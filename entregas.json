@@ -1,0 +1,133 @@
+[
+  {
+    "nombre": "manolo",
+    "fecha": "6/3/2026",
+    "hora": "10:31 a.m.",
+    "synced": 0,
+    "id": 4
+  },
+  {
+    "nombre": "manolo",
+    "fecha": "6/3/2026",
+    "hora": "10:31 a.m.",
+    "synced": 0,
+    "id": 5
+  },
+  {
+    "nombre": "manolo",
+    "fecha": "6/3/2026",
+    "hora": "10:32 a.m.",
+    "synced": 0,
+    "id": 6
+  },
+  {
+    "nombre": "VICTORIA JUAREZ BARRAGAN",
+    "fecha": "6/3/2026",
+    "hora": "10:32 a.m.",
+    "synced": 0,
+    "id": 7
+  },
+  {
+    "nombre": "VICTORIA JUAREZ BARRAGAN",
+    "fecha": "6/3/2026",
+    "hora": "10:33 a.m.",
+    "synced": 0,
+    "id": 8
+  },
+  {
+    "nombre": "Juan perez",
+    "fecha": "6/3/2026",
+    "hora": "11:48 a.m.",
+    "synced": 0,
+    "id": 9
+  },
+  {
+    "nombre": "joel",
+    "fecha": "6/3/2026",
+    "hora": "11:55 a.m.",
+    "synced": 0,
+    "id": 10
+  },
+  {
+    "nombre": "joel",
+    "fecha": "6/3/2026",
+    "hora": "11:55 a.m.",
+    "synced": 0,
+    "id": 11
+  },
+  {
+    "nombre": "Victoria juarez barragan",
+    "fecha": "6/3/2026",
+    "hora": "12:20 p.m.",
+    "synced": 0,
+    "id": 12
+  },
+  {
+    "nombre": "Victoria juarez barragan",
+    "fecha": "6/3/2026",
+    "hora": "12:20 p.m.",
+    "synced": 0,
+    "id": 13
+  },
+  {
+    "nombre": "Victoria juarez barragan",
+    "fecha": "6/3/2026",
+    "hora": "12:20 p.m.",
+    "synced": 0,
+    "id": 14
+  },
+  {
+    "nombre": "Victoria juarez barragan",
+    "fecha": "6/3/2026",
+    "hora": "12:36 p.m.",
+    "synced": 0,
+    "id": 15
+  },
+  {
+    "nombre": "Victoria juarez barragan",
+    "fecha": "6/3/2026",
+    "hora": "12:36 p.m.",
+    "synced": 0,
+    "id": 16
+  },
+  {
+    "nombre": "pedro armendariz",
+    "fecha": "6/3/2026",
+    "hora": "02:27 p.m."
+  },
+  {
+    "alumnoNombre": "pedro armendariz",
+    "tutorNombre": "josefa ortiz",
+    "fecha": "10/3/2026",
+    "hora": "01:43 p.m.",
+    "tipo": "NORMAL"
+  },
+  {
+    "alumnoNombre": "Victoria Juarez Barragan",
+    "tutorNombre": "Emma Barragan",
+    "fecha": "10/3/2026",
+    "hora": "01:56 p.m.",
+    "tipo": "NORMAL"
+  },
+  {
+    "alumnoNombre": "pedro armendariz",
+    "tutorNombre": "josefa ortiz",
+    "fecha": "11/3/2026",
+    "hora": "02:23 p.m.",
+    "tipo": "NORMAL"
+  },
+  {
+    "alumnoNombre": "DIRECCION",
+    "tutorNombre": "MASTER_KEY",
+    "fecha": "11/3/2026",
+    "hora": "02:31 p.m.",
+    "tipo": "NORMAL"
+  },
+  {
+    "alumnoNombre": "pedro armendariz",
+    "tutorNombre": "josefa ortiz",
+    "fecha": "18/3/2026",
+    "hora": "09:59 a.m.",
+    "tipo": "NORMAL"
+  }
+]

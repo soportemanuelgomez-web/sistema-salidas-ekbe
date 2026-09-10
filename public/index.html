@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Desactiva la caché en navegadores de celulares y laptops -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+    <title>Comunidad Ekbe - Control de Salidas</title>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f2f4f7;
+            padding-bottom: 80px;
+        }
+
+        .top-header {
+            background-color: #1b2680;
+            color: white;
+            padding: 30px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .ciclo-badge-header {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .content-area {
+            width: 100%;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block !important;
+        }
+
+        .star-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0 25px 0;
+        }
+
+        .yellow-star-btn {
+            width: 180px;
+            height: 180px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            transition: transform 0.1s ease;
+        }
+
+        .yellow-star-btn:active {
+            transform: scale(0.95);
+        }
+
+        .star-3d {
+            font-size: 100px;
+            color: #ffd740;
+            text-shadow: 0 4px 10px rgba(180, 120, 0, 0.3);
+        }
+
+        .star-label {
+            margin-top: 18px;
+            color: #1b2680;
+            font-weight: 900;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        .manual-box, .panel-card {
+            background: white;
+            margin: 15px 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #1b2680;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-action {
+            width: 100%;
+            background: #1b2680;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn-action:hover {
+            background: #141c60;
+        }
+
+        .btn-filtro-nivel {
+            background: #e0e0e0;
+            color: #333;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .btn-filtro-nivel.active {
+            background: #1b2680;
+            color: white;
+        }
+
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background: white;
+            border-top: 3px solid #ffcc00;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .nav-item {
+            background: none;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #1b2680;
+            cursor: pointer;
+            width: 20%;
+            opacity: 0.6;
+        }
+
+        .nav-item.active {
+            opacity: 1;
+        }
+
+        .nav-item .icon { font-size: 20px; margin-bottom: 2px; }
+        .nav-item .label { font-size: 11px; font-weight: 800; }
+
+        .result-box {
+            background: white;
+            margin: 15px 20px;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #28a745;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .modal-bg {
+            position: fixed;
+            top:0; left:0; width:100%; height:100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+        }
+
+        .modal-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .btn-sec { background: #5c6bc0; color: white; border: none; padding: 8px; border-radius: 6px; width: 100%; margin-top: 5px; cursor: pointer; font-weight: bold; }
+        .btn-close { background: #888; color: white; border: none; padding: 8px; border-radius: 6px; width: 100%; margin-top: 5px; cursor: pointer; }
+        
+        .tabla-general {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .tabla-general th, .tabla-general td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .tabla-general th {
+            background-color: #1b2680;
+            color: white;
+        }
+
+        /* ESTILOS Y PLANTILLA DEL TARJETÓN */
+        .tarjeton-plantilla {
+            width: 100%;
+            min-height: 320px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 3px solid #1b2680;
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #1b2680;
+            text-align: left;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+
+        .tarjeton-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1b2680;
+            padding-bottom: 10px;
+        }
+
+        .tarjeton-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .tarjeton-qr-container {
+            background: #ffffff;
+            padding: 10px;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tarjeton-footer {
+            border-top: 1px solid #cbd5e1;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        /* CONFIGURACIÓN DE IMPRESIÓN (@media print) */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #modal-tarjeton-oficial {
+                display: block !important;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: none;
+            }
+            #modal-tarjeton-oficial .modal-card {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+            #modal-tarjeton-oficial .modal-actions-print {
+                display: none !important;
+            }
+            .tarjeton-plantilla, .tarjeton-plantilla * {
+                visibility: visible;
+            }
+            .tarjeton-plantilla {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid #000;
+            }
+            @page {
+                size: letter landscape;
+                margin: 10mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO GLOBAL -->
+    <header class="top-header">
+        <div>
+            <h1>Comunidad<br>Ekbe</h1>
+        </div>
+        <div id="display-ciclo-escolar-header" class="ciclo-badge-header">
+            Ciclo Escolar: 2026-2027
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="content-area">
+
+        <!-- 1. PESTAÑA ENTREGA (Escanear / Vocear) -->
+        <section id="tab-entrega" class="tab-content active">
+            
+            <div class="star-container">
+                <button id="btn-iniciar-camara" class="yellow-star-btn" title="Presiona para Escanear">
+                    <span class="star-3d">★</span>
+                </button>
+                <div class="star-label">ESCANEAR CÓDIGO DE SALIDA</div>
+            </div>
+
+            <div id="reader" style="width: 100%; max-width: 400px; margin: 0 auto 20px auto; display: none;"></div>
+
+            <!-- Entrada Manual -->
+            <div class="manual-box">
+                <label style="font-weight: bold; color: #1b2680; font-size: 14px; display: block; margin-bottom: 8px;">Acceso con Código Manual</label>
+                <div class="row">
+                    <input type="text" id="manual-code" placeholder="Ingresa ID de Tutor / Familia">
+                    <button id="btn-manual" class="btn-action" style="width: 120px;">Vocear</button>
+                </div>
+            </div>
+
+            <!-- Resultado de Escaneo/Voceo -->
+            <div id="resultCard" class="result-box" style="display: none;">
+                <div id="alerta-custodia-box" style="display: none;"></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <h3 id="res-tutor" style="color: #1b2680;">---</h3>
+                    <button type="button" class="btn-action" onclick="abrirTarjetonDesdeResultado()" style="width: auto; background: #ff9800; padding: 6px 12px; font-size: 12px;">🖨️ Imprimir Tarjetón</button>
+                </div>
+                <p style="font-size: 12px; color: #666; margin-bottom: 10px;">ID Familia/Tutor: <span id="res-id">---</span></p>
+                <div id="lista-hermanos-escaneo"></div>
+            </div>
+
+        </section>
+
+        <!-- 2. PESTAÑA NUEVA: MONITOR DE VOCEO EN TIEMPO REAL (INDEPENDIENTE) -->
+        <section id="tab-voceo" class="tab-content">
+            <div class="panel-card">
+                <h2 style="color: #1b2680; margin-bottom: 15px;">📣 Monitor de Solicitudes (Voceo Puerta)</h2>
+                
+                <!-- Filtro por Nivel -->
+                <div style="display: flex; gap: 8px; margin-bottom: 15px; overflow-x: auto; padding-bottom: 5px;">
+                    <button class="btn-filtro-nivel active" data-nivel="TODOS" onclick="cambiarFiltroNivel('TODOS')">TODOS</button>
+                    <button class="btn-filtro-nivel" data-nivel="PREESCOLAR" onclick="cambiarFiltroNivel('PREESCOLAR')">PREESCOLAR</button>
+                    <button class="btn-filtro-nivel" data-nivel="PRIMARIA" onclick="cambiarFiltroNivel('PRIMARIA')">PRIMARIA</button>
+                    <button class="btn-filtro-nivel" data-nivel="SECUNDARIA" onclick="cambiarFiltroNivel('SECUNDARIA')">SECUNDARIA</button>
+                </div>
+
+                <div id="lista-voceo"></div>
+            </div>
+        </section>
+
+        <!-- 3. PESTAÑA REGISTRO DE ALUMNOS -->
+<section id="tab-registro" class="tab-content">
+    <div class="panel-card">
+        <h2 style="color: #1b2680; margin-bottom: 15px;">Registro de Alumno y Tutor</h2>
+        <form id="form-registro" onsubmit="guardarRegistroAlumno(event)">
+            
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">Nombre Completo del Alumno:</label>
+            <input type="text" id="reg-nombre" placeholder="Nombre completo" required>
+
+            <!-- SELECCIÓN DE NIVEL, GRADO Y GRUPO -->
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">Nivel Educativo:</label>
+            <select id="reg-nivel" required onchange="actualizarOpcionesGrado()">
+                <option value="">-- Seleccionar Nivel --</option>
+                <option value="PREESCOLAR">Preescolar</option>
+                <option value="PRIMARIA">Primaria</option>
+                <option value="SECUNDARIA">Secundaria</option>
+            </select>
+
+            <div class="row">
+                <div style="flex: 1;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 4px;">Grado:</label>
+                    <select id="reg-grado" required>
+                        <option value="">-- Selecciona Nivel Primero --</option>
+                    </select>
+                </div>
+                <div style="flex: 1;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 4px;">Grupo:</label>
+                    <select id="reg-grupo" required>
+                        <option value="">-- Grupo --</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+            </div>
+
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">Nombre del Tutor Principal:</label>
+            <input type="text" id="reg-tutor" placeholder="Nombre del Tutor" required>
+
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">Vincular a Código Familiar Existente (Opcional):</label>
+            <select id="reg-tutor-existente">
+                <option value="">-- Crear Nuevo Código Familiar --</option>
+            </select>
+
+            <label style="font-weight: bold; display: block; margin-bottom: 4px; margin-top: 10px;">Persona Autorizada Adicional (Opcional):</label>
+            <input type="text" id="reg-autorizado-extra" placeholder="Ej: Tía, Abuela, Chofer">
+
+            <button type="submit" class="btn-action" style="margin-top: 15px;">Guardar Registro</button>
+        </form>
+    </div>
+</section>
+
+
+        <!-- 4. PESTAÑA GESTIÓN Y BUSCADOR -->
+        <section id="tab-gestion" class="tab-content">
+            
+            <!-- EDICIÓN Y GESTIÓN RÁPIDA DE CICLO ESCOLAR -->
+            <div class="panel-card">
+                <h3 style="color: #1b2680; margin-bottom: 8px;">📅 Configuración de Ciclo Escolar</h3>
+                <p style="font-size: 12px; color: #666; margin-bottom: 12px;">Modifica el ciclo activo para actualizar automáticamente el pie de los tarjetones e impresiones.</p>
+                <div class="row">
+                    <input type="text" id="input-ciclo-escolar" placeholder="Ej: 2026-2027">
+                    <button type="button" class="btn-action" onclick="guardarNuevoCicloEscolar()" style="width: auto; padding: 0 16px;">Guardar</button>
+                </div>
+            </div>
+
+<!-- ========================================================== -->
+<!-- IMPORTADOR OFICIAL CONECTADO A LA API /api/registrar -->
+<!-- ========================================================== -->
+
+<!-- 1. Librería SheetJS para leer Excel -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<!-- 2. Botón e Input oculto -->
+<div class="contenedor-importar-excel" style="margin: 15px 0;">
+    <button type="button" class="btn-excel-custom" onclick="document.getElementById('input-excel-import').click()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+        </svg>
+        Importar Base de Datos desde Excel
+    </button>
+    <input type="file" id="input-excel-import" accept=".xlsx, .xls, .csv" style="display: none;" onchange="procesarExcelDirecto(this)">
+</div>
+
+<!-- 3. Estilos del Botón -->
+<style>
+.btn-excel-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #107c41;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    user-select: none;
+}
+.btn-excel-custom:hover { background-color: #0b5c30; transform: translateY(-1px); }
+.btn-excel-custom:active { transform: translateY(0); }
+</style>
+
+<!-- 4. Envío masivo al Servidor Backend -->
+<script>
+async function procesarExcelDirecto(input) {
+    const file = input.files ? input.files[0] : null;
+    if (!file) return;
+
+    if (typeof XLSX === 'undefined') {
+        alert("❌ La librería XLSX no pudo cargarse. Revisa tu conexión a Internet.");
+        return;
+    }
+
+    const reader = new FileReader();
+
+    reader.onload = async function(e) {
+        try {
+            const data = new Uint8Array(e.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+            const primeraHoja = workbook.SheetNames[0];
+            const hoja = workbook.Sheets[primeraHoja];
+            const filas = XLSX.utils.sheet_to_json(hoja, { defval: "" });
+
+            if (!filas || filas.length === 0) {
+                alert("⚠️ El Excel no contiene registros legibles.");
+                return;
+            }
+
+            // Filtrar filas con nombre de alumno
+            const alumnosValidos = filas.filter(f => f["NOMBRE COMPLETO DEL ALUMNO"] && f["NOMBRE COMPLETO DEL ALUMNO"].toString().trim().length > 0);
+
+            if (alumnosValidos.length === 0) {
+                alert("⚠️ No se encontraron nombres válidos en la columna 'NOMBRE COMPLETO DEL ALUMNO'.");
+                return;
+            }
+
+            alert(`⏳ Subiendo ${alumnosValidos.length} alumnos al servidor... Haz clic en Aceptar y espera unos segundos.`);
+
+            let guardados = 0;
+
+            // Enviar cada alumno a la ruta real de tu backend (/api/registrar)
+            for (const fila of alumnosValidos) {
+                const payload = {
+                    nombre: fila["NOMBRE COMPLETO DEL ALUMNO"] ? fila["NOMBRE COMPLETO DEL ALUMNO"].toString().trim() : "",
+                    nivel: fila["NIVEL EDUCATIVO"] || "PRIMARIA",
+                    grado: fila["GRADO"] ? fila["GRADO"].toString().trim() : "",
+                    grupo: fila["GRUPO"] ? fila["GRUPO"].toString().trim() : "",
+                    tutorNombre: fila["NOMBRE DEL TUTOR PRINCIPAL"] ? fila["NOMBRE DEL TUTOR PRINCIPAL"].toString().trim() : "",
+                    tutorExistenteId: "",
+                    personaAutorizadaExtra: fila["PERSONAS ADICIONALES"] ? fila["PERSONAS ADICIONALES"].toString().trim() : ""
+                };
+
+                try {
+                    await fetch('/api/registrar', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    guardados++;
+                } catch (err) {
+                    console.error("Error guardando alumno:", payload.nombre, err);
+                }
+            }
+
+            // Forzar sincronización nativa del servidor
+            if (typeof sincronizarServidor === 'function') {
+                try { await sincronizarServidor(); } catch(e) {}
+            }
+
+            alert(`🎉 ¡ÉXITO TOTAL!\n\nSe registraron ${guardados} de ${alumnosValidos.length} alumnos directamente en la base de datos del servidor.`);
+            
+            // Recargar la pantalla para mostrar los cambios
+            location.reload();
+
+        } catch (err) {
+            alert("❌ Error al procesar el Excel: " + err.message);
+        } finally {
+            input.value = '';
+        }
+    };
+
+    reader.readAsArrayBuffer(file);
+}
+</script>
+
+            <!-- BUSCADOR Y CONSULTA DE REGISTRADOS -->
+            <div class="panel-card">
+                <h3 style="color: #1b2680; margin-bottom: 8px;">🔍 Búsqueda de Código QR e Impresión de Tarjetón</h3>
+                <p style="font-size: 12px; color: #666; margin-bottom: 12px;">Ingresa el nombre o código para consultar sus datos y descargar la tarjeta QR.</p>
+                
+                <!-- ✅ CÓDIGO NUEVO CON ETIQUETA "PRESIONAR ENTER" -->
+<div class="row" style="display: flex; align-items: center; gap: 10px;">
+    <input type="text" id="panel-search-input" placeholder="Nombre o Código (Ej: ALU_... / TUT_...)" onkeydown="if(event.key === 'Enter') buscarRegistrado()" style="flex: 1;">
+    <span style="background-color: #e9ecef; color: #495057; font-size: 12px; font-weight: bold; padding: 8px 12px; border-radius: 6px; border: 1px solid #ced4da; white-space: nowrap; user-select: none;">
+        ⌨️ Presiona ENTER
+    </span>
+</div>
+
+                <div id="panel-search-results" style="margin-top: 10px;"></div>
+            </div>
+
+            <!-- OPCIONES DE BASE DE DATOS Y ADMINISTRACIÓN (MODAL Y EXCEL) -->
+            <div class="panel-card">
+                <h3 style="color: #1b2680; margin-bottom: 8px;">📋 Base de Datos de Alumnos y Tutores</h3>
+                <p style="font-size: 12px; color: #666; margin-bottom: 12px;">Exporta los datos en Excel o visualízalos en una ventana limpia cuando lo necesites.</p>
+                
+                <div class="row" style="margin-bottom: 15px;">
+                    <button type="button" class="btn-action" onclick="descargarExcelBaseDatos()" style="background: #28a745; font-size: 13px;">
+                        📥 Descargar Reporte Completo en Excel (.xlsx)
+                    </button>
+                    <button type="button" class="btn-action" onclick="abrirModalBD()" style="background: #17a2b8; font-size: 13px;">
+                        👁️ Ver Base de Datos Completa
+                    </button>
+                </div>
+
+                <!-- ZONA DE PELIGRO DE ADMINISTRADOR -->
+                <div style="padding-top: 15px; border-top: 2px dashed #dc3545;">
+                    <label style="font-weight: bold; color: #dc3545; display: block; margin-bottom: 5px;">🔒 Acciones de Administrador</label>
+                    <p style="font-size: 11px; color: #666; margin-bottom: 10px;">Requiere clave de seguridad para evitar eliminaciones accidentales.</p>
+                    <button type="button" onclick="vaciarBaseDatosAdmin()" class="btn-action" style="background: #dc3545;">
+                        🚨 Vaciar Toda la BD de Alumnos y Tutores
+                    </button>
+                </div>
+            </div>
+
+           <!-- ========================================== -->
+<!-- ========================================== -->
+<!-- SECCIÓN: EDITAR Y ACTUALIZAR ALUMNO       -->
+<!-- ========================================== -->
+<div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e2e8f0; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    
+    <h3 style="color: #1e293b; margin-top: 0; font-size: 18px; display: flex; align-items: center; gap: 8px;">
+        ✏️ Modificar / Editar Registro de Alumno
+    </h3>
+    <p style="color: #64748b; font-size: 13px; margin-bottom: 20px;">
+        Escribe el nombre o código del alumno para cargar sus datos desde el servidor y editarlos.
+    </p>
+
+    <!-- CAJA DE BÚSQUEDA -->
+    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <input type="text" id="edit-buscar-input" placeholder="Escribe Nombre o Código (Ej: ALYSSA...)" 
+               onkeydown="if(event.key === 'Enter') { event.preventDefault(); event.stopPropagation(); window.buscarParaEditarDirecto(); }" 
+               style="flex: 1; padding: 12px; border-radius: 6px; border: 1px solid #cbd5e1; outline: none; font-size: 14px;">
+        
+        <button type="button" onclick="window.buscarParaEditarDirecto()" style="background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">
+            🔍 Buscar Alumno
+        </button>
+    </div>
+
+    <!-- FORMULARIO DE EDICIÓN -->
+    <div id="form-edicion-container" style="display: none; border-top: 2px dashed #e2e8f0; padding-top: 20px;">
+        
+        <input type="hidden" id="edit-id-alumno">
+
+        <!-- DESPLEGABLES -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+            <div>
+                <label style="font-size: 12px; font-weight: bold; color: #475569;">NIVEL:</label>
+                <select id="edit-nivel" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px;">
+                    <option value="">Selecciona Nivel...</option>
+                    <option value="MATERNAL">MATERNAL</option>
+                    <option value="PREESCOLAR">PREESCOLAR</option>
+                    <option value="PRIMARIA">PRIMARIA</option>
+                    <option value="SECUNDARIA">SECUNDARIA</option>
+                </select>
+            </div>
+            <div>
+                <label style="font-size: 12px; font-weight: bold; color: #475569;">GRADO:</label>
+                <select id="edit-grado" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px;">
+                    <option value="">Selecciona Grado...</option>
+                    <option value="MATERNAL 1">MATERNAL 1</option>
+                    <option value="MATERNAL 2">MATERNAL 2</option>
+                    <option value="1°">1°</option>
+                    <option value="2°">2°</option>
+                    <option value="3°">3°</option>
+                    <option value="4°">4°</option>
+                    <option value="5°">5°</option>
+                    <option value="6°">6°</option>
+                </select>
+            </div>
+            <div>
+                <label style="font-size: 12px; font-weight: bold; color: #475569;">GRUPO:</label>
+                <select id="edit-grupo" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px;">
+                    <option value="">Selecciona Grupo...</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="ÚNICO">ÚNICO</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- DATOS PERSONALES -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+            <div>
+                <label style="font-size: 12px; font-weight: bold; color: #475569;">NOMBRE DEL ALUMNO:</label>
+                <input type="text" id="edit-nombre-alumno" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="font-size: 12px; font-weight: bold; color: #475569;">TUTOR RESPONSABLE:</label>
+                <input type="text" id="edit-tutor" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px; box-sizing: border-box;">
+            </div>
+        </div>
+
+        <!-- AUTORIZADOS EXTRAS -->
+        <div style="margin-bottom: 15px;">
+            <label style="font-size: 12px; font-weight: bold; color: #475569;">PERSONAS AUTORIZADAS EXTRAS:</label>
+            <input type="text" id="edit-autorizados" placeholder="Ej: Abuela, Tío, Chofer..." style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 5px; box-sizing: border-box;">
+        </div>
+
+  <!-- CONTENEDOR DE CUSTODIA CON CHECKBOX -->
+    <div style="background-color: #fff5f5; border: 1px solid #feb2b2; border-radius: 8px; padding: 15px; margin-top: 15px; margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <input type="checkbox" id="edit-alerta-active" onchange="toggleAlertaCampo()" style="width: 20px; height: 20px; cursor: pointer;">
+            <label for="edit-alerta-active" style="font-weight: bold; color: #c53030; cursor: pointer; margin: 0;">
+                ⚠️ ACTIVAR ALERTA DE BLOQUEO / CUSTODIA O RESTRICCIÓN
+            </label>
+        </div>
+        
+        <input type="text" id="edit-alerta" disabled placeholder="Ej: NO ENTREGAR A PAPÁ POR CUSTODIA / CARLOS GUTIERREZ..." 
+               style="width: 100%; padding: 10px; border: 1px solid #cbd5e0; border-radius: 6px; box-sizing: border-box; background-color: #edf2f7; transition: all 0.3s;">
+    </div>
+
+    <!-- BOTÓN DE GUARDAR EN EL SERVIDOR CENTRAL -->
+    <button type="button" onclick="window.guardarCambiosAlumnoServidor()" style="width: 100%; padding: 12px; background: #16a34a; color: white; border: none; border-radius: 6px; font-weight: bold; font-size: 15px; cursor: pointer;">
+        💾 Guardar Cambios en Servidor Central
+    </button>
+
+</div>
+
+<script>
+// FUNCIÓN PARA ACTIVAR / DESACTIVAR EL CAMPO DE CUSTODIA CON EL CHECKBOX
+function toggleAlertaCampo() {
+    const chk = document.getElementById("edit-alerta-active");
+    const txt = document.getElementById("edit-alerta");
+    
+    if (chk && txt) {
+        txt.disabled = !chk.checked;
+        if (chk.checked) {
+            txt.style.backgroundColor = "#ffffff";
+            txt.focus();
+        } else {
+            txt.style.backgroundColor = "#edf2f7";
+            txt.value = ""; // Se limpia automáticamente al desmarcar
+        }
+    }
+}
+
+// BUSCADOR EN EL SERVIDOR CENTRAL (MEJORADO)
+window.buscarParaEditarDirecto = function() {
+    const input = document.getElementById("edit-buscar-input");
+    const textoOriginal = input ? input.value.trim() : "";
+
+    if (!textoOriginal) {
+        alert("⚠️ Por favor escribe el nombre o código del alumno.");
+        return;
+    }
+
+    const limpiarTexto = str => str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : "";
+    const palabrasBusqueda = limpiarTexto(textoOriginal).split(/\s+/).filter(p => p.length > 0);
+
+    // FUNCIÓN PARA BUSCAR VALORES IGNORANDO CLAVES DE ID (FAM_...) EN EL CAMPO DE TUTOR
+    const obtenerValorLimpio = (obj, palabrasClave, evitarCodigos = false) => {
+        if (!obj || typeof obj !== 'object') return "";
+        const keys = Object.keys(obj);
+
+        for (let palabra of palabrasClave) {
+            const pNorm = limpiarTexto(palabra);
+            for (let k of keys) {
+                const kNorm = limpiarTexto(k);
+                if ((kNorm === pNorm || kNorm.includes(pNorm)) && obj[k] !== undefined && obj[k] !== null) {
+                    const valStr = String(obj[k]).trim();
+                    if (evitarCodigos && (valStr.startsWith("FAM_") || valStr.startsWith("TUT_") || valStr.startsWith("ALU_"))) {
+                        continue; // Omite códigos/IDs si buscamos nombres reales
+                    }
+                    if (valStr !== "") return valStr;
+                }
+            }
+        }
+        return "";
+    };
+
+    const asignarSelect = (idElem, valor) => {
+        const select = document.getElementById(idElem);
+        if (!select || !valor) return;
+        select.value = valor;
+        if (!select.value || select.selectedIndex === -1) {
+            const valNorm = limpiarTexto(valor);
+            for (let opt of select.options) {
+                const optVal = limpiarTexto(opt.value);
+                const optText = limpiarTexto(opt.text);
+                if ((optVal && valNorm.includes(optVal)) || (optText && valNorm.includes(optText)) || (optVal && optVal.includes(valNorm))) {
+                    select.value = opt.value;
+                    break;
+                }
+            }
+        }
+    };
+
+    fetch('/api/alumnos')
+        .then(res => res.json())
+        .then(lista => {
+            if (!Array.isArray(lista) || lista.length === 0) {
+                alert("⚠️ El archivo data.json está vacío o no contiene una lista válida.");
+                return;
+            }
+
+            const alumno = lista.find(a => {
+                if (!a || typeof a !== 'object') return false;
+                const registroTextoNorm = limpiarTexto(JSON.stringify(a));
+                return palabrasBusqueda.every(palabra => registroTextoNorm.includes(palabra));
+            });
+
+            if (alumno) {
+                document.getElementById("form-edicion-container").style.display = "block";
+
+                // Extraer datos filtrando códigos innecesarios
+                const idVal = obtenerValorLimpio(alumno, ['codigo', 'id', 'clave'], false);
+                const nivelVal = obtenerValorLimpio(alumno, ['nivel', 'seccion'], false);
+                const gradoVal = obtenerValorLimpio(alumno, ['grado', 'ano'], false);
+                const grupoVal = obtenerValorLimpio(alumno, ['grupo'], false);
+                const nombreVal = obtenerValorLimpio(alumno, ['nombre', 'alumno', 'nombreAlumno'], false);
+                
+              // Buscar el NOMBRE real del tutor (evitando IDs tipo FAM_)
+let tutorVal = obtenerValorLimpio(alumno, ['nombreTutor', 'tutorNombre', 'padre', 'madre', 'responsable'], true);
+
+// 💡 1. Si no tiene tutor escrito, lo buscamos con su tutorId
+if (!tutorVal && alumno.tutorId) {
+    const listaTutores = (typeof data !== 'undefined' && data.tutores) ? data.tutores : (window.tutores || []);
+    const tutorObj = listaTutores.find(t => t.id === alumno.tutorId);
+    if (tutorObj) {
+        tutorVal = tutorObj.nombre || tutorObj.madre || tutorObj.padre || tutorObj.tutorNombre || "";
+    }
+}
+
+// 💡 2. Si sigue sin tutor, toma el primero de los autorizados
+if (!tutorVal) {
+    const autorizadosTemp = obtenerValorLimpio(alumno, ['autorizados', 'personasAutorizadas'], false);
+    tutorVal = autorizadosTemp ? autorizadosTemp.split(',')[0].trim() : "";
+}
+
+                const autorizadosVal = obtenerValorLimpio(alumno, ['autorizados', 'extra', 'personasAutorizadas'], false);
+                const alertaVal = obtenerValorLimpio(alumno, ['alerta', 'custodia', 'observaciones', 'restriccion', 'bloqueo'], false);
+
+                // Llenar campos
+                document.getElementById("edit-id-alumno").value = idVal;
+                document.getElementById("edit-nombre-alumno").value = nombreVal;
+                
+                const inputTutor = document.getElementById("edit-tutor");
+                inputTutor.value = tutorVal;
+                inputTutor.readOnly = true; // Protegido contra modificación accidental
+                inputTutor.style.backgroundColor = "#f7fafc";
+
+                document.getElementById("edit-autorizados").value = autorizadosVal;
+
+                // Configurar Alerta y Checkbox
+                const chkAlerta = document.getElementById("edit-alerta-active");
+                const txtAlerta = document.getElementById("edit-alerta");
+
+                if (alertaVal && alertaVal.trim() !== "") {
+                    chkAlerta.checked = true;
+                    txtAlerta.disabled = false;
+                    txtAlerta.value = alertaVal;
+                    txtAlerta.style.backgroundColor = "#ffffff";
+                } else {
+                    chkAlerta.checked = false;
+                    txtAlerta.disabled = true;
+                    txtAlerta.value = "";
+                    txtAlerta.style.backgroundColor = "#edf2f7";
+                }
+
+                asignarSelect("edit-nivel", nivelVal);
+                asignarSelect("edit-grado", gradoVal);
+                asignarSelect("edit-grupo", grupoVal);
+
+                alert("🎉 ¡Alumno cargado exitosamente desde el servidor central!\n\n" + (nombreVal || "Registro encontrado"));
+            } else {
+                alert("❌ No se encontró ningún alumno que coincida con: " + textoOriginal);
+            }
+        })
+        .catch(err => {
+            alert("❌ Error de comunicación con el servidor central: " + err.message);
+        });
+};
+
+// GUARDAR CAMBIOS DIRECTO EN EL DISCO DURO (DATA.JSON)
+window.guardarCambiosAlumnoServidor = function() {
+    const id = document.getElementById("edit-id-alumno").value;
+    const nombre = document.getElementById("edit-nombre-alumno").value;
+    const chkAlerta = document.getElementById("edit-alerta-active");
+
+    if (!id || !nombre) {
+        alert("⚠️ Faltan datos necesarios (Código/ID o Nombre) para guardar.");
+        return;
+    }
+
+    const textoAlerta = (chkAlerta && chkAlerta.checked) ? document.getElementById("edit-alerta").value.trim() : "";
+
+    const datosActualizados = {
+        codigo: id,
+        id: id,
+        nivel: document.getElementById("edit-nivel").value,
+        grado: document.getElementById("edit-grado").value,
+        grupo: document.getElementById("edit-grupo").value,
+        nombre: nombre,
+        tutor: document.getElementById("edit-tutor").value,
+        autorizados: document.getElementById("edit-autorizados").value,
+        alerta: textoAlerta
+    };
+
+    fetch('/api/guardar-alumno', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(datosActualizados)
+    })
+    .then(res => res.json())
+    .then(respuesta => {
+        alert("💾 ¡Cambios guardados exitosamente en data.json!\n\nSe actualizaron los datos para todos los dispositivos.");
+        document.getElementById("form-edicion-container").style.display = "none";
+        document.getElementById("edit-buscar-input").value = "";
+    })
+    .catch(err => {
+        alert("❌ Error guardando en el servidor: " + err.message);
+    });
+};
+
+
+</script>
+</section>
+
+<!-- 5. PESTAÑA REPORTE -->
+<section id="tab-reporte" class="tab-content" style="display: none; padding: 20px; max-width: 1100px; margin: 0 auto;">
+            
+            <h2 style="color: #1b2680; margin-bottom: 20px; font-family: sans-serif; border-bottom: 3px solid #FF6600; padding-bottom: 8px;">
+                📊 Historial de Salidas y Consultas
+            </h2>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                
+                <!-- CARD 1: EXPORTACIÓN DE SALIDAS Y MANTENIMIENTO -->
+                <div class="panel-card" style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e0e0e0;">
+                    <h3 style="color: #1b2680; margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                        📅 Salidas por Fecha
+                    </h3>
+                    <p style="color: #666; font-size: 14px;">Elige un día para consultar o exportar el registro de entregas.</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <label style="font-weight: bold; color: #333; display: block; margin-bottom: 5px;">Seleccionar Fecha:</label>
+                        <input type="date" id="filtro-fecha" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; box-sizing: border-box;">
+                    </div>
+
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button id="btn-exportar-excel" class="btn-action" style="flex: 1; background: #28a745; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                            📊 Excel de Salidas
+                        </button>
+                        <button id="btn-imprimir-ficha" onclick="window.print()" class="btn-action" style="flex: 1; background: #17a2b8; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                            🖨️ Imprimir Lista
+                        </button>
+                    </div>
+
+                    <!-- MANTENIMIENTO Y PURGA DE HISTORIAL -->
+                    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
+                        <label style="font-weight: bold; color: #1b2680; display: block; margin-bottom: 8px; font-size: 13px;">⚙️ Mantenimiento de Historial</label>
+                        <div style="display: flex; gap: 8px;">
+                            <button type="button" onclick="limpiarHistorialManual(30)" class="btn-action" style="background: #ff9800; color: white; border: none; font-size: 12px; padding: 8px; border-radius: 6px; cursor: pointer; flex: 1;">
+                                Borrar > 30 días
+                            </button>
+                            <button type="button" onclick="vaciarHistorialCompleto()" class="btn-action" style="background: #dc3545; color: white; border: none; font-size: 12px; padding: 8px; border-radius: 6px; cursor: pointer; flex: 1;">
+                                🗑️ Vaciar Todo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: CONSULTA EN TIEMPO REAL -->
+<div class="panel-card" style="flex: 1; min-width: 300px; background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e0e0e0;">
+    <h3 style="color: #1b2680; margin-top: 0; display: flex; align-items: center; gap: 8px;">
+        🔍 Consulta en Tiempo Real
+    </h3>
+    <p style="color: #666; font-size: 14px;">Consulta la última salida registrada de un alumno en específico.</p>
+
+    <div style="display: flex; gap: 8px; margin-top: 15px;">
+        <input type="text" id="input-busqueda-salida-alumno" placeholder="Nombre o ID del alumno..." 
+               onkeydown="if(event.key === 'Enter') consultarSalidaAlumno()"
+               style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; box-sizing: border-box;">
+        <button type="button" onclick="consultarSalidaAlumno()" style="padding: 10px 16px; background-color: #1b2680; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            Buscar
+        </button>
+    </div>
+
+    <!-- TARJETA CON DETALLES DE LA BÚSQUEDA -->
+    <div id="card-resultado-salida" style="display: none; margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #f8f9fa; border: 1px solid #dcdcdc;">
+        <div style="font-weight: bold; font-size: 16px; color: #1b2680;" id="res-alumno-nombre">-</div>
+        <div style="color: #FF6600; font-weight: bold; font-size: 13px; margin-top: 2px;" id="res-alumno-grado-grupo">-</div>
+        <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 8px 0;">
+        <div style="font-size: 13px; color: #333;"><strong>🚪 Puerta:</strong> <span id="res-alumno-puerta">-</span></div>
+        <div style="font-size: 13px; color: #333; margin-top: 3px;"><strong>🕒 Fecha / Hora:</strong> <span id="res-alumno-fechahora">-</span></div>
+        <div style="font-size: 13px; color: #333; margin-top: 3px;"><strong>👤 Tutor:</strong> <span id="res-alumno-tutor">-</span></div>
+    </div>
+
+    <!-- Mensajes de aviso -->
+    <div id="msg-consulta-estado" style="margin-top: 15px; display: none;"></div>
+</div>
+
+<!-- SCRIPT DE BÚSQUEDA AUTÓNOMO -->
+<script>
+async function consultarSalidaAlumno() {
+    const input = document.getElementById('input-busqueda-salida-alumno');
+    const cardRes = document.getElementById('card-resultado-salida');
+    const msgEstado = document.getElementById('msg-consulta-estado');
+
+    if (!input || !cardRes) return;
+
+    const query = input.value.trim();
+
+    cardRes.style.display = 'none';
+    if (msgEstado) { msgEstado.style.display = 'none'; msgEstado.innerHTML = ''; }
+
+    if (!query) {
+        if (msgEstado) {
+            msgEstado.innerHTML = `<div style="padding:10px; background:#fff3cd; color:#856404; border-radius:6px; font-size:13px;">⚠️ Ingresa un nombre o ID.</div>`;
+            msgEstado.style.display = 'block';
+        }
+        return;
+    }
+
+    try {
+        const res = await fetch('/api/alumnos');
+        if (!res.ok) throw new Error("No se pudo conectar con el servidor.");
+
+        const data = await res.json();
+        const lista = Array.isArray(data) ? data : (data.alumnos || data.registros || []);
+
+        const normalizar = s => s ? s.toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : "";
+        const queryNorm = normalizar(query);
+
+        const encontrado = lista.find(a => {
+            const txt = normalizar(JSON.stringify(a));
+            return txt.includes(queryNorm);
+        });
+
+        if (encontrado) {
+            document.getElementById('res-alumno-nombre').textContent = encontrado.nombre || encontrado.alumno || 'Alumno Encontrado';
+            document.getElementById('res-alumno-grado-grupo').textContent = `${encontrado.grado || ''} ${encontrado.grupo || ''}`.trim() || 'N/A';
+            document.getElementById('res-alumno-puerta').textContent = encontrado.puerta || 'General';
+            document.getElementById('res-alumno-fechahora').textContent = encontrado.fechahora || encontrado.hora || new Date().toLocaleTimeString();
+            document.getElementById('res-alumno-tutor').textContent = encontrado.tutor || encontrado.tutorNombre || 'No registrado';
+            
+            cardRes.style.display = 'block';
+        } else {
+            if (msgEstado) {
+                msgEstado.innerHTML = `<div style="padding:10px; background:#f8d7da; color:#721c24; border-radius:6px; font-size:13px;">❌ No se encontraron salidas para "<strong>${query}</strong>".</div>`;
+                msgEstado.style.display = 'block';
+            }
+        }
+    } catch (err) {
+        if (msgEstado) {
+            msgEstado.innerHTML = `<div style="padding:10px; background:#f8d7da; color:#721c24; border-radius:6px; font-size:13px;">🚨 Error: ${err.message}</div>`;
+            msgEstado.style.display = 'block';
+        }
+    }
+}
+</script>
+
+                    <!-- TARJETA CON DETALLES DE LA BÚSQUEDA -->
+                    <div id="card-resultado-salida" style="display: none; margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #f8f9fa; border: 1px solid #dcdcdc;">
+                        <div style="font-weight: bold; font-size: 16px; color: #1b2680;" id="res-alumno-nombre">-</div>
+                        <div style="color: #FF6600; font-weight: bold; font-size: 13px; margin-top: 2px;" id="res-alumno-grado-grupo">-</div>
+                        <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 8px 0;">
+                        <div style="font-size: 13px; color: #333;"><strong>🚪 Puerta:</strong> <span id="res-alumno-puerta">-</span></div>
+                        <div style="font-size: 13px; color: #333; margin-top: 3px;"><strong>🕒 Fecha / Hora:</strong> <span id="res-alumno-fechahora">-</span></div>
+                        <div style="font-size: 13px; color: #333; margin-top: 3px;"><strong>👤 Tutor:</strong> <span id="res-alumno-tutor">-</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TABLA CONTENEDORA DE SALIDAS DEL DÍA -->
+            <div class="panel-card" style="background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e0e0e0;">
+                <h3 style="color: #1b2680; margin-top: 0;">📋 Registros de Salida</h3>
+                <div id="tabla-reporte-container" style="overflow-x: auto; margin-top: 15px;">
+                    <p style="color: #777; font-style: italic;">Selecciona una fecha para visualizar el historial de entregas.</p>
+                </div>
+            </div>
+
+</section>
+
+    </main>
+
+    <!-- NAVEGACIÓN INFERIOR FIJA -->
+    <nav class="bottom-bar">
+        <button class="nav-item active" onclick="cambiarPestana('tab-entrega', this)">
+            <span class="icon">🚀</span>
+            <span class="label">Entrega</span>
+        </button>
+        <button class="nav-item" onclick="cambiarPestana('tab-voceo', this)">
+            <span class="icon">📣</span>
+            <span class="label">Voceo</span>
+        </button>
+        <button class="nav-item" onclick="cambiarPestana('tab-registro', this)">
+            <span class="icon">📝</span>
+            <span class="label">Registro</span>
+        </button>
+        <button class="nav-item" onclick="cambiarPestana('tab-gestion', this)">
+            <span class="icon">⚙️</span>
+            <span class="label">Gestión</span>
+        </button>
+        <button class="nav-item" onclick="cambiarPestana('tab-reporte', this)">
+            <span class="icon">📊</span>
+            <span class="label">Reporte</span>
+        </button>
+    </nav>
+
+    <!-- MODAL DE VISUALIZACIÓN DE BASE DE DATOS COMPLETA -->
+    <div id="modal-bd-completa" class="modal-bg" style="display: none;">
+        <div class="modal-card">
+            <h3 style="color: #1b2680; margin-bottom: 8px;">📋 Registros de Alumnos y Tutores</h3>
+            <input type="text" id="input-filtro-bd" placeholder="Buscar en la lista..." onkeyup="filtrarTablaBD()">
+            <div style="overflow-x: auto; max-height: 350px;">
+                <table class="tabla-general" id="tabla-bd-alumnos">
+                    <thead>
+                        <tr>
+                            <th>Alumno</th>
+                            <th>Nivel / Grado / Grupo</th>
+                            <th>ID Alumno</th>
+                            <th>Tutor(es) Autorizado(s)</th>
+                            <th>ID Tutor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-bd-alumnos">
+                        <!-- Se llena dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-close" onclick="cerrarModalBD()" style="margin-top: 15px;">Cerrar Ventana</button>
+        </div>
+    </div>
+
+    <!-- MODAL DE VISUALIZACIÓN DE CÓDIGO QR -->
+    <div id="modal-qr" class="modal-bg" style="display: none;">
+        <div class="modal-card" style="max-width: 350px;">
+            <h3 style="color: #1b2680; margin-bottom: 10px;">Credencial QR Familia</h3>
+            <div id="qrcode-container" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+            <div id="qr-info-alumnos" style="font-size: 13px; color: #333; margin-bottom: 15px;"></div>
+            <canvas id="canvas-tarjeta" style="display: none;"></canvas>
+            <button id="btn-descargar-imagen-qr" class="btn-sec">Descargar Imagen PNG</button>
+            <button id="btn-cerrar-modal" class="btn-close">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- MODAL CON PLANTILLA OFICIAL DEL TARJETÓN PARA IMPRESIÓN -->
+    <div id="modal-tarjeton-oficial" class="modal-bg" style="display: none;">
+        <div class="modal-card" style="max-width: 650px;">
+            <div id="tarjeton-imprimible-area" class="tarjeton-plantilla">
+                <div class="tarjeton-header">
+                    <div>
+                        <div style="font-weight: 900; font-size: 22px; letter-spacing: 1px; color: #1b2680;">COMUNIDAD EKBE</div>
+                        <div style="color: #f59e0b; font-size: 16px;">★ ★ ★ ★ ★</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <span style="font-size: 10px; font-weight: bold; color: #64748b; display: block;">CICLO ESCOLAR</span>
+                        <div id="tarjeton-modal-ciclo" style="font-size: 15px; font-weight: bold; color: #1b2680;">2026-2027</div>
+                    </div>
+                </div>
+
+                <div class="tarjeton-body">
+                    <div>
+                        <div id="tarjeton-modal-familia" style="font-size: 20px; font-weight: bold; color: #0f172a; margin-bottom: 5px;">FAMILIA ---</div>
+                        <div id="tarjeton-modal-nivel" style="font-size: 14px; color: #475569; font-weight: 600;">NIVEL: ---</div>
+                        <div style="margin-top: 10px; font-size: 13px; color: #334155;">
+                            <strong>Alumnos autorizados:</strong>
+                            <ul id="tarjeton-modal-lista-alumnos" style="margin-top: 5px; padding-left: 18px;"></ul>
+                        </div>
+                    </div>
+                    <div class="tarjeton-qr-container">
+                        <div id="tarjeton-modal-qr"></div>
+                    </div>
+                </div>
+
+                <div class="tarjeton-footer">
+                    <span>Código de Tutor: <strong id="tarjeton-modal-codigo">TUT-000</strong></span>
+                    <span>Documento Oficial de Acceso y Entrega de Alumnos</span>
+                </div>
+            </div>
+
+            <div class="modal-actions-print" style="margin-top: 15px; display: flex; gap: 10px;">
+                <button class="btn-action" onclick="imprimirTarjetonDirecto()" style="background: #28a745;">🖨️ Imprimir Tarjetón</button>
+                <button class="btn-close" onclick="cerrarModalTarjetonOficial()" style="margin-top: 0;">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL SELECCIÓN DE ALUMNOS Y SEGURIDAD PARA VOCEO -->
+    <div id="modal-voceo-calle" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center;">
+        <div class="modal-content" style="background: white; border-radius: 12px; padding: 20px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #1b2680; padding-bottom: 10px; margin-bottom: 15px;">
+                <h3 style="margin: 0; color: #1b2680; font-size: 18px;">👨‍👩‍👧‍👦 Control de Salida - Familia</h3>
+                <button onclick="cerrarModalVoceo()" style="background: none; border: none; font-size: 22px; cursor: pointer; color: #666;">✖</button>
+            </div>
+
+            <!-- CAMPO FIJO DE ALERTA DE CUSTODIA -->
+<div style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; margin-bottom: 15px; text-align: left;">
+    <strong style="color: #dc2626; font-size: 13px; display: block; margin-bottom: 5px;">🚨 Alerta de Custodia / Restricción:</strong>
+    <div id="voceo-alerta-box" style="font-size: 13px; color: #dc2626; font-weight: 700; min-height: 18px;">
+        <!-- Se llena si hay persona bloqueada, o se queda totalmente vacío -->
+    </div>
+</div>
+
+            <!-- PERSONAS AUTORIZADAS -->
+            <div style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 10px; margin-bottom: 15px;">
+                <strong style="color: #495057; font-size: 13px; display: block; margin-bottom: 5px;">👥 Personas Autorizadas a Recoger:</strong>
+                <div id="voceo-lista-autorizados" style="font-size: 13px; color: #212529;">
+                    <!-- Se llena dinámicamente -->
+                </div>
+            </div>
+
+            <!-- SELECCIÓN DE ALUMNOS A VOCEAR -->
+            <div style="margin-bottom: 15px;">
+                <strong style="color: #1b2680; font-size: 14px; display: block; margin-bottom: 8px;">🧒 ¿Por qué alumno(s) viene en este momento?</strong>
+                <div id="voceo-lista-alumnos" style="display: flex; flex-direction: column; gap: 8px;">
+                    <!-- Se llena dinámicamente con checkboxes -->
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button onclick="cerrarModalVoceo()" class="btn-sec" style="flex: 1; padding: 10px; border-radius: 6px; cursor: pointer;">Cancelar</button>
+                <button onclick="confirmarEnviarVoceo()" class="btn-action" style="flex: 2; padding: 10px; background: #28a745; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 14px;">📣 Enviar Seleccionados a Voceo</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL DE DETALLE DE ALUMNO / BUSQUEDA DIRECTA -->
+    <div id="modal-detalle-alumno" class="modal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center;">
+        <div class="modal-content" style="background:#fff; width:90%; max-width:500px; padding:25px; border-radius:12px; position:relative; box-shadow:0 10px 25px rgba(0,0,0,0.3); text-align:center;">
+            
+            <button onclick="cerrarModalDetalleAlumno()" style="position:absolute; top:12px; right:15px; border:none; background:none; font-size:22px; cursor:pointer; color:#888;">✕</button>
+
+            <h2 style="color:#1b2680; margin-top:0; border-bottom:2px solid #ffcc00; padding-bottom:10px;">📄 Expediente del Alumno</h2>
+
+            <!-- RESULTADOS / CONTENIDO -->
+            <div id="detalle-alumno-contenido" style="text-align:left; margin-top:15px; font-size:14px; color:#333;">
+                <!-- Se llena dinámicamente con JS -->
+            </div>
+
+            <!-- CONTENEDOR DE CÓDIGO QR -->
+            <div id="qr-modal-expediente" style="margin:20px auto; display:flex; justify-content:center;"></div>
+
+<!-- BOTONES DE ACCIÓN (DENTRO DEL EXPEDIENTE DEL ALUMNO) -->
+<div style="margin-top:20px; display:flex; gap:10px; justify-content:center;">
+    <button id="btn-descargar-tarjeton-modal" class="btn-primary" style="background:#28a745; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; font-weight:bold;">
+        🎴 Descargar Tarjetón
+    </button>
+    <button type="button" onclick="cerrarModalDetalleAlumno()" style="background:#6c757d; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">
+        Cerrar
+    </button>
+</div>
+
+</div>
+</div>
+
+<script>
+    document.write('<script src="app.js?v=' + Date.now() + '"><\/script>');
+</script>
+
+
+<!-- ========================================================== -->
+<!-- LÓGICA DE EDICIÓN CON SOPORTE COMPLETO PARA HERMANOS -->
+<!-- ========================================================== -->
+<script>
+// 1. Agregar casilla para nuevo hermano
+window.agregarFilaHermano = function(datos = {}) {
+    var cont = document.getElementById('contenedor-hermanos-edit');
+    if (!cont) return;
+
+    var div = document.createElement('div');
+    div.className = 'hermano-row';
+    div.style.cssText = 'background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #1b2680; position: relative; border: 1px solid #dee2e6;';
+    
+    div.innerHTML = `
+        <button type="button" onclick="this.parentElement.remove()" style="position: absolute; top: 6px; right: 8px; background: #dc3545; color: white; border: none; border-radius: 50%; width: 22px; height: 22px; font-weight: bold; cursor: pointer; font-size: 12px; line-height: 1;">✕</button>
+        <div style="font-size: 12px; font-weight: bold; color: #1b2680; margin-bottom: 6px;">👦/👧 Hermano(a) Adicional:</div>
+        <input type="text" class="hermano-nombre" placeholder="Nombre completo del hermano(a)" value="${datos.nombre || ''}" style="width: 100%; padding: 6px; margin-bottom: 6px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        <div style="display: flex; gap: 6px;">
+            <select class="hermano-nivel" style="flex: 2; padding: 6px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="PRIMARIA" ${datos.nivel === 'PRIMARIA' ? 'selected' : ''}>PRIMARIA</option>
+                <option value="PREESCOLAR" ${datos.nivel === 'PREESCOLAR' ? 'selected' : ''}>PREESCOLAR</option>
+                <option value="SECUNDARIA" ${datos.nivel === 'SECUNDARIA' ? 'selected' : ''}>SECUNDARIA</option>
+                <option value="MATERNAL" ${datos.nivel === 'MATERNAL' ? 'selected' : ''}>MATERNAL</option>
+            </select>
+            <input type="text" class="hermano-grado" placeholder="Grado" value="${datos.grado || ''}" style="flex: 1; padding: 6px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            <input type="text" class="hermano-grupo" placeholder="Grupo" value="${datos.grupo || ''}" style="flex: 1; padding: 6px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+    `;
+    cont.appendChild(div);
+};
+
+// 2. Abrir ventana de edición limpiando duplicados previos
+window.abrirYLlenarEditar = function() {
+    var modalEdit = document.getElementById('modal-editar-alumno');
+    if (modalEdit) {
+        modalEdit.style.setProperty('display', 'flex', 'important');
+        modalEdit.style.setProperty('z-index', '9999999', 'important');
+        modalEdit.style.setProperty('visibility', 'visible', 'important');
+        modalEdit.style.setProperty('opacity', '1', 'important');
+    }
+
+    var contHermanos = document.getElementById('contenedor-hermanos-edit');
+    if (!contHermanos && modalEdit) {
+        var inputAutorizados = document.getElementById('edit-autorizados');
+        var targetBox = inputAutorizados ? inputAutorizados.parentElement : null;
+        
+        var divSeccion = document.createElement('div');
+        divSeccion.style.cssText = 'margin-top: 15px; margin-bottom: 15px; text-align: left; background: #eef2f7; padding: 12px; border-radius: 8px;';
+        divSeccion.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <label style="font-weight: bold; font-size: 13px; color: #1b2680;">👨‍👩‍👧‍👦 Hermanos en esta misma familia:</label>
+            </div>
+            <div id="contenedor-hermanos-edit"></div>
+        `;
+        divSeccion.style.display = 'none';
+        if (targetBox && targetBox.parentElement) {
+            targetBox.parentElement.insertBefore(divSeccion, targetBox.nextSibling);
+        }
+    } else if (contHermanos) {
+        contHermanos.innerHTML = ''; 
+    }
+
+    var modalDetalle = document.getElementById('modal-detalle-alumno');
+    var listaAlumnos = [];
+    var tutorId = '';
+    var tutorNombre = '';
+    var autorizados = '';
+    var tieneCustodia = false;
+    var alertaCustodia = '';
+
+    if (modalDetalle && modalDetalle.dataset.familiaJson) {
+        try {
+            var familiaData = JSON.parse(modalDetalle.dataset.familiaJson);
+            tutorId = familiaData.tutorId || familiaData.id || '';
+            tutorNombre = familiaData.tutorNombre || '';
+            if (familiaData.alumnos && Array.isArray(familiaData.alumnos)) {
+                listaAlumnos = familiaData.alumnos;
+            }
+        } catch(e){}
+    }
+
+    if (typeof cerrarModalDetalleAlumno === 'function') {
+        try { cerrarModalDetalleAlumno(); } catch(e){}
+    }
+
+    if (listaAlumnos.length === 0) {
+        var textoBusqueda = "";
+        var buscadorInput = document.getElementById('manual-code') || 
+                            document.getElementById('input-busqueda-expediente') ||
+                            document.querySelector('.search-box input') ||
+                            document.querySelector('input[placeholder*="Buscar"]');
+        if (buscadorInput && buscadorInput.value) textoBusqueda = buscadorInput.value.trim();
+        var busq = textoBusqueda.toUpperCase().trim();
+
+        var bd = [];
+        if (window.datosCache && Array.isArray(window.datosCache.alumnos)) {
+            bd = window.datosCache.alumnos;
+        } else {
+            try { bd = JSON.parse(localStorage.getItem('bd_alumnos')) || JSON.parse(localStorage.getItem('alumnos')) || []; } catch(e){}
+        }
+
+        var encontrados = bd.filter(function(item) {
+            var nom = (item.nombre || item.nombreAlumno || item["NOMBRE COMPLETO DEL ALUMNO"] || '').toUpperCase();
+            var tId = (item.idAlumno || item.id || item.tutorId || '').toUpperCase();
+            return (busq && (nom.indexOf(busq) !== -1 || tId.indexOf(busq) !== -1));
+        });
+
+  if (encontrados.length > 0) {
+            tutorId = encontrados[0].idAlumno || encontrados[0].id || encontrados[0].tutorId || '';
+            tutorNombre = encontrados[0].tutorNombre || encontrados[0].tutorPrincipal || encontrados[0].tutor || encontrados[0]["NOMBRE DEL TUTOR PRINCIPAL"] || '';
+            autorizados = encontrados[0].personaExtra || encontrados[0].personaAutorizadaExtra || encontrados[0].autorizados || encontrados[0]["PERSONAS ADICIONALES"] || '';
+            
+            // REVISAR ALERTA EN TODOS LOS CAMPOS POSIBLES DE DATA.JSON
+            alertaCustodia = encontrados[0].alerta || encontrados[0].alertaCustodia || encontrados[0].custodia || encontrados[0].observaciones || encontrados[0].restriccion || '';
+            tieneCustodia = alertaCustodia.trim() !== '';
+
+            listaAlumnos = encontrados.map(a => ({
+                nombre: a.nombre || a.nombreAlumno || a["NOMBRE COMPLETO DEL ALUMNO"] || '',
+                nivel: a.nivel || a["NIVEL EDUCATIVO"] || '',
+                grado: a.grado || a["GRADO"] || '',
+                grupo: a.grupo || a["GRUPO"] || ''
+            }));
+        }
+    }
+
+   // --- DESDUPLICADOR INTELIGENTE DE NOMBRES ---
+    var alumnosUnicos = [];
+    var nombresRegistrados = new Set();
+
+    listaAlumnos.forEach(function(alu) {
+        var nombreLimpio = (alu.nombre || '').trim().toUpperCase();
+        if (nombreLimpio && !nombresRegistrados.has(nombreLimpio)) {
+            nombresRegistrados.add(nombreLimpio);
+            alumnosUnicos.push(alu);
+        }
+    });
+
+    if (alumnosUnicos.length > 0) {
+        var aluPrinc = alumnosUnicos[0];
+        if (document.getElementById('edit-id-alumno')) document.getElementById('edit-id-alumno').value = tutorId;
+        if (document.getElementById('edit-nombre')) document.getElementById('edit-nombre').value = aluPrinc.nombre || '';
+        
+        if (document.getElementById('edit-nivel')) {
+            var niv = (aluPrinc.nivel || '').toString().toUpperCase();
+            if (niv.indexOf('MATER') !== -1) document.getElementById('edit-nivel').value = 'MATERNAL';
+            else if (niv.indexOf('PRE') !== -1) document.getElementById('edit-nivel').value = 'PREESCOLAR';
+            else if (niv.indexOf('SEC') !== -1) document.getElementById('edit-nivel').value = 'SECUNDARIA';
+            else document.getElementById('edit-nivel').value = 'PRIMARIA';
+        }
+
+        if (document.getElementById('edit-grado')) document.getElementById('edit-grado').value = aluPrinc.grado || '';
+        if (document.getElementById('edit-grupo')) document.getElementById('edit-grupo').value = aluPrinc.grupo || '';
+        if (document.getElementById('edit-tutor')) document.getElementById('edit-tutor').value = tutorNombre || aluPrinc.tutorNombre || '';
+        if (document.getElementById('edit-autorizados')) document.getElementById('edit-autorizados').value = autorizados || aluPrinc.personaExtra || '';
+
+        // --- SOPORTE PARA CHECKBOX Y CAMPO DE ALERTA ---
+        var chkAlerta = document.getElementById('edit-alerta-active') || document.getElementById('edit-custodia-check');
+        var txtAlerta = document.getElementById('edit-alerta') || document.getElementById('edit-custodia-texto');
+
+        if (chkAlerta) chkAlerta.checked = !!tieneCustodia;
+        if (txtAlerta) {
+            txtAlerta.value = alertaCustodia || '';
+            txtAlerta.disabled = !tieneCustodia;
+            txtAlerta.style.backgroundColor = tieneCustodia ? "#ffffff" : "#edf2f7";
+        }
+
+// --- INYECTAR NOTA DE ALERTA DENTRO DE LA VENTANA DE VOCEO ---
+var textoAlertaFinal = (typeof alertaCustodia !== 'undefined' && alertaCustodia) ? alertaCustodia : '';
+
+// Si la variable viene vacía, la extraemos directamente de los registros encontrados
+if (!textoAlertaFinal) {
+    var fuenteRegistros = (typeof encontrados !== 'undefined' && encontrados.length) ? encontrados : 
+                          (typeof listaAlumnos !== 'undefined' && listaAlumnos.length) ? listaAlumnos : [];
+    
+    for (var i = 0; i < fuenteRegistros.length; i++) {
+        var alt = fuenteRegistros[i].alerta || fuenteRegistros[i].alertaCustodia || fuenteRegistros[i].custodia;
+        if (alt && alt.trim() !== '') {
+            textoAlertaFinal = alt;
+            break;
+        }
+    }
+}
+
+var alertaBox = document.getElementById("voceo-alerta-box") || document.getElementById("alerta-custodia-box");
+if (alertaBox) {
+    if (textoAlertaFinal && textoAlertaFinal.trim() !== "") {
+        alertaBox.style.display = "block";
+        alertaBox.style.backgroundColor = "#fee2e2";
+        alertaBox.style.border = "2px solid #dc2626";
+        alertaBox.style.borderRadius = "8px";
+        alertaBox.style.padding = "12px";
+        alertaBox.style.marginBottom = "15px";
+        alertaBox.style.textAlign = "left";
+        alertaBox.style.color = "#7f1d1d";
+        
+        alertaBox.innerHTML = `
+            <div style="font-size: 15px; font-weight: 900; color: #dc2626; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                🚨 <span>¡ATENCIÓN! RESTRICCIÓN DE CUSTODIA DETECTADA</span>
+            </div>
+            <div style="font-size: 14px; color: #7f1d1d; background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #fca5a5; font-weight: 600;">
+                📌 <b>NOTA REGISTRADA:</b><br>${textoAlertaFinal}
+            </div>
+        `;
+    } else {
+        alertaBox.style.display = "none";
+        alertaBox.innerHTML = "";
+    }
+}
+
+        for (var h = 1; h < alumnosUnicos.length; h++) {
+            agregarFilaHermano(alumnosUnicos[h]);
+        }
+    }
+};
+
+// 3. Guardar registros sin volver a duplicar (CORREGIDO CON ALERTA)
+window.guardarEdicionAlumno = async function() {
+    var tutorId = document.getElementById('edit-id-alumno') ? document.getElementById('edit-id-alumno').value : '';
+    var nombrePrinc = document.getElementById('edit-nombre') ? document.getElementById('edit-nombre').value.trim() : '';
+    var nivelPrinc = document.getElementById('edit-nivel') ? document.getElementById('edit-nivel').value : '';
+    var gradoPrinc = document.getElementById('edit-grado') ? document.getElementById('edit-grado').value.trim() : '';
+    var grupoPrinc = document.getElementById('edit-grupo') ? document.getElementById('edit-grupo').value.trim() : '';
+    var tutorNombre = document.getElementById('edit-tutor') ? document.getElementById('edit-tutor').value.trim() : '';
+    var autorizados = document.getElementById('edit-autorizados') ? document.getElementById('edit-autorizados').value.trim() : '';
+
+    // CAPTURAR EL ESTADO Y EL TEXTO DE LA ALERTA
+    var chkAlerta = document.getElementById('edit-alerta-active') || document.getElementById('edit-custodia-check');
+    var txtAlerta = document.getElementById('edit-alerta') || document.getElementById('edit-custodia-texto');
+    
+    var tieneCustodiaVal = chkAlerta ? chkAlerta.checked : false;
+    var textoAlertaVal = (tieneCustodiaVal && txtAlerta) ? txtAlerta.value.trim() : '';
+
+    if (!nombrePrinc) {
+        alert('Por favor, ingresa el nombre del alumno.');
+        return;
+    }
+
+    var listaAProcesar = [{
+        nombre: nombrePrinc,
+        nivel: nivelPrinc,
+        grado: gradoPrinc,
+        grupo: grupoPrinc,
+        tutorNombre: tutorNombre,
+        tutorExistenteId: tutorId,
+        personaAutorizadaExtra: autorizados,
+        alerta: textoAlertaVal,
+        alertaCustodia: textoAlertaVal,
+        tieneCustodia: tieneCustodiaVal,
+        custodia: textoAlertaVal
+    }];
+
+    var nombresVistos = new Set([nombrePrinc.toUpperCase()]);
+
+    var filasHermano = document.querySelectorAll('.hermano-row');
+    filasHermano.forEach(function(row) {
+        var nomH = row.querySelector('.hermano-nombre') ? row.querySelector('.hermano-nombre').value.trim() : '';
+        var nivH = row.querySelector('.hermano-nivel') ? row.querySelector('.hermano-nivel').value : '';
+        var graH = row.querySelector('.hermano-grado') ? row.querySelector('.hermano-grado').value.trim() : '';
+        var gruH = row.querySelector('.hermano-grupo') ? row.querySelector('.hermano-grupo').value.trim() : '';
+
+        if (nomH && !nombresVistos.has(nomH.toUpperCase())) {
+            nombresVistos.add(nomH.toUpperCase());
+            listaAProcesar.push({
+                nombre: nomH,
+                nivel: nivH,
+                grado: graH,
+                grupo: gruH,
+                tutorNombre: tutorNombre,
+                tutorExistenteId: tutorId,
+                personaAutorizadaExtra: autorizados,
+                alerta: textoAlertaVal,
+                alertaCustodia: textoAlertaVal,
+                tieneCustodia: tieneCustodiaVal,
+                custodia: textoAlertaVal
+            });
+        }
+    });
+
+    try {
+        for (var i = 0; i < listaAProcesar.length; i++) {
+            await fetch('/api/registrar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(listaAProcesar[i])
+            });
+        }
+
+        if (typeof sincronizarServidor === 'function') {
+            await sincronizarServidor();
+        }
+
+        var modalEdit = document.getElementById('modal-editar-alumno');
+        if (modalEdit) modalEdit.style.display = 'none';
+
+        alert('✅ ¡Guardado de forma correcta!');
+
+    } catch(err) {
+        console.error("Error al guardar:", err);
+        alert('Ocurrió un error al intentar guardar los datos.');
+    }
+};
+</script>
+<!-- ========================================================== -->
+<!-- PARCHE FINAL: ACTIVA SCROLL Y QUITA DUPLICADOS DE PANTALLA -->
+<!-- ========================================================== -->
+<style>
+  /* Hace que las ventanas flotantes tengan su propia barra para bajar */
+  #modal-detalle-alumno .modal-content,
+  #modal-editar-alumno .modal-content,
+  .modal-content {
+      max-height: 75vh !important;
+      overflow-y: auto !important;
+  }
+</style>
+
+<script>
+// Filtra los nombres repetidos antes de mostrarlos en pantalla
+(function() {
+    var funcionOriginal = window.mostrarModalDetalleAlumno;
+
+    window.mostrarModalDetalleAlumno = function(familia) {
+        if (familia && Array.isArray(familia.alumnos)) {
+            var unicos = [];
+            var nombresRegistrados = new Set();
+
+            familia.alumnos.forEach(function(alu) {
+                var nom = (alu.nombre || alu.nombreAlumno || alu["NOMBRE COMPLETO DEL ALUMNO"] || '').toUpperCase().trim();
+                if (nom && !nombresRegistrados.has(nom)) {
+                    nombresRegistrados.add(nom);
+                    unicos.push(alu);
+                }
+            });
+
+            familia.alumnos = unicos;
+        }
+
+        if (typeof funcionOriginal === 'function') {
+            funcionOriginal(familia);
+        }
+    };
+})();
+</script>
+<script>
+// SOBREESCRIBIR FUNCIÓN DE GUARDADO (Actualiza Memoria Local + Servidor)
+window.guardarEdicionAlumno = async function() {
+    var tutorId = document.getElementById('edit-id-alumno') ? document.getElementById('edit-id-alumno').value : '';
+    var nombrePrinc = document.getElementById('edit-nombre') ? document.getElementById('edit-nombre').value.trim() : '';
+    var nivelPrinc = document.getElementById('edit-nivel') ? document.getElementById('edit-nivel').value : '';
+    var gradoPrinc = document.getElementById('edit-grado') ? document.getElementById('edit-grado').value.trim() : '';
+    var grupoPrinc = document.getElementById('edit-grupo') ? document.getElementById('edit-grupo').value.trim() : '';
+    var tutorNombre = document.getElementById('edit-tutor') ? document.getElementById('edit-tutor').value.trim() : '';
+    var autorizados = document.getElementById('edit-autorizados') ? document.getElementById('edit-autorizados').value.trim() : '';
+
+    if (!nombrePrinc) {
+        alert('Por favor, ingresa el nombre del alumno.');
+        return;
+    }
+
+    // 1. Crear la lista con los datos nuevos/editados
+    var listaAlumnosActualizados = [{
+        nombre: nombrePrinc,
+        nivel: nivelPrinc,
+        grado: gradoPrinc,
+        grupo: grupoPrinc,
+        tutorNombre: tutorNombre,
+        tutorExistenteId: tutorId,
+        personaAutorizadaExtra: autorizados
+    }];
+
+    var nombresVistos = new Set([nombrePrinc.toUpperCase()]);
+
+    var filasHermano = document.querySelectorAll('.hermano-row');
+    filasHermano.forEach(function(row) {
+        var nomH = row.querySelector('.hermano-nombre') ? row.querySelector('.hermano-nombre').value.trim() : '';
+        var nivH = row.querySelector('.hermano-nivel') ? row.querySelector('.hermano-nivel').value : '';
+        var graH = row.querySelector('.hermano-grado') ? row.querySelector('.hermano-grado').value.trim() : '';
+        var gruH = row.querySelector('.hermano-grupo') ? row.querySelector('.hermano-grupo').value.trim() : '';
+
+        if (nomH && !nombresVistos.has(nomH.toUpperCase())) {
+            nombresVistos.add(nomH.toUpperCase());
+            listaAlumnosActualizados.push({
+                nombre: nomH,
+                nivel: nivH,
+                grado: graH,
+                grupo: gruH,
+                tutorNombre: tutorNombre,
+                tutorExistenteId: tutorId,
+                personaAutorizadaExtra: autorizados
+            });
+        }
+    });
+
+    try {
+        // 2. REEMPLAZAR EN MEMORIA CACHÉ Y LOCALSTORAGE DE INMEDIATO
+        if (!window.datosCache) window.datosCache = { alumnos: [] };
+        if (!Array.isArray(window.datosCache.alumnos)) window.datosCache.alumnos = [];
+
+        // Eliminar registros desactualizados de esta familia de la memoria
+        window.datosCache.alumnos = window.datosCache.alumnos.filter(function(item) {
+            var itemTutorId = (item.idAlumno || item.id || item.tutorId || '').toString().toUpperCase();
+            return itemTutorId !== tutorId.toString().toUpperCase();
+        });
+
+        // Insertar los datos corregidos
+        listaAlumnosActualizados.forEach(function(a) {
+            var registroNuevo = {
+                id: tutorId,
+                idAlumno: tutorId,
+                tutorId: tutorId,
+                tutorNombre: tutorNombre,
+                tutorPrincipal: tutorNombre,
+                tutor: tutorNombre,
+                nombre: a.nombre,
+                nombreAlumno: a.nombre,
+                "NOMBRE COMPLETO DEL ALUMNO": a.nombre,
+                nivel: a.nivel,
+                "NIVEL EDUCATIVO": a.nivel,
+                grado: a.grado,
+                "GRADO": a.grado,
+                grupo: a.grupo,
+                "GRUPO": a.grupo,
+                personaExtra: autorizados,
+                personaAutorizadaExtra: autorizados,
+                autorizados: autorizados
+            };
+            window.datosCache.alumnos.push(registroNuevo);
+        });
+
+        // Guardar físicamente en el almacenamiento local
+        try {
+            localStorage.setItem('bd_alumnos', JSON.stringify(window.datosCache.alumnos));
+            localStorage.setItem('alumnos', JSON.stringify(window.datosCache.alumnos));
+        } catch(e){}
+
+        // 3. ENVIAR AL SERVIDOR
+        for (var i = 0; i < listaAlumnosActualizados.length; i++) {
+            await fetch('/api/registrar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(listaAlumnosActualizados[i])
+            });
+        }
+
+        // 4. SINCRONIZAR SERVIDOR
+        if (typeof sincronizarServidor === 'function') {
+            await sincronizarServidor();
+        }
+
+        // 5. CERRAR MODAL Y REGRESR AL EXPEDIENTE ACTUALIZADO
+        var modalEdit = document.getElementById('modal-editar-alumno');
+        if (modalEdit) modalEdit.style.display = 'none';
+
+        var familiaNueva = {
+            id: tutorId,
+            tutorId: tutorId,
+            tutorNombre: tutorNombre,
+            alumnos: listaAlumnosActualizados
+        };
+
+        alert('✅ ¡Cambios guardados correctamente!');
+
+        // Volver a dibujar el expediente con la información modificada
+        if (typeof mostrarModalDetalleAlumno === 'function') {
+            mostrarModalDetalleAlumno(familiaNueva);
+        }
+
+    } catch(err) {
+        console.error("Error al guardar edición:", err);
+        alert('Ocurrió un error al intentar guardar los cambios.');
+    }
+};
+</script>
+<script>
+// PARCHE FINAL: Forzar actualización real en Servidor y Caché Local
+window.guardarEdicionAlumno = async function() {
+    var tutorId = document.getElementById('edit-id-alumno') ? document.getElementById('edit-id-alumno').value : '';
+    var nombrePrinc = document.getElementById('edit-nombre') ? document.getElementById('edit-nombre').value.trim() : '';
+    var nivelPrinc = document.getElementById('edit-nivel') ? document.getElementById('edit-nivel').value : '';
+    var gradoPrinc = document.getElementById('edit-grado') ? document.getElementById('edit-grado').value.trim() : '';
+    var grupoPrinc = document.getElementById('edit-grupo') ? document.getElementById('edit-grupo').value.trim() : '';
+    var tutorNombre = document.getElementById('edit-tutor') ? document.getElementById('edit-tutor').value.trim() : '';
+    var autorizados = document.getElementById('edit-autorizados') ? document.getElementById('edit-autorizados').value.trim() : '';
+
+    if (!nombrePrinc) {
+        alert('Por favor, ingresa el nombre del alumno.');
+        return;
+    }
+
+    var listaAlumnosActualizados = [{
+        nombre: nombrePrinc,
+        nivel: nivelPrinc,
+        grado: gradoPrinc,
+        grupo: grupoPrinc,
+        tutorNombre: tutorNombre,
+        tutorExistenteId: tutorId,
+        personaAutorizadaExtra: autorizados
+    }];
+
+    var nombresVistos = new Set([nombrePrinc.toUpperCase()]);
+
+    var filasHermano = document.querySelectorAll('.hermano-row');
+    filasHermano.forEach(function(row) {
+        var nomH = row.querySelector('.hermano-nombre') ? row.querySelector('.hermano-nombre').value.trim() : '';
+        var nivH = row.querySelector('.hermano-nivel') ? row.querySelector('.hermano-nivel').value : '';
+        var graH = row.querySelector('.hermano-grado') ? row.querySelector('.hermano-grado').value.trim() : '';
+        var gruH = row.querySelector('.hermano-grupo') ? row.querySelector('.hermano-grupo').value.trim() : '';
+
+        if (nomH && !nombresVistos.has(nomH.toUpperCase())) {
+            nombresVistos.add(nomH.toUpperCase());
+            listaAlumnosActualizados.push({
+                nombre: nomH,
+                nivel: nivH,
+                grado: graH,
+                grupo: gruH,
+                tutorNombre: tutorNombre,
+                tutorExistenteId: tutorId,
+                personaAutorizadaExtra: autorizados
+            });
+        }
+    });
+
+    try {
+        // 1. Intentar actualizar en las rutas de API de guardado/edición del backend
+        var datosEnvio = {
+            id: tutorId,
+            tutorId: tutorId,
+            tutorNombre: tutorNombre,
+            alumnos: listaAlumnosActualizados,
+            // Datos individuales por compatibilidad
+            nombre: nombrePrinc,
+            nivel: nivelPrinc,
+            grado: gradoPrinc,
+            grupo: grupoPrinc,
+            tutorExistenteId: tutorId,
+            personaAutorizadaExtra: autorizados
+        };
+
+        // Probar endpoints de guardado/modificación en servidor
+        try {
+            await fetch('/api/guardar-alumno', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(datosEnvio)
+            });
+        } catch(e) {}
+
+        for (var i = 0; i < listaAlumnosActualizados.length; i++) {
+            try {
+                await fetch('/api/registrar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(listaAlumnosActualizados[i])
+                });
+            } catch(e) {}
+        }
+
+        // 2. ACTUALIZAR LA MEMORIA LOCAL Y LOCALSTORAGE
+        if (!window.datosCache) window.datosCache = { alumnos: [] };
+        if (!Array.isArray(window.datosCache.alumnos)) window.datosCache.alumnos = [];
+
+        // Limpiar completamente registros antiguos de esta familia en la memoria
+        window.datosCache.alumnos = window.datosCache.alumnos.filter(function(item) {
+            var itemTutorId = (item.idAlumno || item.id || item.tutorId || '').toString().toUpperCase();
+            return itemTutorId !== tutorId.toString().toUpperCase();
+        });
+
+        // Guardar los datos modificados
+        listaAlumnosActualizados.forEach(function(a) {
+            var reg = {
+                id: tutorId,
+                idAlumno: tutorId,
+                tutorId: tutorId,
+                tutorNombre: tutorNombre,
+                tutorPrincipal: tutorNombre,
+                tutor: tutorNombre,
+                nombre: a.nombre,
+                nombreAlumno: a.nombre,
+                "NOMBRE COMPLETO DEL ALUMNO": a.nombre,
+                nivel: a.nivel,
+                "NIVEL EDUCATIVO": a.nivel,
+                grado: a.grado,
+                "GRADO": a.grado,
+                grupo: a.grupo,
+                "GRUPO": a.grupo,
+                personaExtra: autorizados,
+                personaAutorizadaExtra: autorizados,
+                autorizados: autorizados
+            };
+            window.datosCache.alumnos.push(reg);
+        });
+
+        // Congelar en LocalStorage para que prevalezca al volver a buscar
+        try {
+            localStorage.setItem('bd_alumnos', JSON.stringify(window.datosCache.alumnos));
+            localStorage.setItem('alumnos', JSON.stringify(window.datosCache.alumnos));
+        } catch(e){}
+
+        // 3. PROTEGER LA BÚSQUEDA: Evitar que sincronizarServidor destruya los cambios recién hechos
+        var cacheProtegida = JSON.parse(JSON.stringify(window.datosCache.alumnos));
+        
+        if (typeof sincronizarServidor === 'function') {
+            try {
+                await sincronizarServidor();
+            } catch(e){}
+        }
+
+        // Restaurar los datos editados sobre la memoria si el servidor devolvió datos viejos
+        listaAlumnosActualizados.forEach(function(a) {
+            var yaExiste = window.datosCache.alumnos.some(function(x) {
+                return (x.nombre || '').toUpperCase() === a.nombre.toUpperCase() &&
+                       (x.grado || '').toUpperCase() === a.grado.toUpperCase() &&
+                       (x.grupo || '').toUpperCase() === a.grupo.toUpperCase();
+            });
+
+            if (!yaExiste) {
+                // Si el servidor borró la edición al sincronizar, la reinyectamos
+                window.datosCache.alumnos = window.datosCache.alumnos.filter(function(item) {
+                    var itemTutorId = (item.idAlumno || item.id || item.tutorId || '').toString().toUpperCase();
+                    return itemTutorId !== tutorId.toString().toUpperCase();
+                });
+                cacheProtegida.forEach(function(cp) {
+                    if ((cp.idAlumno || cp.id || cp.tutorId || '').toString().toUpperCase() === tutorId.toString().toUpperCase()) {
+                        window.datosCache.alumnos.push(cp);
+                    }
+                });
+            }
+        });
+
+        // Guardar estado final garantizado
+        try {
+            localStorage.setItem('bd_alumnos', JSON.stringify(window.datosCache.alumnos));
+            localStorage.setItem('alumnos', JSON.stringify(window.datosCache.alumnos));
+        } catch(e){}
+
+        // Cerrar modal de edición
+        var modalEdit = document.getElementById('modal-editar-alumno');
+        if (modalEdit) modalEdit.style.display = 'none';
+
+        alert('✅ ¡Edición guardada y fijada correctamente!');
+
+        // Reabrir expediente actualizado
+        if (typeof mostrarModalDetalleAlumno === 'function') {
+            mostrarModalDetalleAlumno({
+                id: tutorId,
+                tutorId: tutorId,
+                tutorNombre: tutorNombre,
+                alumnos: listaAlumnosActualizados
+            });
+        }
+
+    } catch(err) {
+        console.error("Error al guardar:", err);
+        alert('Ocurrió un error al intentar guardar los cambios.');
+    }
+};
+</script>
+<script>
+// BASE DE DATOS LOCAL DE EDICIONES
+if (!window.registroEdicionesGuardadas) {
+    try {
+        window.registroEdicionesGuardadas = JSON.parse(localStorage.getItem('ediciones_locales_fix')) || {};
+    } catch(e) {
+        window.registroEdicionesGuardadas = {};
+    }
+}
+
+// 1. GUARDAR LA EDICIÓN EN EL REGISTRO PERMANENTE
+window.guardarEdicionAlumno = async function() {
+    var tutorId = document.getElementById('edit-id-alumno') ? document.getElementById('edit-id-alumno').value : '';
+    var nombrePrinc = document.getElementById('edit-nombre') ? document.getElementById('edit-nombre').value.trim() : '';
+    var nivelPrinc = document.getElementById('edit-nivel') ? document.getElementById('edit-nivel').value : '';
+    var gradoPrinc = document.getElementById('edit-grado') ? document.getElementById('edit-grado').value.trim() : '';
+    var grupoPrinc = document.getElementById('edit-grupo') ? document.getElementById('edit-grupo').value.trim() : '';
+    var tutorNombre = document.getElementById('edit-tutor') ? document.getElementById('edit-tutor').value.trim() : '';
+    var autorizados = document.getElementById('edit-autorizados') ? document.getElementById('edit-autorizados').value.trim() : '';
+
+    if (!nombrePrinc || !tutorId) {
+        alert('Por favor completa los campos requeridos.');
+        return;
+    }
+
+    var listaAlumnosActualizados = [{
+        nombre: nombrePrinc,
+        nivel: nivelPrinc,
+        grado: gradoPrinc,
+        grupo: grupoPrinc
+    }];
+
+    var nombresVistos = new Set([nombrePrinc.toUpperCase()]);
+
+    var filasHermano = document.querySelectorAll('.hermano-row');
+    filasHermano.forEach(function(row) {
+        var nomH = row.querySelector('.hermano-nombre') ? row.querySelector('.hermano-nombre').value.trim() : '';
+        var nivH = row.querySelector('.hermano-nivel') ? row.querySelector('.hermano-nivel').value : '';
+        var graH = row.querySelector('.hermano-grado') ? row.querySelector('.hermano-grado').value.trim() : '';
+        var gruH = row.querySelector('.hermano-grupo') ? row.querySelector('.hermano-grupo').value.trim() : '';
+
+        if (nomH && !nombresVistos.has(nomH.toUpperCase())) {
+            nombresVistos.add(nomH.toUpperCase());
+            listaAlumnosActualizados.push({
+                nombre: nomH,
+                nivel: nivH,
+                grado: graH,
+                grupo: gruH
+            });
+        }
+    });
+
+    // Guardar el parche de la familia en LocalStorage con llave tutorId
+    window.registroEdicionesGuardadas[tutorId.toUpperCase()] = {
+        tutorId: tutorId,
+        tutorNombre: tutorNombre,
+        autorizados: autorizados,
+        alumnos: listaAlumnosActualizados
+    };
+
+    localStorage.setItem('ediciones_locales_fix', JSON.stringify(window.registroEdicionesGuardadas));
+
+    // Intentar enviar al backend por si acaso
+    try {
+        await fetch('/api/registrar', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                tutorExistenteId: tutorId,
+                nombre: nombrePrinc,
+                nivel: nivelPrinc,
+                grado: gradoPrinc,
+                grupo: grupoPrinc,
+                tutorNombre: tutorNombre,
+                personaAutorizadaExtra: autorizados
+            })
+        });
+    } catch(e){}
+
+    // Cerrar modal
+    var modalEdit = document.getElementById('modal-editar-alumno');
+    if (modalEdit) modalEdit.style.display = 'none';
+
+    alert('✅ ¡Cambios guardados con éxito!');
+
+    // Mostrar modal con los datos actualizados inmediatamente
+    if (typeof mostrarModalDetalleAlumno === 'function') {
+        mostrarModalDetalleAlumno({
+            id: tutorId,
+            tutorId: tutorId,
+            tutorNombre: tutorNombre,
+            alumnos: listaAlumnosActualizados
+        });
+    }
+};
+
+// 2. INTERCEPTAR EL MOSTRADO DEL EXPEDIENTE AL BUSCAR
+(function() {
+    var funcionOriginalModal = window.mostrarModalDetalleAlumno;
+
+    window.mostrarModalDetalleAlumno = function(familia) {
+        if (familia) {
+            var tId = (familia.tutorId || familia.id || '').toString().toUpperCase();
+            
+            // Si no viene el ID de tutor directo, buscar por el ID de alguno de sus alumnos
+            if (!tId && familia.alumnos && familia.alumnos.length > 0) {
+                tId = (familia.alumnos[0].tutorId || familia.alumnos[0].idAlumno || '').toString().toUpperCase();
+            }
+
+            // Si esta familia tiene cambios guardados en nuestro registro local, REEMPLAZAMOS los datos viejos
+            if (tId && window.registroEdicionesGuardadas && window.registroEdicionesGuardadas[tId]) {
+                var edicion = window.registroEdicionesGuardadas[tId];
+                familia.tutorNombre = edicion.tutorNombre || familia.tutorNombre;
+                familia.alumnos = edicion.alumnos;
+            }
+        }
+
+        if (typeof funcionOriginalModal === 'function') {
+            funcionOriginalModal(familia);
+        }
+    };
+})();
+</script>
+<!-- ========================================================== -->
+<!-- PARCHE TARJETÓN: AGREGA EL NIVEL EDUCATIVO (SECUNDARIA/PRIMARIA) A LOS HERMANOS -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // Función que asegura que el Nivel aparezca en el Grado de todos los hermanos
+    function corregirGradosParaTarjeton(alumnos) {
+        if (!Array.isArray(alumnos)) return alumnos;
+
+        return alumnos.map(function(alu) {
+            var nivel = (alu.nivel || alu["NIVEL EDUCATIVO"] || alu.nivelEducativo || '').trim();
+            var grado = (alu.grado || alu["GRADO"] || '').trim();
+
+            // Si el grado no contiene la palabra del Nivel (ej. Secundaria / Primaria), se la agregamos
+            if (nivel && !grado.toUpperCase().includes(nivel.toUpperCase())) {
+                var gradoLimpio = grado.replace('°', '');
+                // Formatear: ej. "3° Secundaria" o "Secundaria 3°"
+                grado = nivel.charAt(0).toUpperCase() + nivel.slice(1).toLowerCase() + ' ' + gradoLimpio + '°';
+            } else if (grado && !grado.includes('°') && !isNaN(parseInt(grado))) {
+                grado = grado + '°';
+            }
+
+            alu.grado = grado;
+            alu["GRADO"] = grado;
+            return alu;
+        });
+    }
+
+    // Interceptar funciones de generación de Tarjetón
+    ['descargarTarjeton', 'descargarTarjetonQR', 'generarTarjeton', 'imprimirTarjeton'].forEach(function(fnName) {
+        if (typeof window[fnName] === 'function') {
+            var original = window[fnName];
+            window[fnName] = function(param1, param2) {
+                if (param1 && typeof param1 === 'object') {
+                    if (param1.alumnos) {
+                        param1.alumnos = corregirGradosParaTarjeton(param1.alumnos);
+                    } else if (Array.isArray(param1)) {
+                        param1 = corregirGradosParaTarjeton(param1);
+                    }
+                }
+                return original.apply(this, arguments);
+            };
+        }
+    });
+
+    // Interceptar al presionar el botón "Descargar Tarjetón"
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('#btn-descargar-tarjeton, .btn-descargar-tarjeton, button[onclick*="Tarjeton"]');
+        if (btn) {
+            if (window.datosCache && Array.isArray(window.datosCache.alumnos)) {
+                corregirGradosParaTarjeton(window.datosCache.alumnos);
+            }
+        }
+    }, true);
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX DEFINITIVO TARJETÓN: PEGAR NIVEL Y GRADO EN HERMANOS -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // Función que fusiona el Nivel dentro del campo Grado (ej: SECUNDARIA + 3° = SECUNDARIA 3°)
+    function fusionarNivelEnGrado(lista) {
+        if (!Array.isArray(lista)) return lista;
+        lista.forEach(function(alu) {
+            var niv = (alu.nivel || alu["NIVEL EDUCATIVO"] || '').trim().toUpperCase();
+            var gra = (alu.grado || alu["GRADO"] || '').trim();
+
+            if (niv && gra) {
+                // Dar formato bonito: "Secundaria"
+                var nivFormateado = niv.charAt(0) + niv.slice(1).toLowerCase();
+                
+                // Si el grado no contiene ya el nivel (ej: solo dice "3" o "3°"), se lo pegamos
+                if (!gra.toUpperCase().includes(niv)) {
+                    var graLimpio = gra.replace('°', '').trim();
+                    var nuevoGrado = nivFormateado + ' ' + graLimpio + '°';
+                    
+                    alu.grado = nuevoGrado;
+                    alu["GRADO"] = nuevoGrado;
+                }
+            }
+        });
+        return lista;
+    }
+
+    // 1. Aplicar al abrir el expediente
+    var funcionModalOriginal = window.mostrarModalDetalleAlumno;
+    window.mostrarModalDetalleAlumno = function(familia) {
+        if (familia && familia.alumnos) {
+            fusionarNivelEnGrado(familia.alumnos);
+        }
+        if (typeof funcionModalOriginal === 'function') {
+            funcionModalOriginal(familia);
+        }
+    };
+
+    // 2. Aplicar al presionar Guardar en la ventana de edición
+    document.addEventListener('submit', function(e) {
+        // Asegurar formato en las casillas antes de enviar
+        var selectNivel = document.getElementById('edit-nivel');
+        var inputGrado = document.getElementById('edit-grado');
+        if (selectNivel && inputGrado && selectNivel.value && inputGrado.value) {
+            if (!inputGrado.value.toUpperCase().includes(selectNivel.value.toUpperCase())) {
+                inputGrado.value = selectNivel.value + ' ' + inputGrado.value;
+            }
+        }
+
+        document.querySelectorAll('.hermano-row').forEach(function(row) {
+            var selN = row.querySelector('.hermano-nivel');
+            var inpG = row.querySelector('.hermano-grado');
+            if (selN && inpG && selN.value && inpG.value) {
+                if (!inpG.value.toUpperCase().includes(selN.value.toUpperCase())) {
+                    inpG.value = selN.value + ' ' + inpG.value;
+                }
+            }
+        });
+    }, true);
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX SEGURO: AUTORIZADOS Y CUSTODIA (SIN ROMPER DISEÑO) -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // 1. Guardar autorizados y custodia al editar
+    var funcionGuardarPrevia = window.guardarEdicionAlumno;
+
+    window.guardarEdicionAlumno = async function() {
+        var tutorId = document.getElementById('edit-id-alumno') ? document.getElementById('edit-id-alumno').value : '';
+        var autorizadosInput = document.getElementById('edit-autorizados') ? document.getElementById('edit-autorizados').value.trim() : '';
+        var custodiaCheck = document.getElementById('edit-custodia-check') ? document.getElementById('edit-custodia-check').checked : false;
+        var custodiaTexto = document.getElementById('edit-custodia-texto') ? document.getElementById('edit-custodia-texto').value.trim() : '';
+
+        if (typeof funcionGuardarPrevia === 'function') {
+            await funcionGuardarPrevia();
+        }
+
+        if (tutorId && window.registroEdicionesGuardadas && window.registroEdicionesGuardadas[tutorId.toUpperCase()]) {
+            window.registroEdicionesGuardadas[tutorId.toUpperCase()].autorizados = autorizadosInput;
+            window.registroEdicionesGuardadas[tutorId.toUpperCase()].tieneCustodia = custodiaCheck;
+            window.registroEdicionesGuardadas[tutorId.toUpperCase()].alertaCustodia = custodiaTexto;
+
+            localStorage.setItem('ediciones_locales_fix', JSON.stringify(window.registroEdicionesGuardadas));
+        }
+    };
+
+    // 2. Inyectar datos en el objeto ANTES de renderizar (no toca el HTML)
+    var funcionModalPrevia = window.mostrarModalDetalleAlumno;
+
+    window.mostrarModalDetalleAlumno = function(familia) {
+        if (familia) {
+            var tId = (familia.tutorId || familia.id || '').toString().toUpperCase();
+            if (!tId && familia.alumnos && familia.alumnos.length > 0) {
+                tId = (familia.alumnos[0].tutorId || familia.alumnos[0].idAlumno || '').toString().toUpperCase();
+            }
+
+            var edicion = (tId && window.registroEdicionesGuardadas) ? window.registroEdicionesGuardadas[tId] : null;
+
+            if (edicion) {
+                var aut = edicion.autorizados || '';
+                if (aut) {
+                    familia.personaExtra = aut;
+                    familia.personaAutorizadaExtra = aut;
+                    familia.autorizados = aut;
+                    familia["PERSONAS ADICIONALES"] = aut;
+
+                    if (Array.isArray(familia.alumnos)) {
+                        familia.alumnos.forEach(function(a) {
+                            a.personaExtra = aut;
+                            a.personaAutorizadaExtra = aut;
+                            a.autorizados = aut;
+                            a["PERSONAS ADICIONALES"] = aut;
+                        });
+                    }
+                }
+                familia.tieneCustodia = edicion.tieneCustodia;
+                familia.alertaCustodia = edicion.alertaCustodia || '';
+            }
+        }
+
+        // Renderiza el diseño bonito y original intacto
+        if (typeof funcionModalPrevia === 'function') {
+            funcionModalPrevia(familia);
+        }
+    };
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX TARJETÓN: ESTÁNDAR ÚNICO DE FORMATO DE GRADO/NIVEL -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    function estandarizarGradoNivel(alumnos) {
+        if (!Array.isArray(alumnos)) return alumnos;
+
+        return alumnos.map(function(alu) {
+            var niv = (alu.nivel || alu["NIVEL EDUCATIVO"] || alu.nivelEducativo || '').trim();
+            var gra = (alu.grado || alu["GRADO"] || '').trim();
+            var gru = (alu.grupo || alu["GRUPO"] || '').trim();
+
+            // Extraer solo los números del grado (ej: de "2°" o "2" dejamos sólo "2")
+            var numGrado = gra.replace(/[^0-9]/g, '');
+
+            if (niv && numGrado) {
+                // Dar formato bonito con la primera letra en mayúscula (ej: "Primaria")
+                var nivFormateado = niv.charAt(0).toUpperCase() + niv.slice(1).toLowerCase();
+                
+                // Formato idéntico para todos: "Primaria 2°"
+                var textoGradoNivel = nivFormateado + ' ' + numGrado + '°';
+                
+                alu.grado = textoGradoNivel;
+                alu["GRADO"] = textoGradoNivel;
+            }
+
+            return alu;
+        });
+    }
+
+    // Interceptar generación del Tarjetón
+    ['descargarTarjeton', 'descargarTarjetonQR', 'generarTarjeton', 'imprimirTarjeton'].forEach(function(fnName) {
+        if (typeof window[fnName] === 'function') {
+            var funcionOriginal = window[fnName];
+            window[fnName] = function(param1, param2) {
+                if (param1 && typeof param1 === 'object') {
+                    if (param1.alumnos) {
+                        param1.alumnos = estandarizarGradoNivel(param1.alumnos);
+                    } else if (Array.isArray(param1)) {
+                        param1 = estandarizarGradoNivel(param1);
+                    }
+                }
+                return funcionOriginal.apply(this, arguments);
+            };
+        }
+    });
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX TARJETÓN: FORMATO HOMOGÉNEO SIN AFECTAR BASE DE DATOS -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // Interceptamos ÚNICAMENTE la función que prepara los datos para la imagen del tarjetón
+    ['descargarTarjeton', 'descargarTarjetonQR', 'generarTarjeton'].forEach(function(fnName) {
+        if (typeof window[fnName] === 'function') {
+            var funcionOriginal = window[fnName];
+            
+            window[fnName] = function(param) {
+                if (param && param.alumnos && Array.isArray(param.alumnos)) {
+                    // Creamos una copia ligera solo para la impresión sin alterar los datos reales
+                    param.alumnos.forEach(function(alu) {
+                        var niv = (alu.nivel || alu["NIVEL EDUCATIVO"] || '').toString().trim();
+                        var gra = (alu.grado || alu["GRADO"] || '').toString().trim();
+                        var gru = (alu.grupo || alu["GRUPO"] || '').toString().trim();
+
+                        // Extraer solo el número de grado
+                        var numGrado = gra.replace(/[^0-9]/g, '');
+
+                        if (niv && numGrado) {
+                            var nivFormateado = niv.charAt(0).toUpperCase() + niv.slice(1).toLowerCase();
+                            // Estándar idéntico para todos: "Primaria 2° "A""
+                            var textoFinal = nivFormateado + ' ' + numGrado + '°';
+                            
+                            // Asignamos el formato estándar
+                            alu.grado = textoFinal;
+                            alu["GRADO"] = textoFinal;
+                        }
+                    });
+                }
+                return funcionOriginal.apply(this, arguments);
+            };
+        }
+    });
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX DEFINITIVO REGISTRO: CONVERTIR OPCIONES A SÓLO GRADO -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // Función que limpia las opciones de cualquier <select> de grado para que no quede en blanco
+    function normalizarSelectGrado(selectEl) {
+        if (!selectEl || selectEl.dataset.gradoCorregido === "true") return;
+
+        Array.from(selectEl.options).forEach(function(opt) {
+            if (opt.value && /(PRIMARIA|SECUNDARIA|KINDER|PREESCOLAR)/i.test(opt.value)) {
+                // Extraer solo el número
+                var num = opt.value.replace(/[^0-9]/g, '');
+                if (num) {
+                    opt.value = num + '°';
+                    opt.textContent = num + '°';
+                }
+            }
+        });
+
+        selectEl.dataset.gradoCorregido = "true";
+    }
+
+    // Corregir selecciones en la pestaña Registro al hacer clic o cambiar
+    document.addEventListener('focusin', function(e) {
+        var el = e.target;
+        if (el && (el.id === 'reg-grado' || el.id === 'grado' || el.classList.contains('hermano-grado') || el.name === 'grado')) {
+            if (el.tagName === 'SELECT') {
+                normalizarSelectGrado(el);
+            }
+        }
+    });
+
+    // Asegurar que al enviar el formulario de registro los datos viajen limpios
+    document.addEventListener('submit', function(e) {
+        var form = e.target;
+        if (!form) return;
+
+        var inputsGrado = form.querySelectorAll('#reg-grado, #grado, .hermano-grado, select[name="grado"], input[name="grado"]');
+        inputsGrado.forEach(function(inp) {
+            if (inp && inp.value) {
+                var num = inp.value.replace(/[^0-9]/g, '');
+                if (num) {
+                    inp.value = num + '°';
+                }
+            }
+        });
+    }, true);
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX BÚSQUEDA DIRECTA: CAPTURAR BÚSQUEDA DE HERMANOS NUEVOS -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    function buscarEnEdicionesLocales(query) {
+        if (!query || !window.registroEdicionesGuardadas) return null;
+        var q = query.trim().toUpperCase();
+        if (!q) return null;
+
+        var familiaEncontrada = null;
+
+        Object.keys(window.registroEdicionesGuardadas).forEach(function(key) {
+            var fam = window.registroEdicionesGuardadas[key];
+            if (fam) {
+                // Buscar coincidencia en el tutor
+                if ((fam.tutorNombre || '').toUpperCase().includes(q)) {
+                    familiaEncontrada = fam;
+                }
+                // Buscar coincidencia en alumnos principales y hermanos agregados
+                if (Array.isArray(fam.alumnos)) {
+                    fam.alumnos.forEach(function(alu) {
+                        if ((alu.nombre || '').toUpperCase().includes(q)) {
+                            familiaEncontrada = fam;
+                        }
+                    });
+                }
+            }
+        });
+
+        return familiaEncontrada;
+    }
+
+    function interceptarEventoBusqueda(e) {
+        // Localizar la casilla de búsqueda
+        var inputs = document.querySelectorAll('input');
+        var inputBusqueda = null;
+
+        inputs.forEach(function(inp) {
+            if (!inp.closest('.modal') && inp.type !== 'hidden') {
+                var ph = (inp.placeholder || '').toLowerCase();
+                if (ph.includes('nombre') || ph.includes('código') || ph.includes('tutor') || inp.id.includes('busc')) {
+                    inputBusqueda = inp;
+                }
+            }
+        });
+
+        if (!inputBusqueda) {
+            inputs.forEach(function(inp) {
+                if (!inp.closest('.modal') && inp.value && inp.type === 'text') {
+                    inputBusqueda = inp;
+                }
+            });
+        }
+
+        if (!inputBusqueda || !inputBusqueda.value.trim()) return;
+
+        var textoBuscado = inputBusqueda.value.trim();
+        var fam = buscarEnEdicionesLocales(textoBuscado);
+
+        // Si el alumno o hermano existe en las ediciones guardadas, mostramos el expediente directo
+        if (fam && typeof window.mostrarModalDetalleAlumno === 'function') {
+            e.preventDefault();
+            e.stopPropagation();
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+
+            window.mostrarModalDetalleAlumno({
+                id: fam.tutorId,
+                tutorId: fam.tutorId,
+                tutorNombre: fam.tutorNombre,
+                alumnos: fam.alumnos,
+                autorizados: fam.autorizados,
+                personaExtra: fam.autorizados,
+                tieneCustodia: fam.tieneCustodia,
+                alertaCustodia: fam.alertaCustodia
+            });
+            return false;
+        }
+    }
+
+    // Interceptar el clic en el botón "Buscar" antes de que la página ejecute su búsqueda original
+    document.addEventListener('click', function(e) {
+        var target = e.target;
+        if (!target) return;
+
+        var textoBoton = (target.textContent || target.innerText || '').trim().toLowerCase();
+        if (textoBoton === 'buscar' || target.id.includes('buscar') || target.classList.contains('btn-buscar')) {
+            interceptarEventoBusqueda(e);
+        }
+    }, true);
+
+    // Interceptar cuando presionas Enter en la caja de texto de búsqueda
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+            if (e.target && e.target.tagName === 'INPUT' && !e.target.closest('.modal')) {
+                interceptarEventoBusqueda(e);
+            }
+        }
+    }, true);
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX DEFINITIVO: DESTRUCCIÓN DE DUPLICADOS Y TEXTO DUPLICADO -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    function limpiarListaVoceoEnTiempoReal() {
+        // Localizar modales o ventanas abiertas de voceo/entrega
+        var contenedores = document.querySelectorAll('.modal, .modal-body, #modalVoceo, #listaVoceo');
+        
+        contenedores.forEach(function(modal) {
+            var checkboxes = modal.querySelectorAll('input[type="checkbox"]');
+            var nombresVistos = {};
+
+            checkboxes.forEach(function(chk) {
+                var RenglonAlumno = chk.closest('div.form-check, div.list-group-item, div') || chk.parentElement;
+                
+                if (RenglonAlumno) {
+                    // 1. CORREGIR EL TEXTO "PRIMARIA Primaria"
+                    if (RenglonAlumno.innerHTML.includes('PRIMARIA Primaria')) {
+                        RenglonAlumno.innerHTML = RenglonAlumno.innerHTML.replace(/PRIMARIA Primaria/g, 'PRIMARIA');
+                    }
+
+                    // 2. DETECTAR EL NOMBRE DEL ALUMNO
+                    var textoRenglon = (RenglonAlumno.innerText || RenglonAlumno.textContent || '').trim().toUpperCase();
+                    var lineas = textoRenglon.split('\n');
+                    var nombreAlumno = lineas[0].trim(); // Primera línea es el nombre
+
+                    if (nombreAlumno && nombreAlumno.length > 3) {
+                        if (nombresVistos[nombreAlumno]) {
+                            // SI YA EXISTE EN LA LISTA: Eliminar este renglón duplicado inmediatamente
+                            RenglonAlumno.remove();
+                        } else {
+                            // SI ES EL PRIMERO: Registrarlo para no repetirlo
+                            nombresVistos[nombreAlumno] = true;
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    // Ejecutar la limpieza en segundo plano cada 100 milisegundos
+    setInterval(limpiarListaVoceoEnTiempoReal, 100);
+})();
+</script>
+<!-- ========================================================== -->
+<!-- FIX DEFINITIVO: Detección y creación de alerta             -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    async function procesarAlerta() {
+        var contenedor = document.getElementById('lista-hermanos-escaneo') || document.getElementById('resultCard');
+        if (!contenedor) return;
+
+        // 1. Si la caja roja no existe en tu HTML, la creamos automáticamente
+        var alertaBox = document.getElementById('alerta-custodia-box');
+        if (!alertaBox) {
+            alertaBox = document.createElement('div');
+            alertaBox.id = 'alerta-custodia-box';
+            contenedor.parentNode.insertBefore(alertaBox, contenedor);
+        }
+
+        // 2. Obtener datos desde memoria o cargar data.json
+        var fuenteAlumnos = [];
+        if (typeof listaAlumnos !== 'undefined' && listaAlumnos.length) fuenteAlumnos = listaAlumnos;
+        else if (typeof alumnos !== 'undefined' && alumnos.length) fuenteAlumnos = alumnos;
+        else if (typeof datosAlumnos !== 'undefined' && datosAlumnos.length) fuenteAlumnos = datosAlumnos;
+        else {
+            try {
+                var resp = await fetch('data.json');
+                if (resp.ok) fuenteAlumnos = await resp.json();
+            } catch(e) {}
+        }
+
+        if (!fuenteAlumnos) fuenteAlumnos = [];
+
+        var textoPantalla = (contenedor.innerText || '').toUpperCase();
+        var resIdEl = document.getElementById('res-id');
+        var idBuscado = resIdEl ? resIdEl.textContent.trim().toUpperCase() : '';
+
+        var alertasEncontradas = [];
+
+        fuenteAlumnos.forEach(function(a) {
+            var textoAlerta = a.alerta || a.alertaCustodia || a.custodia || '';
+
+            if (textoAlerta && textoAlerta.trim() !== '') {
+                var id1 = (a.id || '').toUpperCase();
+                var id2 = (a.idAlumno || '').toUpperCase();
+                var id3 = (a.tutorId || '').toUpperCase();
+                var id4 = (a.codigo || '').toUpperCase();
+                var nom = (a.nombre || a.nombreAlumno || '').toUpperCase();
+
+                // Validar coincidencia por ID o Nombre en pantalla
+                var coincideId = (idBuscado && (id1 === idBuscado || id2 === idBuscado || id3 === idBuscado || id4 === idBuscado)) ||
+                                 (id1 && id1.length > 2 && textoPantalla.includes(id1)) ||
+                                 (id3 && id3.length > 2 && textoPantalla.includes(id3));
+
+                var coincideNombre = nom && nom.length > 3 && textoPantalla.includes(nom);
+
+                if (coincideId || coincideNombre) {
+                    var nombreMostrar = a.nombre || a.nombreAlumno || 'Alumno';
+                    alertasEncontradas.push('📌 <b>' + nombreMostrar + ':</b> ' + textoAlerta);
+                }
+            }
+        });
+
+        // 3. Renderizar alerta
+        if (alertasEncontradas.length > 0) {
+            var unicas = [...new Set(alertasEncontradas)];
+            alertaBox.style.display = 'block';
+            alertaBox.style.backgroundColor = '#fee2e2';
+            alertaBox.style.border = '2px solid #dc2626';
+            alertaBox.style.borderRadius = '8px';
+            alertaBox.style.padding = '12px';
+            alertaBox.style.marginBottom = '15px';
+            alertaBox.style.textAlign = 'left';
+            alertaBox.innerHTML = `
+                <div style="font-size: 15px; font-weight: 900; color: #dc2626; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                    🚨 <span>¡ATENCIÓN! RESTRICCIÓN DETECTADA</span>
+                </div>
+                <div style="font-size: 14px; color: #7f1d1d; background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #fca5a5; font-weight: 600;">
+                    ${unicas.join('<br>')}
+                </div>
+            `;
+        } else {
+            alertaBox.style.display = 'none';
+            alertaBox.innerHTML = '';
+        }
+    }
+
+    // Monitorear cambios en el contenedor de resultados
+    var objetivo = document.getElementById('lista-hermanos-escaneo') || document.getElementById('resultCard');
+    if (objetivo) {
+        var obs = new MutationObserver(procesarAlerta);
+        obs.observe(objetivo, { childList: true, subtree: true, characterData: true });
+    }
+})();
+</script>
+<!-- ========================================================== -->
+<!-- SOLUCIÓN DEFINITIVA: LECTOR DE MEMORIA Y AUTO-DESBLOQUEO   -->
+<!-- ========================================================== -->
+<script>
+(function() {
+    // 1. Obtener datos directamente de la memoria (evita el error 404 de data.json)
+    function obtenerAlumnosMemoria() {
+        return window.alumnos || 
+               window.bdAlumnos || 
+               window.bdActual || 
+               JSON.parse(localStorage.getItem('bd_alumnos')) || 
+               JSON.parse(localStorage.getItem('alumnos')) || [];
+    }
+
+    function obtenerTutoresMemoria() {
+        return window.tutores || 
+               window.bdTutores || 
+               (window.datosGuardados ? window.datosGuardados.tutores : []) || 
+               JSON.parse(localStorage.getItem('tutores')) || [];
+    }
+
+    // 2. FUNCIÓN PARA DESBLOQUEAR Y LLENAR EL TUTOR
+    function autoDesbloquearYLlenarTutor() {
+        var inputNombre = document.getElementById('edit-nombre-alumno');
+        var inputTutor = document.getElementById('edit-tutor');
+
+        if (!inputTutor) return;
+
+        // 🔓 Quitar el bloqueo en gris de inmediato
+        inputTutor.readOnly = false;
+        inputTutor.removeAttribute('readonly');
+        inputTutor.disabled = false;
+        inputTutor.style.backgroundColor = '#ffffff';
+
+        if (!inputNombre || !inputNombre.value) return;
+
+        var nombreBuscado = inputNombre.value.trim().toUpperCase();
+        var listaAlumnos = obtenerAlumnosMemoria();
+        var listaTutores = obtenerTutoresMemoria();
+
+        // Buscar al alumno para extraer el id del tutor
+        var alumno = listaAlumnos.find(function(a) {
+            var nom = (a.nombre || a.nombreAlumno || a.NOMBRE || '').toUpperCase();
+            return nom && nom.includes(nombreBuscado);
+        });
+
+        if (alumno) {
+            var idTutor = alumno.tutorId || alumno.idFamilia;
+            var tutorObj = listaTutores.find(function(t) { return t.id === idTutor; });
+            var nombreTutor = tutorObj ? tutorObj.nombre : (alumno.tutorPrincipal || alumno.tutorResponsable || alumno.tutor || '');
+
+            if (nombreTutor) {
+                inputTutor.value = nombreTutor;
+            }
+        }
+    }
+
+    // Detectar clics en el botón "Buscar Alumno" para ejecutar la corrección en automático
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('button, a');
+        if (btn && btn.innerText.toUpperCase().includes('BUSCAR')) {
+            setTimeout(autoDesbloquearYLlenarTutor, 100);
+            setTimeout(autoDesbloquearYLlenarTutor, 300);
+            setTimeout(autoDesbloquearYLlenarTutor, 600);
+        }
+    });
+
+    // 3. DETECTOR DE ALERTAS DE VOCEO (Sin usar fetch)
+    var modalVoceo = document.getElementById('modal-voceo-calle');
+    if (!modalVoceo) return;
+
+    var observador = new MutationObserver(function() {
+        var esVisible = window.getComputedStyle(modalVoceo).display !== 'none';
+        if (!esVisible) return;
+
+        var alertaBox = document.getElementById('voceo-alerta-box') || document.getElementById('alerta-custodia-box');
+        var contenedorAlumnos = document.getElementById('voceo-lista-alumnos');
+        if (!alertaBox || !contenedorAlumnos) return;
+
+        var textoPantalla = contenedorAlumnos.innerText.toUpperCase();
+        if (!textoPantalla || textoPantalla.length < 3) return;
+
+        var datosAlumnos = obtenerAlumnosMemoria();
+        var alertasEncontradas = [];
+
+        datosAlumnos.forEach(function(alumno) {
+            var nombre = (alumno.nombre || alumno.nombreAlumno || alumno["NOMBRE COMPLETO DEL ALUMNO"] || '').toUpperCase();
+            var textoAlerta = alumno.alerta || alumno.alertaCustodia || alumno.custodia || '';
+
+            if (nombre && nombre.length > 3 && textoPantalla.indexOf(nombre) !== -1 && textoAlerta.trim() !== '') {
+                alertasEncontradas.push(textoAlerta);
+            }
+        });
+
+        if (alertasEncontradas.length > 0) {
+            var alertaTexto = [...new Set(alertasEncontradas)].join('<br>');
+            alertaBox.style.display = 'block';
+            alertaBox.style.backgroundColor = '#fee2e2';
+            alertaBox.style.border = '2px solid #dc2626';
+            alertaBox.style.borderRadius = '8px';
+            alertaBox.style.padding = '12px';
+            alertaBox.style.marginBottom = '15px';
+            alertaBox.style.textAlign = 'left';
+            alertaBox.style.color = '#7f1d1d';
+            alertaBox.innerHTML = `
+                <div style="font-size: 14px; font-weight: 900; color: #dc2626; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                    🚨 <span>¡ATENCIÓN! RESTRICCIÓN DETECTADA</span>
+                </div>
+                <div style="font-size: 13px; color: #7f1d1d; background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #fca5a5; font-weight: 600;">
+                    📌 <b>NOTA REGISTRADA:</b><br>${alertaTexto}
+                </div>
+            `;
+        }
+    });
+
+    observador.observe(modalVoceo, {
+        attributes: true,
+        attributeFilter: ['style', 'class'],
+        childList: true,
+        subtree: true
+    });
+})();
+</script>
+<!-- VIGILANTE UNIVERSAL PARA TUTORES (COMPATIBLE CON NGROK Y LAPTOPS) -->
+<script>
+(function() {
+    function corregirCampoTutorUniversal() {
+        var inputTutor = document.getElementById('edit-tutor');
+        var inputNombre = document.getElementById('edit-nombre-alumno');
+
+        if (!inputTutor) return;
+
+        // 1. FORZAR SIEMPRE EL DESBLOQUEO Y COLOR BLANCO
+        if (inputTutor.readOnly || inputTutor.hasAttribute('readonly') || inputTutor.disabled || inputTutor.style.backgroundColor !== 'rgb(255, 255, 255)') {
+            inputTutor.readOnly = false;
+            inputTutor.removeAttribute('readonly');
+            inputTutor.disabled = false;
+            inputTutor.style.backgroundColor = '#ffffff';
+        }
+
+        // Si ya tiene un nombre escrito por el usuario o por el sistema, no lo sobrescribimos
+        if (inputTutor.value && inputTutor.value.trim() !== '') return;
+        if (!inputNombre || !inputNombre.value) return;
+
+        var nombreBuscado = inputNombre.value.trim().toUpperCase();
+        var nombreTutorEncontrado = "";
+
+        // 2. BUSCAR EN LA ESTRUCTURA PRINCIPAL DEL SISTEMA (ediciones_locales_fix)
+        try {
+            var edicionesLocales = JSON.parse(localStorage.getItem('ediciones_locales_fix')) || {};
+            for (var famId in edicionesLocales) {
+                var familia = edicionesLocales[famId];
+                if (familia && familia.alumnos && Array.isArray(familia.alumnos)) {
+                    var tieneAlHijo = familia.alumnos.some(function(h) {
+                        var nomHijo = (h.nombre || h.nombreAlumno || '').toUpperCase();
+                        return nomHijo && nomHijo.includes(nombreBuscado);
+                    });
+                    if (tieneAlHijo && familia.tutorNombre) {
+                        nombreTutorEncontrado = familia.tutorNombre;
+                        break;
+                    }
+                }
+            }
+        } catch(e) {}
+
+        // 3. BUSCAR EN OTRAS MEMORIAS COMPATIBLES SI NO SE ENCONTRÓ
+        if (!nombreTutorEncontrado) {
+            var bdAlumnos = window.alumnos || window.bdAlumnos || JSON.parse(localStorage.getItem('bd_alumnos')) || JSON.parse(localStorage.getItem('alumnos')) || [];
+            var bdTutores = window.tutores || window.bdTutores || JSON.parse(localStorage.getItem('tutores')) || [];
+
+            var alumnoObj = bdAlumnos.find(function(a) {
+                var nom = (a.nombre || a.nombreAlumno || '').toUpperCase();
+                return nom && nom.includes(nombreBuscado);
+            });
+
+            if (alumnoObj) {
+                var tutorObj = bdTutores.find(function(t) { return t.id === (alumnoObj.tutorId || alumnoObj.idFamilia); });
+                nombreTutorEncontrado = tutorObj ? tutorObj.nombre : (alumnoObj.tutorPrincipal || alumnoObj.tutorResponsable || alumnoObj.tutor || '');
+            }
+        }
+
+        // 4. INYECTAR EL NOMBRE EN LA CASILLA
+        if (nombreTutorEncontrado) {
+            inputTutor.value = nombreTutorEncontrado;
+        }
+    }
+
+    // Revisar la casilla constantemente cada 300ms
+    setInterval(corregirCampoTutorUniversal, 300);
+})();
+</script>

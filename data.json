@@ -1,0 +1,4070 @@
+{
+  "alumnos": [
+    {
+      "id": "ALU_K3D4HJ",
+      "nombre": "ALYSSA DANIELA GUTIERREZ SANMIGUEL",
+      "nombreAlumno": "ALYSSA DANIELA GUTIERREZ SANMIGUEL",
+      "nivel": "MATERNAL",
+      "grado": "MATERNAL 1",
+      "grupo": "A",
+      "tutorId": "FAM_A7AG4Q",
+      "personaExtra": "CARLOS DANIEL GUTIERREZ LLERENAS (PADRE)",
+      "codigo": "ALU_K3D4HJ",
+      "tutor": "DIANELA ANDREA SANMIGUEL CAAMAL (MADRE)",
+      "autorizados": "CARLOS DANIEL GUTIERREZ LLERENAS (PADRE)",
+      "alerta": "",
+      "tutorPrincipal": "DIANELA ANDREA SANMIGUEL CAAMAL (MADRE)",
+      "tutorNombre": "DIANELA ANDREA SANMIGUEL CAAMAL (MADRE)",
+      "tutorResponsable": "DIANELA ANDREA SANMIGUEL CAAMAL (MADRE)"
+    },
+    {
+      "id": "ALU_QIZJ4U",
+      "nombre": "VALENTINA MORALES GRANADOS",
+      "nombreAlumno": "VALENTINA MORALES GRANADOS",
+      "nivel": "PREESCOLAR",
+      "grado": "MATERNAL 1",
+      "grupo": "A",
+      "tutorId": "FAM_7N1N89",
+      "personaExtra": "ADRIANA BARCENAS DOMINGUEZ/LEONARDO GRANADOS CAMPOS/",
+      "codigo": "ALU_QIZJ4U",
+      "tutor": "KARINA ADRIANA GRANADOS BARCERNAS (MADRE)",
+      "autorizados": "ADRIANA BARCENAS DOMINGUEZ/LEONARDO GRANADOS CAMPOS/",
+      "alerta": "",
+      "tutorPrincipal": "KARINA ADRIANA GRANADOS BARCERNAS (MADRE)",
+      "tutorNombre": "KARINA ADRIANA GRANADOS BARCERNAS (MADRE)",
+      "tutorResponsable": "KARINA ADRIANA GRANADOS BARCERNAS (MADRE)"
+    },
+    {
+      "id": "ALU_6KW8X4",
+      "nombre": "SAGA REGINA POHJANEN PADILLA",
+      "nombreAlumno": "SAGA REGINA POHJANEN PADILLA",
+      "nivel": "PREESCOLAR",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_N6KWRL",
+      "personaExtra": "ANGEL GUSTAVO PADILLA CUETO (PADRE)",
+      "tutorPrincipal": "LAURA JOHANNA POHJANEN (MADRE)",
+      "tutorNombre": "LAURA JOHANNA POHJANEN (MADRE)",
+      "tutor": "LAURA JOHANNA POHJANEN (MADRE)",
+      "tutorResponsable": "LAURA JOHANNA POHJANEN (MADRE)"
+    },
+    {
+      "id": "ALU_CDFXES",
+      "nombre": "PAULA JIMENA CORONA MEDINA",
+      "nombreAlumno": "PAULA JIMENA CORONA MEDINA",
+      "nivel": "PREESCOLAR",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_0GF43W",
+      "personaExtra": "FERNANDO CORONA GOMEZ (PADRE)/MA. GUADALUPE DEL SOCORRO RODRIGUEZ CARRILLO",
+      "tutorPrincipal": "MARIA JOSE MEDINA RODRIGUEZ (MADRE)",
+      "tutorNombre": "MARIA JOSE MEDINA RODRIGUEZ (MADRE)",
+      "tutor": "MARIA JOSE MEDINA RODRIGUEZ (MADRE)",
+      "tutorResponsable": "MARIA JOSE MEDINA RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_B6R5IP",
+      "nombre": "ITZAE SANTIAGO UC BALAM",
+      "nombreAlumno": "ITZAE SANTIAGO UC BALAM",
+      "nivel": "PREESCOLAR",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_3SKYPG",
+      "personaExtra": "RAUL BALTAZAR UC CABALLERO (PADRE)/CELESTINO EYDER BALAM EVAN (ABUELO)/ADDY PATRICIA CABALLERO CAUICH (ABUELA)/",
+      "tutorPrincipal": "ARLENE ISABEL BALAM NAH (MADRE)",
+      "tutorNombre": "ARLENE ISABEL BALAM NAH (MADRE)",
+      "tutor": "ARLENE ISABEL BALAM NAH (MADRE)",
+      "tutorResponsable": "ARLENE ISABEL BALAM NAH (MADRE)"
+    },
+    {
+      "id": "ALU_AB1WIC",
+      "nombre": "JUAN IGNACIO NIEVA BONIFACIO",
+      "nombreAlumno": "JUAN IGNACIO NIEVA BONIFACIO",
+      "nivel": "PREESCOLAR",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_MOTV69",
+      "personaExtra": "ESEQUIEL DARIO NIEVA (PADRE)/ENRIQUE MAXIMILIANO MISTRALETTI",
+      "tutorPrincipal": "MICAELA GABRIELA BONIFACIO (MADRE)",
+      "tutorNombre": "MICAELA GABRIELA BONIFACIO (MADRE)",
+      "tutor": "MICAELA GABRIELA BONIFACIO (MADRE)",
+      "tutorResponsable": "MICAELA GABRIELA BONIFACIO (MADRE)"
+    },
+    {
+      "id": "ALU_H3J53O",
+      "nombre": "LUCAS PIÑA VIVALDI",
+      "nombreAlumno": "LUCAS PIÑA VIVALDI",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_ZX1A32",
+      "personaExtra": "ALONSO PIÑA (PADRE)/JULIE COLLEUIL LLANTADA (MAMA EKBE)",
+      "tutorPrincipal": "LOLITA VIVALDI (MADRE)",
+      "tutorNombre": "LOLITA VIVALDI (MADRE)",
+      "tutor": "LOLITA VIVALDI (MADRE)",
+      "tutorResponsable": "LOLITA VIVALDI (MADRE)"
+    },
+    {
+      "id": "ALU_M50SZK",
+      "nombre": "MILA GONZALEZ SILVA",
+      "nombreAlumno": "MILA GONZALEZ SILVA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_6LESK7",
+      "personaExtra": "HUMBERTO GONZALEZ MARTINEZ (PADRE)",
+      "tutorPrincipal": "LINDA ROXANA SILVA VIZCARRA (MADRE)",
+      "tutorNombre": "LINDA ROXANA SILVA VIZCARRA (MADRE)",
+      "tutor": "LINDA ROXANA SILVA VIZCARRA (MADRE)",
+      "tutorResponsable": "LINDA ROXANA SILVA VIZCARRA (MADRE)"
+    },
+    {
+      "id": "ALU_22FN1W",
+      "nombre": "ANTONELLA LUKINI RODRIGUEZ",
+      "nombreAlumno": "ANTONELLA LUKINI RODRIGUEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_O73U59",
+      "personaExtra": "CARLO VALENTINO LUKINI ESTRADA (PADRE)/MAYRA JAVIER JAVIER",
+      "tutorPrincipal": "ALEJANDRA ISABEL RODRIGUEZ RODRIGUEZ (MADRE)",
+      "tutorNombre": "ALEJANDRA ISABEL RODRIGUEZ RODRIGUEZ (MADRE)",
+      "tutor": "ALEJANDRA ISABEL RODRIGUEZ RODRIGUEZ (MADRE)",
+      "tutorResponsable": "ALEJANDRA ISABEL RODRIGUEZ RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_WMFX07",
+      "nombre": "KAI SOLORZANO CHONG",
+      "nombreAlumno": "KAI SOLORZANO CHONG",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_LRY7YT",
+      "personaExtra": "PABLO ANDRES SOLORZANO ADAME (PADRE)/ITZURI OVIEDO",
+      "tutorPrincipal": "ANAHI CHONG OVIEDO (MADRE)",
+      "tutorNombre": "ANAHI CHONG OVIEDO (MADRE)",
+      "tutor": "ANAHI CHONG OVIEDO (MADRE)",
+      "tutorResponsable": "ANAHI CHONG OVIEDO (MADRE)"
+    },
+    {
+      "id": "ALU_FK3KNK",
+      "nombre": "MAXIMILIANO RIVERA WENCE",
+      "nombreAlumno": "MAXIMILIANO RIVERA WENCE",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_8GEHEJ",
+      "personaExtra": "WALTER RIVERA BONFIL (PADRE)/MARITZA BONFIL MENDOZA/JUAN WENCE RODRIGUEZ/",
+      "tutorPrincipal": "FRINE WENCE PINEDA (MADRE)",
+      "tutorNombre": "FRINE WENCE PINEDA (MADRE)",
+      "tutor": "FRINE WENCE PINEDA (MADRE)",
+      "tutorResponsable": "FRINE WENCE PINEDA (MADRE)"
+    },
+    {
+      "id": "ALU_AXQ6P4",
+      "nombre": "RIO RAFAEL DIAZ SANTANA GARCIA",
+      "nombreAlumno": "RIO RAFAEL DIAZ SANTANA GARCIA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_RFBJ3V",
+      "personaExtra": "RAFAEL DIAZ SANTANA SAIZ (PADRE)/REBECA DIAZ SANTANA",
+      "tutorPrincipal": "LLUVIA AZUCENA GARCIA DUARTE (MADRE)",
+      "tutorNombre": "LLUVIA AZUCENA GARCIA DUARTE (MADRE)",
+      "tutor": "LLUVIA AZUCENA GARCIA DUARTE (MADRE)",
+      "tutorResponsable": "LLUVIA AZUCENA GARCIA DUARTE (MADRE)"
+    },
+    {
+      "id": "ALU_R20AX6",
+      "nombre": "TOMER LEWIS GARCIA",
+      "nombreAlumno": "TOMER LEWIS GARCIA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_DI4KDE",
+      "personaExtra": "DANIEL LEWIS (PADRE)",
+      "tutorPrincipal": "MARCIA CAROLINA GARCIA MENDEZ (MADRE)",
+      "tutorNombre": "MARCIA CAROLINA GARCIA MENDEZ (MADRE)",
+      "tutor": "MARCIA CAROLINA GARCIA MENDEZ (MADRE)",
+      "tutorResponsable": "MARCIA CAROLINA GARCIA MENDEZ (MADRE)"
+    },
+    {
+      "id": "ALU_YH6VQ1",
+      "nombre": "VICTORIA SOFIA ROMAN AMEZCUA",
+      "nombreAlumno": "VICTORIA SOFIA ROMAN AMEZCUA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_11VSWL",
+      "personaExtra": "JESUS ALEJANDRO ROMAN RAMIREZ (PADRE)/ELSA DE JESUS ESTRADA ARRIETA/ANDREA ESTRADA ARRIETA/",
+      "tutorPrincipal": "MARIANA VICTORIA AMEZCUA ESTRADA (MADRE)",
+      "tutorNombre": "MARIANA VICTORIA AMEZCUA ESTRADA (MADRE)",
+      "tutor": "MARIANA VICTORIA AMEZCUA ESTRADA (MADRE)",
+      "tutorResponsable": "MARIANA VICTORIA AMEZCUA ESTRADA (MADRE)"
+    },
+    {
+      "id": "ALU_JWJRSE",
+      "nombre": "ANTONELLA FUENTES BETANCOURT",
+      "nombreAlumno": "ANTONELLA FUENTES BETANCOURT",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_JBUVG8",
+      "personaExtra": "CHRISTIAN RENE FUENTES HERNANDEZ (PADRE)/LORENA HERNANDEZ CUEVAS",
+      "tutorPrincipal": "ANGIE PAULINA BETANCOURT LOFFSNER (MADRE)",
+      "tutorNombre": "ANGIE PAULINA BETANCOURT LOFFSNER (MADRE)",
+      "tutor": "ANGIE PAULINA BETANCOURT LOFFSNER (MADRE)",
+      "tutorResponsable": "ANGIE PAULINA BETANCOURT LOFFSNER (MADRE)"
+    },
+    {
+      "id": "ALU_I7913I",
+      "nombre": "LEONARDO MATEU CHAVEZ RAMIREZ",
+      "nombreAlumno": "LEONARDO MATEU CHAVEZ RAMIREZ",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_G32YR4",
+      "personaExtra": "SASHA ALEXANDRO MARCELL CHAVEZ RAMIREZ (PADRE)/BLANCA LILIANA COTA LLAMAS/LUIS ALEJANDRO CHAVEZ VIRGEN/PALOMA SERNA/SAMANTHA SALOMON",
+      "tutorPrincipal": "KARLA LISSET RAMIREZ ARANDA (MADRE)",
+      "tutorNombre": "KARLA LISSET RAMIREZ ARANDA (MADRE)",
+      "tutor": "KARLA LISSET RAMIREZ ARANDA (MADRE)",
+      "tutorResponsable": "KARLA LISSET RAMIREZ ARANDA (MADRE)"
+    },
+    {
+      "id": "ALU_D7KR8X",
+      "nombre": "ALI CELESTE VIDAL MOLINA",
+      "nombreAlumno": "ALI CELESTE VIDAL MOLINA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_PSEFIU",
+      "personaExtra": "FRANCISCO JAVIER VIDAL VAZQUEZ (PADRE)/YESSENIA VIDAL VAZQUEZ/CONRADO VAZQUEZ NAVA/",
+      "tutorPrincipal": "MARICELA MOLINA ACATITLAN (MADRE)",
+      "tutorNombre": "MARICELA MOLINA ACATITLAN (MADRE)",
+      "tutor": "MARICELA MOLINA ACATITLAN (MADRE)",
+      "tutorResponsable": "MARICELA MOLINA ACATITLAN (MADRE)"
+    },
+    {
+      "id": "ALU_QJXHSL",
+      "nombre": "CAROLINA DENISE SCHWEIN GONZALEZ",
+      "nombreAlumno": "CAROLINA DENISE SCHWEIN GONZALEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_JHZOLF",
+      "personaExtra": "CHRISTOPHER DAVID SCHWEIN (PADRE)/BLANCA NELLY GALARZA SALAZAR",
+      "tutorPrincipal": "NELLY CAROLINA GONZALEZ GALARZA (MADRE)",
+      "tutorNombre": "NELLY CAROLINA GONZALEZ GALARZA (MADRE)",
+      "tutor": "NELLY CAROLINA GONZALEZ GALARZA (MADRE)",
+      "tutorResponsable": "NELLY CAROLINA GONZALEZ GALARZA (MADRE)"
+    },
+    {
+      "id": "ALU_1VAUAF",
+      "nombre": "SANTIAGO VILLALOBOS GARCIA",
+      "nombreAlumno": "SANTIAGO VILLALOBOS GARCIA",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_4LUCU2",
+      "personaExtra": "GUILLERMO ALBERTO VILLALOBOS ZANABRIA (PADRE)/MERCEDES DELL'AQUILA/JULIO ALFREDO CEBALLOS/GUILLERMO ARMANDO VILLALOBOS",
+      "tutorPrincipal": "XIMENA GARCIA GOMEZ (MADRE)",
+      "tutorNombre": "XIMENA GARCIA GOMEZ (MADRE)",
+      "tutor": "XIMENA GARCIA GOMEZ (MADRE)",
+      "tutorResponsable": "XIMENA GARCIA GOMEZ (MADRE)"
+    },
+    {
+      "id": "ALU_IRZ9R7",
+      "nombre": "SAMANTHA HERNANDEZ CUERO",
+      "nombreAlumno": "SAMANTHA HERNANDEZ CUERO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_R91BSL",
+      "personaExtra": "HUMBERTO HERNANDEZ RAMIREZ (PADRE)",
+      "tutorPrincipal": "CYNTHIA CUERO MUCIÑO (MADRE)",
+      "tutorNombre": "CYNTHIA CUERO MUCIÑO (MADRE)",
+      "tutor": "CYNTHIA CUERO MUCIÑO (MADRE)",
+      "tutorResponsable": "CYNTHIA CUERO MUCIÑO (MADRE)"
+    },
+    {
+      "id": "ALU_YSMLEK",
+      "nombre": "VANYA IZEL FLORES GIRON",
+      "nombreAlumno": "VANYA IZEL FLORES GIRON",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_FXBMHF",
+      "personaExtra": "JORGE ERNESTO FLORES UCH (PADRE)MARTHA PATRICIA GARCIA/",
+      "tutorPrincipal": "ANGELICA GIRON GARCIA (MADRE)",
+      "tutorNombre": "ANGELICA GIRON GARCIA (MADRE)",
+      "tutor": "ANGELICA GIRON GARCIA (MADRE)",
+      "tutorResponsable": "ANGELICA GIRON GARCIA (MADRE)"
+    },
+    {
+      "id": "ALU_F67C0D",
+      "nombre": "NOAH ISRAEL GUILLEN TRUJILLO",
+      "nombreAlumno": "NOAH ISRAEL GUILLEN TRUJILLO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_XMG0FB",
+      "personaExtra": "ISRAEL ABRAHAM GUILLEN VELAZQUEZ (PADRE)/BARBARA TRUJILLO/MIGUEL PLANCARTE/ADRIAN GUILLEN/ MELIDA VELAZQUEZ",
+      "tutorPrincipal": "BARBARA ABIGAIL TRUJILLO GOMORA (MADRE)",
+      "tutorNombre": "BARBARA ABIGAIL TRUJILLO GOMORA (MADRE)",
+      "tutor": "BARBARA ABIGAIL TRUJILLO GOMORA (MADRE)",
+      "tutorResponsable": "BARBARA ABIGAIL TRUJILLO GOMORA (MADRE)"
+    },
+    {
+      "id": "ALU_YG1F2F",
+      "nombre": "ZERETZE MERAZ LOPEZ",
+      "nombreAlumno": "ZERETZE MERAZ LOPEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_SIRXXF",
+      "personaExtra": "VICTOR MAURO MERAZ ALMANZA (PADRE)",
+      "tutorPrincipal": "BLANCA VIOLETA LOPEZ LOPEZ (MADRE)",
+      "tutorNombre": "BLANCA VIOLETA LOPEZ LOPEZ (MADRE)",
+      "tutor": "BLANCA VIOLETA LOPEZ LOPEZ (MADRE)",
+      "tutorResponsable": "BLANCA VIOLETA LOPEZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "ALU_UNMLXV",
+      "nombre": "CATALINA OVIEDO LOSARDO",
+      "nombreAlumno": "CATALINA OVIEDO LOSARDO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_I099BO",
+      "personaExtra": "JUAN MANUEL OVIEDO (PADRE)/LUZ MARIA AVILA GUTIERREZ/KAREN DOMENECH/",
+      "tutorPrincipal": "CANDELARIA LOSARDO (MADRE)",
+      "tutorNombre": "CANDELARIA LOSARDO (MADRE)",
+      "tutor": "CANDELARIA LOSARDO (MADRE)",
+      "tutorResponsable": "CANDELARIA LOSARDO (MADRE)"
+    },
+    {
+      "id": "ALU_TNPW2F",
+      "nombre": "LUA JIMENEZ MONTAÑO",
+      "nombreAlumno": "LUA JIMENEZ MONTAÑO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_SI79XW",
+      "personaExtra": "MANUEL JIMENEZ GUADARRAMA (PADRE)/CONSTANZA UNDONETA CASAS (ABUELA)",
+      "tutorPrincipal": "CONSTANZA MONTAÑO URDANETA (MADRE)",
+      "tutorNombre": "CONSTANZA MONTAÑO URDANETA (MADRE)",
+      "tutor": "CONSTANZA MONTAÑO URDANETA (MADRE)",
+      "tutorResponsable": "CONSTANZA MONTAÑO URDANETA (MADRE)"
+    },
+    {
+      "id": "ALU_Z0LKPD",
+      "nombre": "ROMINA AGUILAR CASTILLO",
+      "nombreAlumno": "ROMINA AGUILAR CASTILLO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_EYK7X4",
+      "personaExtra": "JOSE LUIS AGUILAR ROSADO (PADRE)/KARLA GABRIELA PEREZ VAZQUEZ",
+      "tutorPrincipal": "DULCE NOHEMI CASTILLO VAZQUEZ (MADRE)",
+      "tutorNombre": "DULCE NOHEMI CASTILLO VAZQUEZ (MADRE)",
+      "tutor": "DULCE NOHEMI CASTILLO VAZQUEZ (MADRE)",
+      "tutorResponsable": "DULCE NOHEMI CASTILLO VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_RAOEV2",
+      "nombre": "CONSTANZA NUÑEZ PEREZ FIGUEROA",
+      "nombreAlumno": "CONSTANZA NUÑEZ PEREZ FIGUEROA",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_HR9XFK",
+      "personaExtra": "ULISES AZAEL NUÑEZ SOSA (PADRE)/RAUL PEREZ FIGUEROA/MARTHA SILVIA MACIAS JIMENEZ/MARIA ISABEL SOSA CASTILLO",
+      "tutorPrincipal": "FABIOLA PEREZ FIGUEROA MACIAS (MADRE)",
+      "tutorNombre": "FABIOLA PEREZ FIGUEROA MACIAS (MADRE)",
+      "tutor": "FABIOLA PEREZ FIGUEROA MACIAS (MADRE)",
+      "tutorResponsable": "FABIOLA PEREZ FIGUEROA MACIAS (MADRE)"
+    },
+    {
+      "id": "ALU_QLWDLY",
+      "nombre": "NORA IXCHEL MEDINA DE LA CRUZ",
+      "nombreAlumno": "NORA IXCHEL MEDINA DE LA CRUZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_E5XFCG",
+      "personaExtra": "JOSE BENJAMIN MEDINA MIRELES (PADRE)",
+      "tutorPrincipal": "FATIMA DE LA CRUZ ORTIZ (MADRE)",
+      "tutorNombre": "FATIMA DE LA CRUZ ORTIZ (MADRE)",
+      "tutor": "FATIMA DE LA CRUZ ORTIZ (MADRE)",
+      "tutorResponsable": "FATIMA DE LA CRUZ ORTIZ (MADRE)"
+    },
+    {
+      "id": "ALU_2DU9OD",
+      "nombre": "MATIAS RODRIGUEZ CERON",
+      "nombreAlumno": "MATIAS RODRIGUEZ CERON",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_O93UXR",
+      "personaExtra": "CESAR RODRIGUEZ OLVERA (PADRE)/JUAN JOSE CERON/ROSA MARTHA MONDRAGON/",
+      "tutorPrincipal": "JESSICA CERON MONDRAGON (MADRE)",
+      "tutorNombre": "JESSICA CERON MONDRAGON (MADRE)",
+      "tutor": "JESSICA CERON MONDRAGON (MADRE)",
+      "tutorResponsable": "JESSICA CERON MONDRAGON (MADRE)"
+    },
+    {
+      "id": "ALU_XNUWSR",
+      "nombre": "LUCIANA REYES RAMIREZ",
+      "nombreAlumno": "LUCIANA REYES RAMIREZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_1Q3QX1",
+      "personaExtra": "EDGAR JAVIER REYES (PADRE)/SONIA FRAGOSO RODRIGUEZ",
+      "tutorPrincipal": "JOCELYN RAMIREZ FRAGOSO (MADRE)",
+      "tutorNombre": "JOCELYN RAMIREZ FRAGOSO (MADRE)",
+      "tutor": "JOCELYN RAMIREZ FRAGOSO (MADRE)",
+      "tutorResponsable": "JOCELYN RAMIREZ FRAGOSO (MADRE)"
+    },
+    {
+      "id": "ALU_L9IALW",
+      "nombre": "KAI DOMENECH AVILA",
+      "nombreAlumno": "KAI DOMENECH AVILA",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_B8CCDH",
+      "personaExtra": "-/LUZ MARIA AVILA GUTIERREZ/CANDELARIA LOSARDO/",
+      "tutorPrincipal": "KAREN DOMENECH AVILA (MADRE)",
+      "tutorNombre": "KAREN DOMENECH AVILA (MADRE)",
+      "tutor": "KAREN DOMENECH AVILA (MADRE)",
+      "tutorResponsable": "KAREN DOMENECH AVILA (MADRE)"
+    },
+    {
+      "id": "ALU_ECUYD1",
+      "nombre": "VALENTINA ILDEFONSO AGUIRRE",
+      "nombreAlumno": "VALENTINA ILDEFONSO AGUIRRE",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_PJNID9",
+      "personaExtra": "JORGE ALBERTO ILDEFONSO RODRIGUEZ (PADRE)/JUDIT RESENDIZ HERNANDEZ (ABUELA)/LUACIANA ANDIZAGA/YAZMIN HERNANDEZ ARREHON/YESENIA MARIN FRANCO",
+      "tutorPrincipal": "KARLA JUDITH AGUIRRE RESENDIZ (MADRE)",
+      "tutorNombre": "KARLA JUDITH AGUIRRE RESENDIZ (MADRE)",
+      "tutor": "KARLA JUDITH AGUIRRE RESENDIZ (MADRE)",
+      "tutorResponsable": "KARLA JUDITH AGUIRRE RESENDIZ (MADRE)"
+    },
+    {
+      "id": "ALU_N8OAPU",
+      "nombre": "SERGIO FRANCISCO ESQUINCA SANDOVAL",
+      "nombreAlumno": "SERGIO FRANCISCO ESQUINCA SANDOVAL",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_DW6AGH",
+      "personaExtra": "SERGIO ALEJANDRO ESQUINCA AVENDAÑO (PADRE)",
+      "tutorPrincipal": "LIZBETH SANDOVAL VALENZUELA (MADRE)",
+      "tutorNombre": "LIZBETH SANDOVAL VALENZUELA (MADRE)",
+      "tutor": "LIZBETH SANDOVAL VALENZUELA (MADRE)",
+      "tutorResponsable": "LIZBETH SANDOVAL VALENZUELA (MADRE)"
+    },
+    {
+      "id": "ALU_20T4WF",
+      "nombre": "FRANCO MARTINEZ USANDIZAGA",
+      "nombreAlumno": "FRANCO MARTINEZ USANDIZAGA",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_YIOIAU",
+      "personaExtra": "FEDERICO EMMANUEL MARTINEZ BADILLO (PADRE)",
+      "tutorPrincipal": "LUCIANA USANDIZAGA (MADRE)",
+      "tutorNombre": "LUCIANA USANDIZAGA (MADRE)",
+      "tutor": "LUCIANA USANDIZAGA (MADRE)",
+      "tutorResponsable": "LUCIANA USANDIZAGA (MADRE)"
+    },
+    {
+      "id": "ALU_TVH7LL",
+      "nombre": "MARIANO SERVIN HERNANDEZ",
+      "nombreAlumno": "MARIANO SERVIN HERNANDEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_FE2A7H",
+      "personaExtra": "EDUARDO ALBERTO SERVIN OSORIO (PADRE)/MA. ESPERANZA PEREZ/MONICA HERNANDEZ PEREZ/",
+      "tutorPrincipal": "MARCELA HERNANDEZ PEREZ (MADRE)",
+      "tutorNombre": "MARCELA HERNANDEZ PEREZ (MADRE)",
+      "tutor": "MARCELA HERNANDEZ PEREZ (MADRE)",
+      "tutorResponsable": "MARCELA HERNANDEZ PEREZ (MADRE)"
+    },
+    {
+      "id": "ALU_M76QND",
+      "nombre": "SEBASTIAN DÜRRE MALVAEZ",
+      "nombreAlumno": "SEBASTIAN DÜRRE MALVAEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_1Q3IWT",
+      "personaExtra": "FLORIAN MICHAEL DÜRRE (PADRE)",
+      "tutorPrincipal": "MARCELA MALVAEZ SANTILLAN (MADRE)",
+      "tutorNombre": "MARCELA MALVAEZ SANTILLAN (MADRE)",
+      "tutor": "MARCELA MALVAEZ SANTILLAN (MADRE)",
+      "tutorResponsable": "MARCELA MALVAEZ SANTILLAN (MADRE)"
+    },
+    {
+      "id": "ALU_U9W9C1",
+      "nombre": "EMMA MORALES RIOS",
+      "nombreAlumno": "EMMA MORALES RIOS",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ADOSLM",
+      "personaExtra": "JULIO CESAR MORALES HERNANDEZ (PADRE)",
+      "tutorPrincipal": "MARIA EMILIA RIOS GERONIMO (MADRE)",
+      "tutorNombre": "MARIA EMILIA RIOS GERONIMO (MADRE)",
+      "tutor": "MARIA EMILIA RIOS GERONIMO (MADRE)",
+      "tutorResponsable": "MARIA EMILIA RIOS GERONIMO (MADRE)"
+    },
+    {
+      "id": "ALU_VU9OW8",
+      "nombre": "OLIVIER CEBALLOS DELL'AQUILA",
+      "nombreAlumno": "OLIVIER CEBALLOS DELL'AQUILA",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ZCOL72",
+      "personaExtra": "JULIO ALFREDO CEBALLOS JUAREZ (PADRE)/NORA NOEMI ESCARIZ (ABUELA)/PRICILA TERAN/MELINA PONTNAU/MARCOS JUAREZ",
+      "tutorPrincipal": "MARIA MERCEDES DELL'AQUILA (MADRE)",
+      "tutorNombre": "MARIA MERCEDES DELL'AQUILA (MADRE)",
+      "tutor": "MARIA MERCEDES DELL'AQUILA (MADRE)",
+      "tutorResponsable": "MARIA MERCEDES DELL'AQUILA (MADRE)"
+    },
+    {
+      "id": "ALU_1ITG5B",
+      "nombre": "ANDRE EMILIANO GARCIA RODRIGUEZ",
+      "nombreAlumno": "ANDRE EMILIANO GARCIA RODRIGUEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ZW91I0",
+      "personaExtra": "RODRIGO MARIANO GARCIA MIRANDA (PADRE)",
+      "tutorPrincipal": "ALEJANDRA ABIGAIL RODRIGUEZ VENTURA (MADRE)",
+      "tutorNombre": "ALEJANDRA ABIGAIL RODRIGUEZ VENTURA (MADRE)",
+      "tutor": "ALEJANDRA ABIGAIL RODRIGUEZ VENTURA (MADRE)",
+      "tutorResponsable": "ALEJANDRA ABIGAIL RODRIGUEZ VENTURA (MADRE)"
+    },
+    {
+      "id": "ALU_WQHXVE",
+      "nombre": "REGINA SARAI CANO MAY",
+      "nombreAlumno": "REGINA SARAI CANO MAY",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_R786EL",
+      "personaExtra": "LUIS ENRIQUE CANO PUGA (PADRE)/MARTHA PUGA CEN/VIVIANA CANO PUGA/MARIELA MAY SABIDO",
+      "tutorPrincipal": "CINTHIA ANGELICA MAY SABIDO (MADRE)",
+      "tutorNombre": "CINTHIA ANGELICA MAY SABIDO (MADRE)",
+      "tutor": "CINTHIA ANGELICA MAY SABIDO (MADRE)",
+      "tutorResponsable": "CINTHIA ANGELICA MAY SABIDO (MADRE)"
+    },
+    {
+      "id": "ALU_GR72Z7",
+      "nombre": "FERNANDO ALONSO DIAZ VIGUERAS",
+      "nombreAlumno": "FERNANDO ALONSO DIAZ VIGUERAS",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_S6OF5S",
+      "personaExtra": "FERNANDO JOSE DIAZ MANRIQUE DE LARA (PADRE)/NADHIEZDA NOGUERON CHIRINOS",
+      "tutorPrincipal": "DESIRE VIGUERAS MONCADA (MADRE)",
+      "tutorNombre": "DESIRE VIGUERAS MONCADA (MADRE)",
+      "tutor": "DESIRE VIGUERAS MONCADA (MADRE)",
+      "tutorResponsable": "DESIRE VIGUERAS MONCADA (MADRE)"
+    },
+    {
+      "id": "ALU_ZDCX10",
+      "nombre": "GREGORIO GIMENEZ CASADIO",
+      "nombreAlumno": "GREGORIO GIMENEZ CASADIO",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_2M1NEL",
+      "personaExtra": "PABLO GIMENEZ (PADRE)",
+      "tutorPrincipal": "MARIA AGUSTINA CASADIO (MADRE)",
+      "tutorNombre": "MARIA AGUSTINA CASADIO (MADRE)",
+      "tutor": "MARIA AGUSTINA CASADIO (MADRE)",
+      "tutorResponsable": "MARIA AGUSTINA CASADIO (MADRE)"
+    },
+    {
+      "id": "ALU_URGB9F",
+      "nombre": "SARA ALISHA BAY MARTINEZ",
+      "nombreAlumno": "SARA ALISHA BAY MARTINEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_GBJECF",
+      "personaExtra": "CARLOS BERNARDO ROMERO BAY (PADRE)",
+      "tutorPrincipal": "MARIA DIANE MARTINEZ FLORES (MADRE)",
+      "tutorNombre": "MARIA DIANE MARTINEZ FLORES (MADRE)",
+      "tutor": "MARIA DIANE MARTINEZ FLORES (MADRE)",
+      "tutorResponsable": "MARIA DIANE MARTINEZ FLORES (MADRE)"
+    },
+    {
+      "id": "ALU_9M7WYG",
+      "nombre": "EMILIA JUAREZ PONTNAU",
+      "nombreAlumno": "EMILIA JUAREZ PONTNAU",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ZNW662",
+      "personaExtra": "MARCOS GABRIEL JUAREZ (PADRE)/MERCEDES DELL'AQUILA/JULIO CEBALLOS/CAMILA DELGADO/IVANNIA RODRIGUEZ",
+      "tutorPrincipal": "MELINA PONTNAU (MADRE)",
+      "tutorNombre": "MELINA PONTNAU (MADRE)",
+      "tutor": "MELINA PONTNAU (MADRE)",
+      "tutorResponsable": "MELINA PONTNAU (MADRE)"
+    },
+    {
+      "id": "ALU_DUK7LM",
+      "nombre": "MARGOT FRANCO REYES",
+      "nombreAlumno": "MARGOT FRANCO REYES",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_2UY4M8",
+      "personaExtra": "JOSE RICARDO FRANCO PAREDES (PADRE)/MA. RAQUEL MOZQUEDA",
+      "tutorPrincipal": "MIRIAM ANJELLY REYES CAREÑO (MADRE)",
+      "tutorNombre": "MIRIAM ANJELLY REYES CAREÑO (MADRE)",
+      "tutor": "MIRIAM ANJELLY REYES CAREÑO (MADRE)",
+      "tutorResponsable": "MIRIAM ANJELLY REYES CAREÑO (MADRE)"
+    },
+    {
+      "id": "ALU_CR7FUH",
+      "nombre": "AKAL MALDONADO ELIAS",
+      "nombreAlumno": "AKAL MALDONADO ELIAS",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_7M33OT",
+      "personaExtra": "JONATHAN MALDONADO MAYORGA (PADRE)",
+      "tutorPrincipal": "MIRTYS ELIAS MODESTO DE PAULA (MADRE)",
+      "tutorNombre": "MIRTYS ELIAS MODESTO DE PAULA (MADRE)",
+      "tutor": "MIRTYS ELIAS MODESTO DE PAULA (MADRE)",
+      "tutorResponsable": "MIRTYS ELIAS MODESTO DE PAULA (MADRE)"
+    },
+    {
+      "id": "ALU_7DZKJM",
+      "nombre": "VALENTINA ARACELI ARGÜELLO GAIA",
+      "nombreAlumno": "VALENTINA ARACELI ARGÜELLO GAIA",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_UL2XF9",
+      "personaExtra": "ANGEL SEBASTIAN ARGÜELLO CORONA (PADRE)",
+      "tutorPrincipal": "SUELEN SANTOS GAIA (MADRE)",
+      "tutorNombre": "SUELEN SANTOS GAIA (MADRE)",
+      "tutor": "SUELEN SANTOS GAIA (MADRE)",
+      "tutorResponsable": "SUELEN SANTOS GAIA (MADRE)"
+    },
+    {
+      "id": "ALU_EDG0K5",
+      "nombre": "ALONSO HERNANDEZ GUZMAN",
+      "nombreAlumno": "ALONSO HERNANDEZ GUZMAN",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_NUFDFV",
+      "personaExtra": "ERUBEY HERNANDEZ DEL ANGEL (PADRE)/IRMA PEREZ ROSADO/MARIO PEREZ/CYNTHIA GUZMAN PEREZ/ANDREA LISSETTE MARSCH",
+      "tutorPrincipal": "TAMARA GUZMAN PEREZ (MADRE)",
+      "tutorNombre": "TAMARA GUZMAN PEREZ (MADRE)",
+      "tutor": "TAMARA GUZMAN PEREZ (MADRE)",
+      "tutorResponsable": "TAMARA GUZMAN PEREZ (MADRE)"
+    },
+    {
+      "id": "ALU_AJR923",
+      "nombre": "NATALIA GARCIA TOBON",
+      "nombreAlumno": "NATALIA GARCIA TOBON",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_WBAB8P",
+      "personaExtra": "CESAR GABRIEL GARCIA CHAVEZ (PADRE)/GUADALUPE LEONEL LARA (ABUELA)",
+      "tutorPrincipal": "THALIA TOBON LEONEL (MADRE)",
+      "tutorNombre": "THALIA TOBON LEONEL (MADRE)",
+      "tutor": "THALIA TOBON LEONEL (MADRE)",
+      "tutorResponsable": "THALIA TOBON LEONEL (MADRE)"
+    },
+    {
+      "id": "ALU_483YM9",
+      "nombre": "ROMINA WONG GONZALEZ",
+      "nombreAlumno": "ROMINA WONG GONZALEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_1IGMC3",
+      "personaExtra": "OSCAR WONG MORONES (PADRE)/JUSTO WONG MORONES (TIO)/KAREN CORREA SOTO (AMIGA DE LA FAMILIA)/",
+      "tutorPrincipal": "VERONICA ROCIO GONZALEZ SUAREZ (MADRE)",
+      "tutorNombre": "VERONICA ROCIO GONZALEZ SUAREZ (MADRE)",
+      "tutor": "VERONICA ROCIO GONZALEZ SUAREZ (MADRE)",
+      "tutorResponsable": "VERONICA ROCIO GONZALEZ SUAREZ (MADRE)"
+    },
+    {
+      "id": "ALU_RCNKPC",
+      "nombre": "NOAH MENANT-LECLERCQ TORRES",
+      "nombreAlumno": "NOAH MENANT-LECLERCQ TORRES",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_TUPWWC",
+      "personaExtra": "TRISTAN HUGUES MENANT-LECLERCQ (PADRE)/ANNE SOPHIE BORDE/BRENDA CUELLAR/",
+      "tutorPrincipal": "ANABEL TORRES MOLINA (MADRE)",
+      "tutorNombre": "ANABEL TORRES MOLINA (MADRE)",
+      "tutor": "ANABEL TORRES MOLINA (MADRE)",
+      "tutorResponsable": "ANABEL TORRES MOLINA (MADRE)"
+    },
+    {
+      "id": "ALU_KMN692",
+      "nombre": "EMMA RODRIGUEZ RODRIGUEZ",
+      "nombreAlumno": "EMMA RODRIGUEZ RODRIGUEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_UOFSQY",
+      "personaExtra": "PEDRO ALFREDO RODRIGUEZ DIAZ (PADRE)/EDILIO RODRIGUEZ RAMIREZ (ABUELO)/PATRICIA SOLAR SOLIS (ABUELAI/",
+      "tutorPrincipal": "FRIDA PATRICIA RODRIGUEZ SOLAR (MADRE)",
+      "tutorNombre": "FRIDA PATRICIA RODRIGUEZ SOLAR (MADRE)",
+      "tutor": "FRIDA PATRICIA RODRIGUEZ SOLAR (MADRE)",
+      "tutorResponsable": "FRIDA PATRICIA RODRIGUEZ SOLAR (MADRE)"
+    },
+    {
+      "id": "ALU_LDGZ3Q",
+      "nombre": "SARAH CRUZ JIMENEZ",
+      "nombreAlumno": "SARAH CRUZ JIMENEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_QWIKWF",
+      "personaExtra": "LUIS URBANO CRUZ BUSTOS (PADRE)/DULCE MARIA BUSTOS",
+      "tutorPrincipal": "MARIA GUADALUPE JIMENEZ HERNANDEZ (MADRE)",
+      "tutorNombre": "MARIA GUADALUPE JIMENEZ HERNANDEZ (MADRE)",
+      "tutor": "MARIA GUADALUPE JIMENEZ HERNANDEZ (MADRE)",
+      "tutorResponsable": "MARIA GUADALUPE JIMENEZ HERNANDEZ (MADRE)"
+    },
+    {
+      "id": "ALU_QLOCCG",
+      "nombre": "SOFIA TELLO",
+      "nombreAlumno": "SOFIA TELLO",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_C4IY93",
+      "personaExtra": "LUCAS DANIEL TELLO (PADRE)/GABRIEL IGNACIO HEREDIA\r\n/CONSTANZA ZILI/",
+      "tutorPrincipal": "MARIA JOSE PEREIRA (MADRE)",
+      "tutorNombre": "MARIA JOSE PEREIRA (MADRE)",
+      "tutor": "MARIA JOSE PEREIRA (MADRE)",
+      "tutorResponsable": "MARIA JOSE PEREIRA (MADRE)"
+    },
+    {
+      "id": "ALU_SM84Q5",
+      "nombre": "DANTE CALVO DE LA ROSA",
+      "nombreAlumno": "DANTE CALVO DE LA ROSA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_DU8CL4",
+      "personaExtra": "JUAN PABLO CALVO (PADRE)/MERCEDES DELL'AQUILA",
+      "tutorPrincipal": "MARIA MARTA DE LA ROSA (MADRE)",
+      "tutorNombre": "MARIA MARTA DE LA ROSA (MADRE)",
+      "tutor": "MARIA MARTA DE LA ROSA (MADRE)",
+      "tutorResponsable": "MARIA MARTA DE LA ROSA (MADRE)"
+    },
+    {
+      "id": "ALU_OMZR2P",
+      "nombre": "CAMILO FELICES JIMENEZ",
+      "nombreAlumno": "CAMILO FELICES JIMENEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_SQPI54",
+      "personaExtra": "MARCELO MATIAS FELICES (PADRE)/PAULINA DANIOTTI/FRANCISCO BERTOGLIO/LAUTARO ELIAS CARRION",
+      "tutorPrincipal": "MARIA VICTORIA JIMENEZ (MADRE)",
+      "tutorNombre": "MARIA VICTORIA JIMENEZ (MADRE)",
+      "tutor": "MARIA VICTORIA JIMENEZ (MADRE)",
+      "tutorResponsable": "MARIA VICTORIA JIMENEZ (MADRE)"
+    },
+    {
+      "id": "ALU_K7LKOX",
+      "nombre": "GALA YOLOTZIN ROBLES CASTAÑEDA",
+      "nombreAlumno": "GALA YOLOTZIN ROBLES CASTAÑEDA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_KQRIR6",
+      "personaExtra": "JORGE ISAAC ROBLES BRAIN (PADRE)",
+      "tutorPrincipal": "BRIZIA ANGELICA CASTAÑEDA GRANADOS (MADRE)",
+      "tutorNombre": "BRIZIA ANGELICA CASTAÑEDA GRANADOS (MADRE)",
+      "tutor": "BRIZIA ANGELICA CASTAÑEDA GRANADOS (MADRE)",
+      "tutorResponsable": "BRIZIA ANGELICA CASTAÑEDA GRANADOS (MADRE)"
+    },
+    {
+      "id": "ALU_AVFADR",
+      "nombre": "DELFINA LUNA GAMBARTTE PERALTA",
+      "nombreAlumno": "DELFINA LUNA GAMBARTTE PERALTA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_VS9YTJ",
+      "personaExtra": "LAUTARO TOMAS GAMBARTTE (PADRE)/NADIA LUZ ALBORNOZ/EMMANUEL MARCELO CIERI/",
+      "tutorPrincipal": "KAREN SOLEDAD PERALTA (MADRE)",
+      "tutorNombre": "KAREN SOLEDAD PERALTA (MADRE)",
+      "tutor": "KAREN SOLEDAD PERALTA (MADRE)",
+      "tutorResponsable": "KAREN SOLEDAD PERALTA (MADRE)"
+    },
+    {
+      "id": "ALU_URWXXX",
+      "nombre": "NICOLAS CABRERA HERNANDEZ",
+      "nombreAlumno": "NICOLAS CABRERA HERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_STBMD1",
+      "personaExtra": "JOSE LUIS CABRERA RUELAS (PADRE)",
+      "tutorPrincipal": "PALOMA HERNANDEZ MEDRANO (MADRE)",
+      "tutorNombre": "PALOMA HERNANDEZ MEDRANO (MADRE)",
+      "tutor": "PALOMA HERNANDEZ MEDRANO (MADRE)",
+      "tutorResponsable": "PALOMA HERNANDEZ MEDRANO (MADRE)"
+    },
+    {
+      "id": "ALU_XAKZX5",
+      "nombre": "ITZAE MARIN CASANOVA",
+      "nombreAlumno": "ITZAE MARIN CASANOVA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_MN41M6",
+      "personaExtra": "GABINO MARTIN MARIN VICTORIA (PADRE)",
+      "tutorPrincipal": "PATRICIA IRENE CASANOVA MORENO (MADRE)",
+      "tutorNombre": "PATRICIA IRENE CASANOVA MORENO (MADRE)",
+      "tutor": "PATRICIA IRENE CASANOVA MORENO (MADRE)",
+      "tutorResponsable": "PATRICIA IRENE CASANOVA MORENO (MADRE)"
+    },
+    {
+      "id": "ALU_J857AB",
+      "nombre": "ROMEO SEVERIN RODRIGUEZ",
+      "nombreAlumno": "ROMEO SEVERIN RODRIGUEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_NMJE8I",
+      "personaExtra": "JEREMIE ALAIN PHILIPPE SEVERIN (PADRE)/FRANCIS SEVERIN (ABUELO)",
+      "tutorPrincipal": "REYNA RUBI RODRIGUEZ SAMPERIO (MADRE)",
+      "tutorNombre": "REYNA RUBI RODRIGUEZ SAMPERIO (MADRE)",
+      "tutor": "REYNA RUBI RODRIGUEZ SAMPERIO (MADRE)",
+      "tutorResponsable": "REYNA RUBI RODRIGUEZ SAMPERIO (MADRE)"
+    },
+    {
+      "id": "ALU_HC777J",
+      "nombre": "NICO WERKMEISTER ISHIDA",
+      "nombreAlumno": "NICO WERKMEISTER ISHIDA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_1VRNP0",
+      "personaExtra": "WALTER WERKMEISTER BERISTAIN (PADRE)",
+      "tutorPrincipal": "RUMI ISHIDA (MADRE)",
+      "tutorNombre": "RUMI ISHIDA (MADRE)",
+      "tutor": "RUMI ISHIDA (MADRE)",
+      "tutorResponsable": "RUMI ISHIDA (MADRE)"
+    },
+    {
+      "id": "ALU_8A4OH0",
+      "nombre": "MIA MURILLO GALA",
+      "nombreAlumno": "MIA MURILLO GALA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_6HU42O",
+      "personaExtra": "DIEGO MARTIN MURILLO (PADRE)",
+      "tutorPrincipal": "SONIA SARAI GALA CORDOVA (MADRE)",
+      "tutorNombre": "SONIA SARAI GALA CORDOVA (MADRE)",
+      "tutor": "SONIA SARAI GALA CORDOVA (MADRE)",
+      "tutorResponsable": "SONIA SARAI GALA CORDOVA (MADRE)"
+    },
+    {
+      "id": "ALU_T2DK1C",
+      "nombre": "VALENTINA ABAN OLIVERA",
+      "nombreAlumno": "VALENTINA ABAN OLIVERA",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_E0K0TF",
+      "personaExtra": "PAULINO ABAN KU (PADRE)",
+      "tutorPrincipal": "SUSANA OLIVERA NAVA (MADRE)",
+      "tutorNombre": "SUSANA OLIVERA NAVA (MADRE)",
+      "tutor": "SUSANA OLIVERA NAVA (MADRE)",
+      "tutorResponsable": "SUSANA OLIVERA NAVA (MADRE)"
+    },
+    {
+      "id": "ALU_LLCIHF",
+      "nombre": "KAI ENRIQUEZ DI LAUDONIO",
+      "nombreAlumno": "KAI ENRIQUEZ DI LAUDONIO",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_9UTQ8Q",
+      "personaExtra": "ALBERTO ENRIQUE ENRIQUEZ (PADRE)",
+      "tutorPrincipal": "VERONICA ALEJANDRA DI LAUDONIO (MADRE)",
+      "tutorNombre": "VERONICA ALEJANDRA DI LAUDONIO (MADRE)",
+      "tutor": "VERONICA ALEJANDRA DI LAUDONIO (MADRE)",
+      "tutorResponsable": "VERONICA ALEJANDRA DI LAUDONIO (MADRE)"
+    },
+    {
+      "id": "ALU_UREE4K",
+      "nombre": "LUCAS LEONARDO PEREZ CASTILLO",
+      "nombreAlumno": "LUCAS LEONARDO PEREZ CASTILLO",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_A80V2H",
+      "personaExtra": "JOSE CARLOS PEREZ CARCAÑO (PADRE)/ALEJANDRO PEREZ GOMEZ (ABUELO)/BETTY CARCAÑO GOMEZ (ABUELA)/",
+      "tutorPrincipal": "YENI NAXELI CASTILLO GOMEZ (MADRE)",
+      "tutorNombre": "YENI NAXELI CASTILLO GOMEZ (MADRE)",
+      "tutor": "YENI NAXELI CASTILLO GOMEZ (MADRE)",
+      "tutorResponsable": "YENI NAXELI CASTILLO GOMEZ (MADRE)"
+    },
+    {
+      "id": "ALU_4M674O",
+      "nombre": "SANTIAGO MORALEZ LOPEZ",
+      "nombreAlumno": "SANTIAGO MORALEZ LOPEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_TKN92N",
+      "personaExtra": "ALEJANDRO MORALES DELGADO (PADRE)/MA. DE LOURDES DELGADO (ABUELA)/JESSICA BEATRIZ DIAZ DELGADO (TIA) \r\n/CINAR MORALES (ABUELO)",
+      "tutorPrincipal": "YULI DEL CARMEN LOPEZ MARQUEZ (MADRE)",
+      "tutorNombre": "YULI DEL CARMEN LOPEZ MARQUEZ (MADRE)",
+      "tutor": "YULI DEL CARMEN LOPEZ MARQUEZ (MADRE)",
+      "tutorResponsable": "YULI DEL CARMEN LOPEZ MARQUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_AQGCP5",
+      "nombre": "LUCA BERZUNZA RAIKES",
+      "nombreAlumno": "LUCA BERZUNZA RAIKES",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_EB8MGI",
+      "personaExtra": "CRESCENCIO ANTONIO BERZUNZA DAJER (PADRE)/DIANA TAYLOR",
+      "tutorPrincipal": "LAURA KELLY RAIKES (MADRE)",
+      "tutorNombre": "LAURA KELLY RAIKES (MADRE)",
+      "tutor": "LAURA KELLY RAIKES (MADRE)",
+      "tutorResponsable": "LAURA KELLY RAIKES (MADRE)"
+    },
+    {
+      "id": "ALU_203N17",
+      "nombre": "DALI HERNANDEZ ESPARZA MONROY",
+      "nombreAlumno": "DALI HERNANDEZ ESPARZA MONROY",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_GP7NHF",
+      "personaExtra": "MANUEL HERNANDEZ ESPARZA YAÑEZ (PADRE)",
+      "tutorPrincipal": "TANIA MARLEN MONROY PEREZ (MADRE)",
+      "tutorNombre": "TANIA MARLEN MONROY PEREZ (MADRE)",
+      "tutor": "TANIA MARLEN MONROY PEREZ (MADRE)",
+      "tutorResponsable": "TANIA MARLEN MONROY PEREZ (MADRE)"
+    },
+    {
+      "id": "ALU_QJLVRZ",
+      "nombre": "OLIVER PAILLER JUAREZ",
+      "nombreAlumno": "OLIVER PAILLER JUAREZ",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_0ATYQA",
+      "personaExtra": "ARNAUD OLIVER PAILLER (PADRE)/REYNA RAMIREZ MONROY (ABUELA)/MOISES JUAREZ PALMA/",
+      "tutorPrincipal": "REYNA AZUCENA JUAREZ RAMIREZ (MADRE)",
+      "tutorNombre": "REYNA AZUCENA JUAREZ RAMIREZ (MADRE)",
+      "tutor": "REYNA AZUCENA JUAREZ RAMIREZ (MADRE)",
+      "tutorResponsable": "REYNA AZUCENA JUAREZ RAMIREZ (MADRE)"
+    },
+    {
+      "id": "ALU_LC0ENB",
+      "nombre": "SERGIO DAMIAN RODRIGUEZ RAMONET",
+      "nombreAlumno": "SERGIO DAMIAN RODRIGUEZ RAMONET",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_7J4IMC",
+      "personaExtra": "SERGIO RODRIGUEZ DIAZ (PADRE)/GLORIA ARREDONDO/BERENICE RAMONET/CARLOS FERNANDO ROCA",
+      "tutorPrincipal": "CYNTHIA MARCELA RAMONET ARREDONDO (MADRE)",
+      "tutorNombre": "CYNTHIA MARCELA RAMONET ARREDONDO (MADRE)",
+      "tutor": "CYNTHIA MARCELA RAMONET ARREDONDO (MADRE)",
+      "tutorResponsable": "CYNTHIA MARCELA RAMONET ARREDONDO (MADRE)"
+    },
+    {
+      "id": "ALU_8B0KD7",
+      "nombre": "NOAH VELASCO WELLS",
+      "nombreAlumno": "NOAH VELASCO WELLS",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_RGZMPK",
+      "personaExtra": "MISRAIM VELASCO FLORES (PADRE)/GLORIA RAMIREZ/VALENTINA MICHIELETTO/",
+      "tutorPrincipal": "DIANA WELLS (MADRE)",
+      "tutorNombre": "DIANA WELLS (MADRE)",
+      "tutor": "DIANA WELLS (MADRE)",
+      "tutorResponsable": "DIANA WELLS (MADRE)"
+    },
+    {
+      "id": "ALU_IZ5587",
+      "nombre": "BARNA TAKATS URRAZA",
+      "nombreAlumno": "BARNA TAKATS URRAZA",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_YP3CN9",
+      "personaExtra": "BARNA TAKATS (PADRE)",
+      "tutorPrincipal": "ELIZABETH URRAZA DUGAY (MADRE)",
+      "tutorNombre": "ELIZABETH URRAZA DUGAY (MADRE)",
+      "tutor": "ELIZABETH URRAZA DUGAY (MADRE)",
+      "tutorResponsable": "ELIZABETH URRAZA DUGAY (MADRE)"
+    },
+    {
+      "id": "ALU_6L9WF5",
+      "nombre": "ERICK JAVIER RUIZ TUZ",
+      "nombreAlumno": "ERICK JAVIER RUIZ TUZ",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_COO8RK",
+      "personaExtra": "DANIEL IVAN RUIZ CUEVAS (PADRE)/LEYDI ESCAMILLA (ABUELA)/ELADIO TUZ PERERA (ABUELO)/",
+      "tutorPrincipal": "ERIKA MARIBEL TUZ ESCAMILLA (MADRE)",
+      "tutorNombre": "ERIKA MARIBEL TUZ ESCAMILLA (MADRE)",
+      "tutor": "ERIKA MARIBEL TUZ ESCAMILLA (MADRE)",
+      "tutorResponsable": "ERIKA MARIBEL TUZ ESCAMILLA (MADRE)"
+    },
+    {
+      "id": "ALU_RPZHI5",
+      "nombre": "ADHARA FERRETIS CORONA",
+      "nombreAlumno": "ADHARA FERRETIS CORONA",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_G3R891",
+      "personaExtra": "ALEJANDRO FERRETIS TOMASINI (PADRE)",
+      "tutorPrincipal": "HELIA ESTELA CORONA PARRA (MADRE)",
+      "tutorNombre": "HELIA ESTELA CORONA PARRA (MADRE)",
+      "tutor": "HELIA ESTELA CORONA PARRA (MADRE)",
+      "tutorResponsable": "HELIA ESTELA CORONA PARRA (MADRE)"
+    },
+    {
+      "id": "ALU_QRASI7",
+      "nombre": "LUNA GUTIERREZ COS",
+      "nombreAlumno": "LUNA GUTIERREZ COS",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_EG27YA",
+      "personaExtra": "ALEJANDRO GUTIERREZ ONETO (PADRE)/ARACELI ONETO/SEGIO GUTIERREZ ONETO/",
+      "tutorPrincipal": "MA. DE LOS ANGELES COS RODRIGUEZ (MADRE)",
+      "tutorNombre": "MA. DE LOS ANGELES COS RODRIGUEZ (MADRE)",
+      "tutor": "MA. DE LOS ANGELES COS RODRIGUEZ (MADRE)",
+      "tutorResponsable": "MA. DE LOS ANGELES COS RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_N4WCVL",
+      "nombre": "DANTE ZUBIRE YICK",
+      "nombreAlumno": "DANTE ZUBIRE YICK",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_42Y65K",
+      "personaExtra": "CESAR JESUS ZUBIRE CASTILLO (PADRE)/LAURA TATIANA ARBELAEZ",
+      "tutorPrincipal": "MARA LEE YICK ALVAREZ (MADRE)",
+      "tutorNombre": "MARA LEE YICK ALVAREZ (MADRE)",
+      "tutor": "MARA LEE YICK ALVAREZ (MADRE)",
+      "tutorResponsable": "MARA LEE YICK ALVAREZ (MADRE)"
+    },
+    {
+      "id": "ALU_UFPZMH",
+      "nombre": "HANNAH ISABELLA STEVENS FIGUEROA",
+      "nombreAlumno": "HANNAH ISABELLA STEVENS FIGUEROA",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_M3JEW2",
+      "personaExtra": "GEOFFREY TROY STEVENS (PADRE)",
+      "tutorPrincipal": "MARIA EUNICE FIGUEROA SIFUENTES (MADRE)",
+      "tutorNombre": "MARIA EUNICE FIGUEROA SIFUENTES (MADRE)",
+      "tutor": "MARIA EUNICE FIGUEROA SIFUENTES (MADRE)",
+      "tutorResponsable": "MARIA EUNICE FIGUEROA SIFUENTES (MADRE)"
+    },
+    {
+      "id": "ALU_CMYM8O",
+      "nombre": "SOLE SEIDEL VALDEZ",
+      "nombreAlumno": "SOLE SEIDEL VALDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_JPBHE0",
+      "personaExtra": "ELVIO GONZALO SEIDEL (PADRE)",
+      "tutorPrincipal": "ALEJANDRA VALDEZ RAMIREZ (MADRE)",
+      "tutorNombre": "ALEJANDRA VALDEZ RAMIREZ (MADRE)",
+      "tutor": "ALEJANDRA VALDEZ RAMIREZ (MADRE)",
+      "tutorResponsable": "ALEJANDRA VALDEZ RAMIREZ (MADRE)"
+    },
+    {
+      "id": "ALU_AM1BQP",
+      "nombre": "SABINA VIDAL VILLAR",
+      "nombreAlumno": "SABINA VIDAL VILLAR",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_LUZB0H",
+      "personaExtra": "-/GILBERTO CORTES ROSADO/BEATRIZ CORTES ROSADO/ROGELIO SOSA MONTIEL",
+      "tutorPrincipal": "ANEL VIDAL VILLAR (MADRE)",
+      "tutorNombre": "ANEL VIDAL VILLAR (MADRE)",
+      "tutor": "ANEL VIDAL VILLAR (MADRE)",
+      "tutorResponsable": "ANEL VIDAL VILLAR (MADRE)"
+    },
+    {
+      "id": "ALU_JWKEI0",
+      "nombre": "EDRIC ZAID GOMEZ ARIAS",
+      "nombreAlumno": "EDRIC ZAID GOMEZ ARIAS",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_LKNHIF",
+      "personaExtra": "JOSE ALEJANDRO GOMEZ PUEBLA (PADRE)/HILDA PORRAS SOTO",
+      "tutorPrincipal": "DIANA ALEJANDRA ARIAS PORRAS (MADRE)",
+      "tutorNombre": "DIANA ALEJANDRA ARIAS PORRAS (MADRE)",
+      "tutor": "DIANA ALEJANDRA ARIAS PORRAS (MADRE)",
+      "tutorResponsable": "DIANA ALEJANDRA ARIAS PORRAS (MADRE)"
+    },
+    {
+      "id": "ALU_3A7DBF",
+      "nombre": "ABRIL ARANZA VARGAS MORENO",
+      "nombreAlumno": "ABRIL ARANZA VARGAS MORENO",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_6XC3AG",
+      "personaExtra": "JOSE GUILLERMO VARGAS GONZALEZ (PADRE)/TERESITA GUADALUPE VERA CRUZ",
+      "tutorPrincipal": "PAULINA IVETTE MORENO VERA (MADRE)",
+      "tutorNombre": "PAULINA IVETTE MORENO VERA (MADRE)",
+      "tutor": "PAULINA IVETTE MORENO VERA (MADRE)",
+      "tutorResponsable": "PAULINA IVETTE MORENO VERA (MADRE)"
+    },
+    {
+      "id": "ALU_EEREGB",
+      "nombre": "LEONARDO RODRIGUEZ FINAMORE",
+      "nombreAlumno": "LEONARDO RODRIGUEZ FINAMORE",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_MVRL85",
+      "personaExtra": "JAIME KARIM RODRIGUEZ VIDAL (PADRE)/EDMUNDO RODRIGUEZ VILLALOBOS (ABUELO)/ENRIQUETA VIDAL GONZALEZ (ABUELA)/JAIR RODRIGUEZ VIDAL (TIO)",
+      "tutorPrincipal": "ROSA FINAMORE (MADRE)",
+      "tutorNombre": "ROSA FINAMORE (MADRE)",
+      "tutor": "ROSA FINAMORE (MADRE)",
+      "tutorResponsable": "ROSA FINAMORE (MADRE)"
+    },
+    {
+      "id": "ALU_FZYEGA",
+      "nombre": "JHONATHAN ADRIAN ARAUJO PARKKINEN",
+      "nombreAlumno": "JHONATHAN ADRIAN ARAUJO PARKKINEN",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_UGF7W7",
+      "personaExtra": "JHONATHAN GUILLERMO ARAUJO CHURIO (PADRE)",
+      "tutorPrincipal": "SARI CARITA PARKKINEN (MADRE)",
+      "tutorNombre": "SARI CARITA PARKKINEN (MADRE)",
+      "tutor": "SARI CARITA PARKKINEN (MADRE)",
+      "tutorResponsable": "SARI CARITA PARKKINEN (MADRE)"
+    },
+    {
+      "id": "ALU_K4GZRT",
+      "nombre": "JOSEFINA LUCERO FIGUEROA",
+      "nombreAlumno": "JOSEFINA LUCERO FIGUEROA",
+      "nivel": "PRIMARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_1NMUHV",
+      "personaExtra": "AGUSTIN ADRIAN LUCERO AHUMADA (PADRE)/VALERIA FIGUEROA",
+      "tutorPrincipal": "VANESA ALEXANDRA FIGUEROA (MADRE)",
+      "tutorNombre": "VANESA ALEXANDRA FIGUEROA (MADRE)",
+      "tutor": "VANESA ALEXANDRA FIGUEROA (MADRE)",
+      "tutorResponsable": "VANESA ALEXANDRA FIGUEROA (MADRE)"
+    },
+    {
+      "id": "ALU_3UYTOQ",
+      "nombre": "AURORA YAXCHEE ORTIZ MACIAS",
+      "nombreAlumno": "AURORA YAXCHEE ORTIZ MACIAS",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_77M6ZI",
+      "personaExtra": "RAUL SINUHE ORTIZ VAZQUEZ (PADRE)/VIRGINIA MA. GUADALUPE FLORES (ABUELA)/GABRIELA VAZQUEZ (ABUELA)/",
+      "tutorPrincipal": "CORAL HAIDE MACIAS FLORES (MADRE)",
+      "tutorNombre": "CORAL HAIDE MACIAS FLORES (MADRE)",
+      "tutor": "CORAL HAIDE MACIAS FLORES (MADRE)",
+      "tutorResponsable": "CORAL HAIDE MACIAS FLORES (MADRE)"
+    },
+    {
+      "id": "ALU_0O5WVY",
+      "nombre": "MICHELLE WEBER LEON",
+      "nombreAlumno": "MICHELLE WEBER LEON",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_SHVMBY",
+      "personaExtra": "-",
+      "tutorPrincipal": "ERIKA SHIRLEY LEON FERRETIS (MADRE)",
+      "tutorNombre": "ERIKA SHIRLEY LEON FERRETIS (MADRE)",
+      "tutor": "ERIKA SHIRLEY LEON FERRETIS (MADRE)",
+      "tutorResponsable": "ERIKA SHIRLEY LEON FERRETIS (MADRE)"
+    },
+    {
+      "id": "ALU_1VDRT1",
+      "nombre": "IAN GAEL CERVANTES DIAZ",
+      "nombreAlumno": "IAN GAEL CERVANTES DIAZ",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_J1NFW5",
+      "personaExtra": "JOSE ALBERTO CERVANTES GALLEGOS (PADRE)/JOSE MANUEL DIAZ (ABUELO)/MARIA ISABEL FLORES (ABUELA)/ROCIO SELENE DIAZ",
+      "tutorPrincipal": "FLOR DE MARIA DIAZ FLORES (MADRE)",
+      "tutorNombre": "FLOR DE MARIA DIAZ FLORES (MADRE)",
+      "tutor": "FLOR DE MARIA DIAZ FLORES (MADRE)",
+      "tutorResponsable": "FLOR DE MARIA DIAZ FLORES (MADRE)"
+    },
+    {
+      "id": "ALU_2FGYH9",
+      "nombre": "MATEUS HERNANDEZ BRAGANCA MEDEIROS",
+      "nombreAlumno": "MATEUS HERNANDEZ BRAGANCA MEDEIROS",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_0YJ2S7",
+      "personaExtra": "BRUNO BRAGANCA MEDEIROS DE SOUZA (PADRE)/ARGELIA JIMENEZ GARCIA (ABUELA)",
+      "tutorPrincipal": "FLOR HERNANDEZ JIMENEZ (MADRE)",
+      "tutorNombre": "FLOR HERNANDEZ JIMENEZ (MADRE)",
+      "tutor": "FLOR HERNANDEZ JIMENEZ (MADRE)",
+      "tutorResponsable": "FLOR HERNANDEZ JIMENEZ (MADRE)"
+    },
+    {
+      "id": "ALU_6GQMBH",
+      "nombre": "IAN RENE GONZALEZ MENDOZA",
+      "nombreAlumno": "IAN RENE GONZALEZ MENDOZA",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_O1M2U8",
+      "personaExtra": "VICTOR MANUEL GONZALEZ (PADRE)/RENE GONZALEZ",
+      "tutorPrincipal": "GISELLA MILOE MENDOZA HERNADEZ (MADRE)",
+      "tutorNombre": "GISELLA MILOE MENDOZA HERNADEZ (MADRE)",
+      "tutor": "GISELLA MILOE MENDOZA HERNADEZ (MADRE)",
+      "tutorResponsable": "GISELLA MILOE MENDOZA HERNADEZ (MADRE)"
+    },
+    {
+      "id": "ALU_2TBEW0",
+      "nombre": "DARIA SABUCKA",
+      "nombreAlumno": "DARIA SABUCKA",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ST2NDN",
+      "personaExtra": "-/ELENA SABUCKA (ABUELA)",
+      "tutorPrincipal": "JANA SABUCKA (MADRE)",
+      "tutorNombre": "JANA SABUCKA (MADRE)",
+      "tutor": "JANA SABUCKA (MADRE)",
+      "tutorResponsable": "JANA SABUCKA (MADRE)"
+    },
+    {
+      "id": "ALU_KRLSQH",
+      "nombre": "CONSTANZA BONALES CASTILLO",
+      "nombreAlumno": "CONSTANZA BONALES CASTILLO",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_7F0DVQ",
+      "personaExtra": "MARICELA BONALES ALATORRE (PADRE)/ANAHI CHONG",
+      "tutorPrincipal": "JESICA DEL ROCIO CASTILLO AGUILAR (MADRE)",
+      "tutorNombre": "JESICA DEL ROCIO CASTILLO AGUILAR (MADRE)",
+      "tutor": "JESICA DEL ROCIO CASTILLO AGUILAR (MADRE)",
+      "tutorResponsable": "JESICA DEL ROCIO CASTILLO AGUILAR (MADRE)"
+    },
+    {
+      "id": "ALU_FMUKYT",
+      "nombre": "ANN SOPHIE MENDOZA MONTAÑEZ",
+      "nombreAlumno": "ANN SOPHIE MENDOZA MONTAÑEZ",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_U99GAK",
+      "personaExtra": "ANGEL ALFREDO MENDOZA LOPEZ (PADRE)/MA. DE LOS ANGELES LOPEZ /ALFREDO MENDOZA DIEZ/EVELYN MONTAÑEZ MACIAS/MELIN ANGELICA MENDOZA",
+      "tutorPrincipal": "JESSICA MONTAÑEZ MACIAS VALADEZ (MADRE)",
+      "tutorNombre": "JESSICA MONTAÑEZ MACIAS VALADEZ (MADRE)",
+      "tutor": "JESSICA MONTAÑEZ MACIAS VALADEZ (MADRE)",
+      "tutorResponsable": "JESSICA MONTAÑEZ MACIAS VALADEZ (MADRE)"
+    },
+    {
+      "id": "ALU_R1AFKK",
+      "nombre": "LEO ARSLAN CALISKAN MUÑOZ",
+      "nombreAlumno": "LEO ARSLAN CALISKAN MUÑOZ",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_RD3J1H",
+      "personaExtra": "-/JORDANA PROL/JESSICA MUÑOZ/LESLIE MUÑOZ",
+      "tutorPrincipal": "JULIEE MELISSA MUÑOZ CANALES (MADRE)",
+      "tutorNombre": "JULIEE MELISSA MUÑOZ CANALES (MADRE)",
+      "tutor": "JULIEE MELISSA MUÑOZ CANALES (MADRE)",
+      "tutorResponsable": "JULIEE MELISSA MUÑOZ CANALES (MADRE)"
+    },
+    {
+      "id": "ALU_D3AQSB",
+      "nombre": "JULIA VARESI PERELLO",
+      "nombreAlumno": "JULIA VARESI PERELLO",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ZICCL7",
+      "personaExtra": "DAVID VARESI (PADRE)",
+      "tutorPrincipal": "MARIA FLORENCIA PERELLO (MADRE)",
+      "tutorNombre": "MARIA FLORENCIA PERELLO (MADRE)",
+      "tutor": "MARIA FLORENCIA PERELLO (MADRE)",
+      "tutorResponsable": "MARIA FLORENCIA PERELLO (MADRE)"
+    },
+    {
+      "id": "ALU_RMJNPO",
+      "nombre": "NOAH ROCHA RAHAL",
+      "nombreAlumno": "NOAH ROCHA RAHAL",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_BALM4M",
+      "personaExtra": "GIBERTO ROCHA URIBE (PADRE)/PATRICIA ROCHA (ABUELA)",
+      "tutorPrincipal": "MARIA JOSE RAHAL (MADRE)",
+      "tutorNombre": "MARIA JOSE RAHAL (MADRE)",
+      "tutor": "MARIA JOSE RAHAL (MADRE)",
+      "tutorResponsable": "MARIA JOSE RAHAL (MADRE)"
+    },
+    {
+      "id": "ALU_OPI724",
+      "nombre": "PABLO IBARRA AZANZA",
+      "nombreAlumno": "PABLO IBARRA AZANZA",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_BS8HVG",
+      "personaExtra": "RODRIGO IBARRA REYES (PADRE)",
+      "tutorPrincipal": "MARIA LAURA AZANZA CERVANTES (MADRE)",
+      "tutorNombre": "MARIA LAURA AZANZA CERVANTES (MADRE)",
+      "tutor": "MARIA LAURA AZANZA CERVANTES (MADRE)",
+      "tutorResponsable": "MARIA LAURA AZANZA CERVANTES (MADRE)"
+    },
+    {
+      "id": "ALU_BBQI79",
+      "nombre": "MILO OLIVA LESCANO",
+      "nombreAlumno": "MILO OLIVA LESCANO",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_ZML7ZX",
+      "personaExtra": "RODRIGO ARIEL OLIVA (PADRE)/PAULA GARCIA/SEGUNDO TORRES/",
+      "tutorPrincipal": "MARIA LAURA LESCANO (MADRE)",
+      "tutorNombre": "MARIA LAURA LESCANO (MADRE)",
+      "tutor": "MARIA LAURA LESCANO (MADRE)",
+      "tutorResponsable": "MARIA LAURA LESCANO (MADRE)"
+    },
+    {
+      "id": "ALU_AMF3TQ",
+      "nombre": "MATEO SAID GARCIA RAMOS",
+      "nombreAlumno": "MATEO SAID GARCIA RAMOS",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_71HJGC",
+      "personaExtra": "KRISTEL DEL CARMEN GARCIA RAMOS (MAMA) (PADRE)",
+      "tutorPrincipal": "MARICELA RAMOS ESCOBAR (ABUELA) (MADRE)",
+      "tutorNombre": "MARICELA RAMOS ESCOBAR (ABUELA) (MADRE)",
+      "tutor": "MARICELA RAMOS ESCOBAR (ABUELA) (MADRE)",
+      "tutorResponsable": "MARICELA RAMOS ESCOBAR (ABUELA) (MADRE)"
+    },
+    {
+      "id": "ALU_QT9O7V",
+      "nombre": "AMELIE CASTAÑEDA MORLET",
+      "nombreAlumno": "AMELIE CASTAÑEDA MORLET",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_QXFG73",
+      "personaExtra": "-/YULENI NENETZI HERNANDEZ/TERESA BESNE URUZQUETA/",
+      "tutorPrincipal": "CLAUDIA PAULINA CASTAÑEDA MORLET (MADRE)",
+      "tutorNombre": "CLAUDIA PAULINA CASTAÑEDA MORLET (MADRE)",
+      "tutor": "CLAUDIA PAULINA CASTAÑEDA MORLET (MADRE)",
+      "tutorResponsable": "CLAUDIA PAULINA CASTAÑEDA MORLET (MADRE)"
+    },
+    {
+      "id": "ALU_R1SLPQ",
+      "nombre": "AURORA BERTOGLIO DANIOTTI",
+      "nombreAlumno": "AURORA BERTOGLIO DANIOTTI",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_1MLP9P",
+      "personaExtra": "FRANCISCO BERTOGLIO (PADRE)/MARCELO MATIAS FELICES (PAPA DE CAMILO FELICES)/MARIA VICTORIA JIMENEZ (MAMA DE CAMILO FELICES)/",
+      "tutorPrincipal": "PAULINA DANIOTTI (MADRE)",
+      "tutorNombre": "PAULINA DANIOTTI (MADRE)",
+      "tutor": "PAULINA DANIOTTI (MADRE)",
+      "tutorResponsable": "PAULINA DANIOTTI (MADRE)"
+    },
+    {
+      "id": "ALU_NWXXVP",
+      "nombre": "EMILIANO RODRIGUEZ REYNOSO",
+      "nombreAlumno": "EMILIANO RODRIGUEZ REYNOSO",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_HU4P5T",
+      "personaExtra": "ALEJANDRO CESAR RODRIGUEZ ZAMUDIO (PADRE)",
+      "tutorPrincipal": "PILAR REYNOSO URIBARREN (MADRE)",
+      "tutorNombre": "PILAR REYNOSO URIBARREN (MADRE)",
+      "tutor": "PILAR REYNOSO URIBARREN (MADRE)",
+      "tutorResponsable": "PILAR REYNOSO URIBARREN (MADRE)"
+    },
+    {
+      "id": "ALU_HAWT9Y",
+      "nombre": "KINNARI BECERRA GUTIERREZ",
+      "nombreAlumno": "KINNARI BECERRA GUTIERREZ",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_FOWR39",
+      "personaExtra": "ERNESTO EDEN BECERRA PLIEGO (PADRE)/MARIA DEL PILAR SALAZAR",
+      "tutorPrincipal": "RUTH MONNSERRAT GUTIERREZ HDEZ. (MADRE)",
+      "tutorNombre": "RUTH MONNSERRAT GUTIERREZ HDEZ. (MADRE)",
+      "tutor": "RUTH MONNSERRAT GUTIERREZ HDEZ. (MADRE)",
+      "tutorResponsable": "RUTH MONNSERRAT GUTIERREZ HDEZ. (MADRE)"
+    },
+    {
+      "id": "ALU_3XFRT4",
+      "nombre": "GRECIA SAHILY LANDA MAY",
+      "nombreAlumno": "GRECIA SAHILY LANDA MAY",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_7AA4EX",
+      "personaExtra": "AMILKA RAFAEL LANDA AUDELO (PADRE)/MA. DE LA LUZ AUDELO (ABUELA)/LESLY LANDA AUDELO (TIA)/",
+      "tutorPrincipal": "SARAI JEMIMAH MAY MUKUL (MADRE)",
+      "tutorNombre": "SARAI JEMIMAH MAY MUKUL (MADRE)",
+      "tutor": "SARAI JEMIMAH MAY MUKUL (MADRE)",
+      "tutorResponsable": "SARAI JEMIMAH MAY MUKUL (MADRE)"
+    },
+    {
+      "id": "ALU_LRWGLF",
+      "nombre": "ADRIK FLORES BECERRA",
+      "nombreAlumno": "ADRIK FLORES BECERRA",
+      "nivel": "PRIMARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_82XJH5",
+      "personaExtra": "ALDO RODRIGO FLORES VALENCIA (PADRE)/NADIA VILLALOBOS",
+      "tutorPrincipal": "VERONICA BECERRA MUNOZ (MADRE)",
+      "tutorNombre": "VERONICA BECERRA MUNOZ (MADRE)",
+      "tutor": "VERONICA BECERRA MUNOZ (MADRE)",
+      "tutorResponsable": "VERONICA BECERRA MUNOZ (MADRE)"
+    },
+    {
+      "id": "ALU_JDDIOM",
+      "nombre": "MARIA FERNANDA RODRIGUEZ SERNA",
+      "nombreAlumno": "MARIA FERNANDA RODRIGUEZ SERNA",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_MB85CG",
+      "personaExtra": "JORGE ARTURO RODRIGUEZ BENITEZ (PADRE)/JESUS GASON (PAPA EKBE)/SAMANTHA SALOMON (MAMA EKBE)/",
+      "tutorPrincipal": "FABIOLA PALOMA SERNA GILL (MADRE)",
+      "tutorNombre": "FABIOLA PALOMA SERNA GILL (MADRE)",
+      "tutor": "FABIOLA PALOMA SERNA GILL (MADRE)",
+      "tutorResponsable": "FABIOLA PALOMA SERNA GILL (MADRE)"
+    },
+    {
+      "id": "ALU_EWDOGC",
+      "nombre": "MATEO ALBERTO CORTES DIAZ",
+      "nombreAlumno": "MATEO ALBERTO CORTES DIAZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_XM6URH",
+      "personaExtra": "CARLOS ALBERTO CORTES ARMENTA (PADRE)/KAREN DIAZ/ROSSINA PEREZ/",
+      "tutorPrincipal": "AIDA GERALDINE DIAZ HOWES (MADRE)",
+      "tutorNombre": "AIDA GERALDINE DIAZ HOWES (MADRE)",
+      "tutor": "AIDA GERALDINE DIAZ HOWES (MADRE)",
+      "tutorResponsable": "AIDA GERALDINE DIAZ HOWES (MADRE)"
+    },
+    {
+      "id": "ALU_4XTETA",
+      "nombre": "IZAN DANIEL FLORES ZUBILLAGA",
+      "nombreAlumno": "IZAN DANIEL FLORES ZUBILLAGA",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_8N6XMI",
+      "personaExtra": "DANIEL FLORES GARCIA (PADRE)",
+      "tutorPrincipal": "DIANA XIMENA ZUBILLAGA MARTINEZ (MADRE)",
+      "tutorNombre": "DIANA XIMENA ZUBILLAGA MARTINEZ (MADRE)",
+      "tutor": "DIANA XIMENA ZUBILLAGA MARTINEZ (MADRE)",
+      "tutorResponsable": "DIANA XIMENA ZUBILLAGA MARTINEZ (MADRE)"
+    },
+    {
+      "id": "ALU_HIHI86",
+      "nombre": "MARTIN ELIAS CELIS VERDUGO",
+      "nombreAlumno": "MARTIN ELIAS CELIS VERDUGO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_HN31SR",
+      "personaExtra": "KRISS HUMBERTO CELIS AEDO (PADRE)",
+      "tutorPrincipal": "ALICIA GUADALUPE VERDUGO GALVEZ (MADRE)",
+      "tutorNombre": "ALICIA GUADALUPE VERDUGO GALVEZ (MADRE)",
+      "tutor": "ALICIA GUADALUPE VERDUGO GALVEZ (MADRE)",
+      "tutorResponsable": "ALICIA GUADALUPE VERDUGO GALVEZ (MADRE)"
+    },
+    {
+      "id": "ALU_F1BXQA",
+      "nombre": "ARLET MARCELA CHAVEZ REYES",
+      "nombreAlumno": "ARLET MARCELA CHAVEZ REYES",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_C74ZDA",
+      "personaExtra": "-",
+      "tutorPrincipal": "ANA CECILIA REYES HERNANDEZ (MADRE)",
+      "tutorNombre": "ANA CECILIA REYES HERNANDEZ (MADRE)",
+      "tutor": "ANA CECILIA REYES HERNANDEZ (MADRE)",
+      "tutorResponsable": "ANA CECILIA REYES HERNANDEZ (MADRE)"
+    },
+    {
+      "id": "ALU_H9O96C",
+      "nombre": "LEON ARTURO ESLAVA LOBATO",
+      "nombreAlumno": "LEON ARTURO ESLAVA LOBATO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_CPY92W",
+      "personaExtra": "ARTURO ISAI ESLAVA (PADRE)/NALLELY FALCON/SANDRA SUAREZ/SANDRA LOBATO",
+      "tutorPrincipal": "ANA LAURA LOBATO (MADRE)",
+      "tutorNombre": "ANA LAURA LOBATO (MADRE)",
+      "tutor": "ANA LAURA LOBATO (MADRE)",
+      "tutorResponsable": "ANA LAURA LOBATO (MADRE)"
+    },
+    {
+      "id": "ALU_YF6ORT",
+      "nombre": "DIEGO JIMENEZ MENDOZA",
+      "nombreAlumno": "DIEGO JIMENEZ MENDOZA",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_L9LCFK",
+      "personaExtra": "ANTONIO JIMENEZ DIAZ (PADRE)",
+      "tutorPrincipal": "CLAUDIA ANDREA MENDOZA (MADRE)",
+      "tutorNombre": "CLAUDIA ANDREA MENDOZA (MADRE)",
+      "tutor": "CLAUDIA ANDREA MENDOZA (MADRE)",
+      "tutorResponsable": "CLAUDIA ANDREA MENDOZA (MADRE)"
+    },
+    {
+      "id": "ALU_MD7YZ0",
+      "nombre": "ARANZA BONIFAZ CUPIL",
+      "nombreAlumno": "ARANZA BONIFAZ CUPIL",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_MQZGHG",
+      "personaExtra": "BULMARO FABIAN BONIFAZ CUESTA (PADRE)/NADIA VILLALOBOS TREVIÑO (TRANSPORTE)",
+      "tutorPrincipal": "DANIELA CUPIL GIL (MADRE)",
+      "tutorNombre": "DANIELA CUPIL GIL (MADRE)",
+      "tutor": "DANIELA CUPIL GIL (MADRE)",
+      "tutorResponsable": "DANIELA CUPIL GIL (MADRE)"
+    },
+    {
+      "id": "ALU_AKZTYT",
+      "nombre": "NAOMI ALVARADO MEDRANO",
+      "nombreAlumno": "NAOMI ALVARADO MEDRANO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_KN8VYJ",
+      "personaExtra": "JAVIER ALVARADO MILACATL (PADRE)/MAYRA PEDRAZA",
+      "tutorPrincipal": "DIANA MEDRANO VILLEGAS (MADRE)",
+      "tutorNombre": "DIANA MEDRANO VILLEGAS (MADRE)",
+      "tutor": "DIANA MEDRANO VILLEGAS (MADRE)",
+      "tutorResponsable": "DIANA MEDRANO VILLEGAS (MADRE)"
+    },
+    {
+      "id": "ALU_JH0CX7",
+      "nombre": "THOMAS GUTIERREZ MAESTRE",
+      "nombreAlumno": "THOMAS GUTIERREZ MAESTRE",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_XPBUST",
+      "personaExtra": "JOSE IGNACIO GUTIERREZ (PADRE)",
+      "tutorPrincipal": "DINA MELISA MAESTRE LEDESMA (MADRE)",
+      "tutorNombre": "DINA MELISA MAESTRE LEDESMA (MADRE)",
+      "tutor": "DINA MELISA MAESTRE LEDESMA (MADRE)",
+      "tutorResponsable": "DINA MELISA MAESTRE LEDESMA (MADRE)"
+    },
+    {
+      "id": "ALU_CBDBNW",
+      "nombre": "VICTORIA HERNANDEZ SANGABRIEL",
+      "nombreAlumno": "VICTORIA HERNANDEZ SANGABRIEL",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_8UPY5K",
+      "personaExtra": "-",
+      "tutorPrincipal": "ELIZETH HERNANDEZ SANGABRIEL (MADRE)",
+      "tutorNombre": "ELIZETH HERNANDEZ SANGABRIEL (MADRE)",
+      "tutor": "ELIZETH HERNANDEZ SANGABRIEL (MADRE)",
+      "tutorResponsable": "ELIZETH HERNANDEZ SANGABRIEL (MADRE)"
+    },
+    {
+      "id": "ALU_I77CWF",
+      "nombre": "ANGEL SAMUEL BELLO DIAZ",
+      "nombreAlumno": "ANGEL SAMUEL BELLO DIAZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_26Q2YC",
+      "personaExtra": "LUIS REZA REZA (PAREJA DE MAMA) (PADRE)",
+      "tutorPrincipal": "JESSICA BEATRIZ DIAZ DELGADO (MADRE)",
+      "tutorNombre": "JESSICA BEATRIZ DIAZ DELGADO (MADRE)",
+      "tutor": "JESSICA BEATRIZ DIAZ DELGADO (MADRE)",
+      "tutorResponsable": "JESSICA BEATRIZ DIAZ DELGADO (MADRE)"
+    },
+    {
+      "id": "ALU_2OWQKP",
+      "nombre": "FERNANDA CAROLINA KU CUTZ",
+      "nombreAlumno": "FERNANDA CAROLINA KU CUTZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_9NW6PO",
+      "personaExtra": "JORGE FERNANDO KU POOL (PADRE)",
+      "tutorPrincipal": "MARIA ARACELI DE JESUS CUTZ CIAU (MADRE)",
+      "tutorNombre": "MARIA ARACELI DE JESUS CUTZ CIAU (MADRE)",
+      "tutor": "MARIA ARACELI DE JESUS CUTZ CIAU (MADRE)",
+      "tutorResponsable": "MARIA ARACELI DE JESUS CUTZ CIAU (MADRE)"
+    },
+    {
+      "id": "ALU_4FJJEB",
+      "nombre": "EMMA DORANTES SANCHEZ",
+      "nombreAlumno": "EMMA DORANTES SANCHEZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_ZU7E28",
+      "personaExtra": "HUGO DORANTES VEGA (PADRE)/FRANCIA ADAME/IAVN PEREZ/FERNANDO GALVEZ/MIGUEL ASGARD ALCAZAR (PAPA EKBE)",
+      "tutorPrincipal": "MARIA INES SANCHEZ DEL CAMPO (MADRE)",
+      "tutorNombre": "MARIA INES SANCHEZ DEL CAMPO (MADRE)",
+      "tutor": "MARIA INES SANCHEZ DEL CAMPO (MADRE)",
+      "tutorResponsable": "MARIA INES SANCHEZ DEL CAMPO (MADRE)"
+    },
+    {
+      "id": "ALU_ZZQNEI",
+      "nombre": "BRUNO MATA FLORES",
+      "nombreAlumno": "BRUNO MATA FLORES",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_1EAO3N",
+      "personaExtra": "JOSE ALFONSO MATA MATA (PADRE)/MARCOS WALLMARK",
+      "tutorPrincipal": "MARIA MONSERRAT FLORES CAMPOS (MADRE)",
+      "tutorNombre": "MARIA MONSERRAT FLORES CAMPOS (MADRE)",
+      "tutor": "MARIA MONSERRAT FLORES CAMPOS (MADRE)",
+      "tutorResponsable": "MARIA MONSERRAT FLORES CAMPOS (MADRE)"
+    },
+    {
+      "id": "ALU_OV562T",
+      "nombre": "MARIA JOSE GOMEZ LOPEZ",
+      "nombreAlumno": "MARIA JOSE GOMEZ LOPEZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_BTP26F",
+      "personaExtra": "CARLOS GOMEZ NAVARRO (PADRE)/LETICIA A. NAVARRO MARTINEZ/CARLOS GOMEZ HERNANDEZ/",
+      "tutorPrincipal": "MARIANANA LOPEZ VILLANUEVA (MADRE)",
+      "tutorNombre": "MARIANANA LOPEZ VILLANUEVA (MADRE)",
+      "tutor": "MARIANANA LOPEZ VILLANUEVA (MADRE)",
+      "tutorResponsable": "MARIANANA LOPEZ VILLANUEVA (MADRE)"
+    },
+    {
+      "id": "ALU_6N28AK",
+      "nombre": "LIAM MERTENS BELTRAN",
+      "nombreAlumno": "LIAM MERTENS BELTRAN",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_VGLO03",
+      "personaExtra": "ROEL MERTENS (PADRE)",
+      "tutorPrincipal": "MARITZA BELTRAN ROMERO (MADRE)",
+      "tutorNombre": "MARITZA BELTRAN ROMERO (MADRE)",
+      "tutor": "MARITZA BELTRAN ROMERO (MADRE)",
+      "tutorResponsable": "MARITZA BELTRAN ROMERO (MADRE)"
+    },
+    {
+      "id": "ALU_M6I9WC",
+      "nombre": "XIMENA ASCENCION MENDEZ",
+      "nombreAlumno": "XIMENA ASCENCION MENDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_T26RW3",
+      "personaExtra": "EDUARDO ASCENCION MARTINEZ (PADRE)/NELLY MENDEZ LORENZANO/NIKSURY MENDEZ LORENZANO/",
+      "tutorPrincipal": "MAYDA ITZEL MENDEZ LORENZANO (MADRE)",
+      "tutorNombre": "MAYDA ITZEL MENDEZ LORENZANO (MADRE)",
+      "tutor": "MAYDA ITZEL MENDEZ LORENZANO (MADRE)",
+      "tutorResponsable": "MAYDA ITZEL MENDEZ LORENZANO (MADRE)"
+    },
+    {
+      "id": "ALU_GK8YZD",
+      "nombre": "CIELO ZALASAR FERNANDEZ",
+      "nombreAlumno": "CIELO ZALASAR FERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_SOZ5UT",
+      "personaExtra": "MANUEL ALEJANDRO ZALASAR (PADRE)/LUCRECIA GUTIERREZ/LAURA LESCANO/",
+      "tutorPrincipal": "CAMILA FERNANDEZ (MADRE)",
+      "tutorNombre": "CAMILA FERNANDEZ (MADRE)",
+      "tutor": "CAMILA FERNANDEZ (MADRE)",
+      "tutorResponsable": "CAMILA FERNANDEZ (MADRE)"
+    },
+    {
+      "id": "ALU_2CRLJK",
+      "nombre": "SOFIA WONG LOPEZ AGUADO",
+      "nombreAlumno": "SOFIA WONG LOPEZ AGUADO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_BZSQK1",
+      "personaExtra": "EMMANUEL WONG CARREÑO (PADRE)/FERNANDO LOPEZ AGUADO/SAMANTHA MORA RODRIGUEZ/",
+      "tutorPrincipal": "DIANA KARINA LOPEZ AGUADO RODRIGUEZ (MADRE)",
+      "tutorNombre": "DIANA KARINA LOPEZ AGUADO RODRIGUEZ (MADRE)",
+      "tutor": "DIANA KARINA LOPEZ AGUADO RODRIGUEZ (MADRE)",
+      "tutorResponsable": "DIANA KARINA LOPEZ AGUADO RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_GA1SUN",
+      "nombre": "URIEL GONZALEZ ABELAR",
+      "nombreAlumno": "URIEL GONZALEZ ABELAR",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_E33WA4",
+      "personaExtra": "JOSE LUIS GONZALEZ GOMEZ (PADRE)/SILVIA SALGADO SALAZAR",
+      "tutorPrincipal": "EDNA SYLVIA ABELAR (MADRE)",
+      "tutorNombre": "EDNA SYLVIA ABELAR (MADRE)",
+      "tutor": "EDNA SYLVIA ABELAR (MADRE)",
+      "tutorResponsable": "EDNA SYLVIA ABELAR (MADRE)"
+    },
+    {
+      "id": "ALU_Z38Y7M",
+      "nombre": "BENEDETTA BRAVO ARELLANO",
+      "nombreAlumno": "BENEDETTA BRAVO ARELLANO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_WJ2WL8",
+      "personaExtra": "ALFREDO JONATHAN BRAVO ARELLANO (PADRE)/FEDERICA PARLANI/ALFREDO JONATHAN BRAVO/",
+      "tutorPrincipal": "FEDERICA PARLANI (MADRE)",
+      "tutorNombre": "FEDERICA PARLANI (MADRE)",
+      "tutor": "FEDERICA PARLANI (MADRE)",
+      "tutorResponsable": "FEDERICA PARLANI (MADRE)"
+    },
+    {
+      "id": "ALU_UMV5BQ",
+      "nombre": "JONATHAN ARIEL HEREDIA CRUCES",
+      "nombreAlumno": "JONATHAN ARIEL HEREDIA CRUCES",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_25EOYO",
+      "personaExtra": "HUMBERTO HEREDIA HERNANDEZ (PADRE)/LUZ MARIA VAZQUEZ",
+      "tutorPrincipal": "MA. BEATRIZ CRUCES VAZQUEZ (MADRE)",
+      "tutorNombre": "MA. BEATRIZ CRUCES VAZQUEZ (MADRE)",
+      "tutor": "MA. BEATRIZ CRUCES VAZQUEZ (MADRE)",
+      "tutorResponsable": "MA. BEATRIZ CRUCES VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_VCTIXJ",
+      "nombre": "HECTOR CORBELLA ROMERO",
+      "nombreAlumno": "HECTOR CORBELLA ROMERO",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_IHERIK",
+      "personaExtra": "WAYNE BEWICK (PAREJA DE MAMA) (PADRE)/LAURA RIOS",
+      "tutorPrincipal": "MA. DE JESUS ROMERO HEREDIA (MADRE)",
+      "tutorNombre": "MA. DE JESUS ROMERO HEREDIA (MADRE)",
+      "tutor": "MA. DE JESUS ROMERO HEREDIA (MADRE)",
+      "tutorResponsable": "MA. DE JESUS ROMERO HEREDIA (MADRE)"
+    },
+    {
+      "id": "ALU_38K22R",
+      "nombre": "PAMELA MARTIN HUERTA",
+      "nombreAlumno": "PAMELA MARTIN HUERTA",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_AMPON1",
+      "personaExtra": "GUILLERMO MARTIN SIERRA (PADRE)/FRANCO MARTIN HUERTA",
+      "tutorPrincipal": "MARIA MAYELA HUERTA GONZALEZ (MADRE)",
+      "tutorNombre": "MARIA MAYELA HUERTA GONZALEZ (MADRE)",
+      "tutor": "MARIA MAYELA HUERTA GONZALEZ (MADRE)",
+      "tutorResponsable": "MARIA MAYELA HUERTA GONZALEZ (MADRE)"
+    },
+    {
+      "id": "ALU_B3J2D3",
+      "nombre": "MILA CASTILLO MICHAUS",
+      "nombreAlumno": "MILA CASTILLO MICHAUS",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_KYZRYB",
+      "personaExtra": "-",
+      "tutorPrincipal": "MELISSA MICHAUS VILLALOBOS (MADRE)",
+      "tutorNombre": "MELISSA MICHAUS VILLALOBOS (MADRE)",
+      "tutor": "MELISSA MICHAUS VILLALOBOS (MADRE)",
+      "tutorResponsable": "MELISSA MICHAUS VILLALOBOS (MADRE)"
+    },
+    {
+      "id": "ALU_3T3K2D",
+      "nombre": "SHAHEEN BEY ALEXANDER",
+      "nombreAlumno": "SHAHEEN BEY ALEXANDER",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_10KF82",
+      "personaExtra": "SADRUDDIN ROBERT BEY ALEXANDER (PADRE)/CARMEN ALICIA LEMUS SALAS",
+      "tutorPrincipal": "MITZI ALETHIA TORRES LEMUS (MADRE)",
+      "tutorNombre": "MITZI ALETHIA TORRES LEMUS (MADRE)",
+      "tutor": "MITZI ALETHIA TORRES LEMUS (MADRE)",
+      "tutorResponsable": "MITZI ALETHIA TORRES LEMUS (MADRE)"
+    },
+    {
+      "id": "ALU_RJ5H0H",
+      "nombre": "MARCELO VALADEZ TORRES",
+      "nombreAlumno": "MARCELO VALADEZ TORRES",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_T8SQVC",
+      "personaExtra": "ENRIQUE VALADEZ GONZALEZ (PADRE)",
+      "tutorPrincipal": "NAYELI ESMERALDA TORRES VAZQUEZ (MADRE)",
+      "tutorNombre": "NAYELI ESMERALDA TORRES VAZQUEZ (MADRE)",
+      "tutor": "NAYELI ESMERALDA TORRES VAZQUEZ (MADRE)",
+      "tutorResponsable": "NAYELI ESMERALDA TORRES VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_6MB2UL",
+      "nombre": "ILAI GASSON SALOMON",
+      "nombreAlumno": "ILAI GASSON SALOMON",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_EEJR26",
+      "personaExtra": "JESUS ALFONSO GASSON SALAS (PADRE)/PALOMA SERNA (MAMA EKBE)/ARTURO RODRIGUEZ (PAPA EKBE)/ADELA ENESTROSA",
+      "tutorPrincipal": "SAMANTHA SALOMON RODRIGUEZ (MADRE)",
+      "tutorNombre": "SAMANTHA SALOMON RODRIGUEZ (MADRE)",
+      "tutor": "SAMANTHA SALOMON RODRIGUEZ (MADRE)",
+      "tutorResponsable": "SAMANTHA SALOMON RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "ALU_OYT439",
+      "nombre": "ANDRICK KALANI GONZALEZ VILLALOBOS",
+      "nombreAlumno": "ANDRICK KALANI GONZALEZ VILLALOBOS",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_ZVI4KI",
+      "personaExtra": "SERGIO LUIS GONZALEZ JARAMILLO (PADRE)/MARTHA RUBIALES JARAMILLO/MA. DE LOURDES RIVERA MELO/",
+      "tutorPrincipal": "TANIA VILLALOBOS RIVERA MELO (MADRE)",
+      "tutorNombre": "TANIA VILLALOBOS RIVERA MELO (MADRE)",
+      "tutor": "TANIA VILLALOBOS RIVERA MELO (MADRE)",
+      "tutorResponsable": "TANIA VILLALOBOS RIVERA MELO (MADRE)"
+    },
+    {
+      "id": "ALU_OD6QIG",
+      "nombre": "LIAM RENE PEREZ FINCKEN",
+      "nombreAlumno": "LIAM RENE PEREZ FINCKEN",
+      "nivel": "PRIMARIA",
+      "grado": "4",
+      "grupo": "A",
+      "tutorId": "FAM_LGH4BE",
+      "personaExtra": "ERICK PEREZ CASTILLO (PADRE)/ALBERTO ULISES PEREZ/ TERESA CASTILLO/MARIA LEEWEN/ CHARON FINCKEN/HEINZ WILHEM GUSTAV LEEWEN",
+      "tutorPrincipal": "VERONIQUE ELISABETH JOANNES FINCKEN (MADRE)",
+      "tutorNombre": "VERONIQUE ELISABETH JOANNES FINCKEN (MADRE)",
+      "tutor": "VERONIQUE ELISABETH JOANNES FINCKEN (MADRE)",
+      "tutorResponsable": "VERONIQUE ELISABETH JOANNES FINCKEN (MADRE)"
+    },
+    {
+      "id": "ALU_FUTEZ6",
+      "nombre": "MATIAS NUÑEZ ROSAS",
+      "nombreAlumno": "MATIAS NUÑEZ ROSAS",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_4PJ685",
+      "personaExtra": "ULISES AZAEL NUÑEZ SOSA (PADRE)/MANUEL JESUS RUIZ/GASPAR HUMBERTO RUIZ/JUAN PABLO SUAREZ GARCIA",
+      "tutorPrincipal": "ADRIANA ROSAS MORALES (MADRE)",
+      "tutorNombre": "ADRIANA ROSAS MORALES (MADRE)",
+      "tutor": "ADRIANA ROSAS MORALES (MADRE)",
+      "tutorResponsable": "ADRIANA ROSAS MORALES (MADRE)"
+    },
+    {
+      "id": "ALU_4JS9S2",
+      "nombre": "RENATA GABRIELA TALAVERA RUZ",
+      "nombreAlumno": "RENATA GABRIELA TALAVERA RUZ",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_JAV3O6",
+      "personaExtra": "ERNESTO ARIEL TALAVERA GALARZA (PADRE)",
+      "tutorPrincipal": "ALEJANDRA RUZ (MADRE)",
+      "tutorNombre": "ALEJANDRA RUZ (MADRE)",
+      "tutor": "ALEJANDRA RUZ (MADRE)",
+      "tutorResponsable": "ALEJANDRA RUZ (MADRE)"
+    },
+    {
+      "id": "ALU_C04776",
+      "nombre": "ROBERTO GIAMPICCOLO TRINIDAD",
+      "nombreAlumno": "ROBERTO GIAMPICCOLO TRINIDAD",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_Q71FVT",
+      "personaExtra": "ROBERTO GIAMPICCOLO (PADRE)/ANTONIO TRINIDAD VIDAÑA (ESPORADICO)",
+      "tutorPrincipal": "ALINA TRINIDAD VIDAÑA (MADRE)",
+      "tutorNombre": "ALINA TRINIDAD VIDAÑA (MADRE)",
+      "tutor": "ALINA TRINIDAD VIDAÑA (MADRE)",
+      "tutorResponsable": "ALINA TRINIDAD VIDAÑA (MADRE)"
+    },
+    {
+      "id": "ALU_ODN3W7",
+      "nombre": "RENATA GABRIELA CACERES BARRON",
+      "nombreAlumno": "RENATA GABRIELA CACERES BARRON",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_VTWXFC",
+      "personaExtra": "GABRIEL ALEJANDRO CACERES (PADRE)/INGRID REPETTO (MAMA EKBE)/ERIKA RUIZ PEREZ/",
+      "tutorPrincipal": "ESMERALDA BARRON PEREZ (MADRE)",
+      "tutorNombre": "ESMERALDA BARRON PEREZ (MADRE)",
+      "tutor": "ESMERALDA BARRON PEREZ (MADRE)",
+      "tutorResponsable": "ESMERALDA BARRON PEREZ (MADRE)"
+    },
+    {
+      "id": "ALU_UKZCCH",
+      "nombre": "YASMIN IAMIN KOBUS TROMBETTI",
+      "nombreAlumno": "YASMIN IAMIN KOBUS TROMBETTI",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_H3X2CJ",
+      "personaExtra": "MARCUS VINICIUS TROMBETTI (PADRE)/THAIS ALISS",
+      "tutorPrincipal": "ILSE KOBUS (MADRE)",
+      "tutorNombre": "ILSE KOBUS (MADRE)",
+      "tutor": "ILSE KOBUS (MADRE)",
+      "tutorResponsable": "ILSE KOBUS (MADRE)"
+    },
+    {
+      "id": "ALU_DCWW9W",
+      "nombre": "THIAGO GARNICA TONON",
+      "nombreAlumno": "THIAGO GARNICA TONON",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_1O335U",
+      "personaExtra": "JAIRO JORGE GARNICA FRANCO (PADRE)",
+      "tutorPrincipal": "JULIETA TONON MARINI (MADRE)",
+      "tutorNombre": "JULIETA TONON MARINI (MADRE)",
+      "tutor": "JULIETA TONON MARINI (MADRE)",
+      "tutorResponsable": "JULIETA TONON MARINI (MADRE)"
+    },
+    {
+      "id": "ALU_3DA488",
+      "nombre": "ELENA SOFIA ANGULO JUAREZ",
+      "nombreAlumno": "ELENA SOFIA ANGULO JUAREZ",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_YTC5D6",
+      "personaExtra": "JESUS GUSTAVO ANGULO VAZQUEZ (PADRE)/AURORA JUAREZ BARRAGAN/ROSA BARRAGAN MERAZ/",
+      "tutorPrincipal": "LILI JUAREZ BARRAGAN (MADRE)",
+      "tutorNombre": "LILI JUAREZ BARRAGAN (MADRE)",
+      "tutor": "LILI JUAREZ BARRAGAN (MADRE)",
+      "tutorResponsable": "LILI JUAREZ BARRAGAN (MADRE)"
+    },
+    {
+      "id": "ALU_TSJH7A",
+      "nombre": "SANTIAGO MARTIN LEON SERRANO",
+      "nombreAlumno": "SANTIAGO MARTIN LEON SERRANO",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_YKSECY",
+      "personaExtra": "PABLO MARTIN SERRANO (PADRE)",
+      "tutorPrincipal": "MA. VIRGINIA DEL VALLE ESPECHE (MADRE)",
+      "tutorNombre": "MA. VIRGINIA DEL VALLE ESPECHE (MADRE)",
+      "tutor": "MA. VIRGINIA DEL VALLE ESPECHE (MADRE)",
+      "tutorResponsable": "MA. VIRGINIA DEL VALLE ESPECHE (MADRE)"
+    },
+    {
+      "id": "ALU_I9LXF0",
+      "nombre": "EMILY MARLENE JUAREZ CHIRINOS",
+      "nombreAlumno": "EMILY MARLENE JUAREZ CHIRINOS",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_JC0I4B",
+      "personaExtra": "JOSE ISRALE JUAREZ MUÑIZ (PADRE)/NATIVIDAD MUÑIZ/SANDRA JUAREZ/TERESA BARRAN",
+      "tutorPrincipal": "MARLENE CHIRINOS BARRAN (MADRE)",
+      "tutorNombre": "MARLENE CHIRINOS BARRAN (MADRE)",
+      "tutor": "MARLENE CHIRINOS BARRAN (MADRE)",
+      "tutorResponsable": "MARLENE CHIRINOS BARRAN (MADRE)"
+    },
+    {
+      "id": "ALU_BIDPBL",
+      "nombre": "MATTEO OCAMPO ESTRADA",
+      "nombreAlumno": "MATTEO OCAMPO ESTRADA",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_V22227",
+      "personaExtra": "LUIS FERNANDO OCAMPO (PADRE)",
+      "tutorPrincipal": "MARTHA JESSICA ESTRADA RAMIREZ (MADRE)",
+      "tutorNombre": "MARTHA JESSICA ESTRADA RAMIREZ (MADRE)",
+      "tutor": "MARTHA JESSICA ESTRADA RAMIREZ (MADRE)",
+      "tutorResponsable": "MARTHA JESSICA ESTRADA RAMIREZ (MADRE)"
+    },
+    {
+      "id": "ALU_RMHJHD",
+      "nombre": "JOSAFATH VAZQUEZ VALENCIA",
+      "nombreAlumno": "JOSAFATH VAZQUEZ VALENCIA",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_ISSYIE",
+      "personaExtra": "JOSE DANIEL VAZQUEZ (PADRE)",
+      "tutorPrincipal": "EILEEN VALENCIA NUÑEZ (MADRE)",
+      "tutorNombre": "EILEEN VALENCIA NUÑEZ (MADRE)",
+      "tutor": "EILEEN VALENCIA NUÑEZ (MADRE)",
+      "tutorResponsable": "EILEEN VALENCIA NUÑEZ (MADRE)"
+    },
+    {
+      "id": "ALU_BEX1NX",
+      "nombre": "BROOKLYN JULES JOSHUA THOMAS",
+      "nombreAlumno": "BROOKLYN JULES JOSHUA THOMAS",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_J3QZ22",
+      "personaExtra": "-/WENDY CLARKE/GINA CLARKE/RAPHAEL MASSE",
+      "tutorPrincipal": "KIESHA DIXON (MADRE)",
+      "tutorNombre": "KIESHA DIXON (MADRE)",
+      "tutor": "KIESHA DIXON (MADRE)",
+      "tutorResponsable": "KIESHA DIXON (MADRE)"
+    },
+    {
+      "id": "ALU_XDDHPH",
+      "nombre": "BARBARA ZARZOSA CONTRERAS",
+      "nombreAlumno": "BARBARA ZARZOSA CONTRERAS",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_MXM0B7",
+      "personaExtra": "LUIS ALFONSO ZARZOSA MENDOZA (PADRE)/ASTRID MARIA DE LOUERDES AMEZCUA",
+      "tutorPrincipal": "MIROSLAVA DEL PILAR CONTRERAS AMEZCUA (MADRE)",
+      "tutorNombre": "MIROSLAVA DEL PILAR CONTRERAS AMEZCUA (MADRE)",
+      "tutor": "MIROSLAVA DEL PILAR CONTRERAS AMEZCUA (MADRE)",
+      "tutorResponsable": "MIROSLAVA DEL PILAR CONTRERAS AMEZCUA (MADRE)"
+    },
+    {
+      "id": "ALU_Y6KM7A",
+      "nombre": "ANGEL SANTIAGO TEC PERERA",
+      "nombreAlumno": "ANGEL SANTIAGO TEC PERERA",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_HXQPHY",
+      "personaExtra": "GABRIEL ARTURO TEC CHI (PADRE)/GENNY LORENA PERERA/ANTONIO DE JESUS TEC PERERA/JORGE EFRAIN TEC CHI",
+      "tutorPrincipal": "NACIRA ROXANA PERERA UCAN (MADRE)",
+      "tutorNombre": "NACIRA ROXANA PERERA UCAN (MADRE)",
+      "tutor": "NACIRA ROXANA PERERA UCAN (MADRE)",
+      "tutorResponsable": "NACIRA ROXANA PERERA UCAN (MADRE)"
+    },
+    {
+      "id": "ALU_PFXKZD",
+      "nombre": "DHARA MARTELLI FLORES",
+      "nombreAlumno": "DHARA MARTELLI FLORES",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_YSKV87",
+      "personaExtra": "PAOLO MARTELLI (PADRE)",
+      "tutorPrincipal": "NIDIA FLORES CUEVAS (MADRE)",
+      "tutorNombre": "NIDIA FLORES CUEVAS (MADRE)",
+      "tutor": "NIDIA FLORES CUEVAS (MADRE)",
+      "tutorResponsable": "NIDIA FLORES CUEVAS (MADRE)"
+    },
+    {
+      "id": "ALU_YUZ47Q",
+      "nombre": "BAIA NORA SUZANNE MIA TOUIMER",
+      "nombreAlumno": "BAIA NORA SUZANNE MIA TOUIMER",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_O2OCFD",
+      "personaExtra": "SEIF TOUIMER (PADRE)/ADRIEN BERTHELOT/ISIS BERTHELOT/LOLITA VIVALDI",
+      "tutorPrincipal": "SOPHIE SCHLESSER (MADRE)",
+      "tutorNombre": "SOPHIE SCHLESSER (MADRE)",
+      "tutor": "SOPHIE SCHLESSER (MADRE)",
+      "tutorResponsable": "SOPHIE SCHLESSER (MADRE)"
+    },
+    {
+      "id": "ALU_TVCI6O",
+      "nombre": "MILAN LOAIZA ROSTAS",
+      "nombreAlumno": "MILAN LOAIZA ROSTAS",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_Q6MC8H",
+      "personaExtra": "MIGUEL ANGEL LOAIZA SALAS (PADRE)",
+      "tutorPrincipal": "SZILVIA ROSTAS (MADRE)",
+      "tutorNombre": "SZILVIA ROSTAS (MADRE)",
+      "tutor": "SZILVIA ROSTAS (MADRE)",
+      "tutorResponsable": "SZILVIA ROSTAS (MADRE)"
+    },
+    {
+      "id": "ALU_OA4KB4",
+      "nombre": "MARKUS ROMAN VOROZHKO",
+      "nombreAlumno": "MARKUS ROMAN VOROZHKO",
+      "nivel": "PRIMARIA",
+      "grado": "5",
+      "grupo": "A",
+      "tutorId": "FAM_NAPTXP",
+      "personaExtra": "DIEGO ROMAN (PADRE)",
+      "tutorPrincipal": "YULIIA VOROZHKO (MADRE)",
+      "tutorNombre": "YULIIA VOROZHKO (MADRE)",
+      "tutor": "YULIIA VOROZHKO (MADRE)",
+      "tutorResponsable": "YULIIA VOROZHKO (MADRE)"
+    },
+    {
+      "id": "ALU_02HCXI",
+      "nombre": "ADRIAN MEDINA GUZMAN",
+      "nombreAlumno": "ADRIAN MEDINA GUZMAN",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_6QL2TO",
+      "personaExtra": "JOSE ISMAEL MEDINA (PADRE)",
+      "tutorPrincipal": "BEATRIZ ADRIANA GUZMAN (MADRE)",
+      "tutorNombre": "BEATRIZ ADRIANA GUZMAN (MADRE)",
+      "tutor": "BEATRIZ ADRIANA GUZMAN (MADRE)",
+      "tutorResponsable": "BEATRIZ ADRIANA GUZMAN (MADRE)"
+    },
+    {
+      "id": "ALU_MLX5DY",
+      "nombre": "CAMILA SOFIA NAVARRO EUDAVE",
+      "nombreAlumno": "CAMILA SOFIA NAVARRO EUDAVE",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_WR82V0",
+      "personaExtra": "JOSE EDUARDO NAVARRO NIETO (PADRE)",
+      "tutorPrincipal": "CAMILA GUADALUPE EUDAVE DELGADO (MADRE)",
+      "tutorNombre": "CAMILA GUADALUPE EUDAVE DELGADO (MADRE)",
+      "tutor": "CAMILA GUADALUPE EUDAVE DELGADO (MADRE)",
+      "tutorResponsable": "CAMILA GUADALUPE EUDAVE DELGADO (MADRE)"
+    },
+    {
+      "id": "ALU_P79ANL",
+      "nombre": "ANDREA MACEDO MIAJA",
+      "nombreAlumno": "ANDREA MACEDO MIAJA",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_EM9KP1",
+      "personaExtra": "ANDRES MACEDO SUAREZ DEL REAL (PADRE)/JUAN CARLOS LIMON",
+      "tutorPrincipal": "CLAUDIA PAOLA MIAJA FALCON (MADRE)",
+      "tutorNombre": "CLAUDIA PAOLA MIAJA FALCON (MADRE)",
+      "tutor": "CLAUDIA PAOLA MIAJA FALCON (MADRE)",
+      "tutorResponsable": "CLAUDIA PAOLA MIAJA FALCON (MADRE)"
+    },
+    {
+      "id": "ALU_PYGQ38",
+      "nombre": "MATTEO RUGERIO MARTINEZ",
+      "nombreAlumno": "MATTEO RUGERIO MARTINEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_RHRQ6Y",
+      "personaExtra": "MARCO ANTONIO RUGERIO GONZALEZ (PADRE)/FERNANDO RUGEIRO/ MARIA LUISA GONZALEZ/BLANCA HUERTA/LUIS RUGEIRO",
+      "tutorPrincipal": "ELIDE MARTINEZ HUERTA (MADRE)",
+      "tutorNombre": "ELIDE MARTINEZ HUERTA (MADRE)",
+      "tutor": "ELIDE MARTINEZ HUERTA (MADRE)",
+      "tutorResponsable": "ELIDE MARTINEZ HUERTA (MADRE)"
+    },
+    {
+      "id": "ALU_CW9R5G",
+      "nombre": "MATIAS ANTALFRED PALETTA ZARATE",
+      "nombreAlumno": "MATIAS ANTALFRED PALETTA ZARATE",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_GA70GQ",
+      "personaExtra": "MANUEL PALETTA (PADRE)/VINCENZO PALETTA (ABUELO)/CHRISTIAN TIVIOLI (TIO)/",
+      "tutorPrincipal": "EUFRACIA ZARATE (MADRE)",
+      "tutorNombre": "EUFRACIA ZARATE (MADRE)",
+      "tutor": "EUFRACIA ZARATE (MADRE)",
+      "tutorResponsable": "EUFRACIA ZARATE (MADRE)"
+    },
+    {
+      "id": "ALU_AN3ZUT",
+      "nombre": "ANGELO DURANTE BORRELLI",
+      "nombreAlumno": "ANGELO DURANTE BORRELLI",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_BJQZ7H",
+      "personaExtra": "STEFANO DURANTE (PADRE)/LOURDES CASTAÑEDA/ITALIA GARZA/CECILIA ROMAN",
+      "tutorPrincipal": "FRANCA ALEJANDRA BORELLI (MADRE)",
+      "tutorNombre": "FRANCA ALEJANDRA BORELLI (MADRE)",
+      "tutor": "FRANCA ALEJANDRA BORELLI (MADRE)",
+      "tutorResponsable": "FRANCA ALEJANDRA BORELLI (MADRE)"
+    },
+    {
+      "id": "ALU_TLISS9",
+      "nombre": "ANTAL QUIÑONES NARVAEZ",
+      "nombreAlumno": "ANTAL QUIÑONES NARVAEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_ZS2MSL",
+      "personaExtra": "JUAN FRANCISCO QUIÑONES SUAREZ (PADRE)/LOURDES SUAREZ (ABUELA)/CARMEN LOMELI/",
+      "tutorPrincipal": "GABRIELA ADRIANA NARVAEZ RANGEL (MADRE)",
+      "tutorNombre": "GABRIELA ADRIANA NARVAEZ RANGEL (MADRE)",
+      "tutor": "GABRIELA ADRIANA NARVAEZ RANGEL (MADRE)",
+      "tutorResponsable": "GABRIELA ADRIANA NARVAEZ RANGEL (MADRE)"
+    },
+    {
+      "id": "ALU_6SDGFM",
+      "nombre": "THIAGO ANDRE GARZA ACOSTA",
+      "nombreAlumno": "THIAGO ANDRE GARZA ACOSTA",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_REYAFY",
+      "personaExtra": "IVAN GARZA CASTILLO (PADRE)/NELLY VARGAS/LAURO CARRILLO/FRANCA BORELLI",
+      "tutorPrincipal": "ITALIA CAROLINA ACOSTA CHAIREZ (MADRE)",
+      "tutorNombre": "ITALIA CAROLINA ACOSTA CHAIREZ (MADRE)",
+      "tutor": "ITALIA CAROLINA ACOSTA CHAIREZ (MADRE)",
+      "tutorResponsable": "ITALIA CAROLINA ACOSTA CHAIREZ (MADRE)"
+    },
+    {
+      "id": "ALU_YJJZDI",
+      "nombre": "LEON DE LA TORRE BLUMENKRON",
+      "nombreAlumno": "LEON DE LA TORRE BLUMENKRON",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_WOV2OB",
+      "personaExtra": "SERGIO DE LA TORRE LARIOS (PADRE)/SILVIA SUAREZ (ABUELA)/SARA SOLORZANO (TIA)/",
+      "tutorPrincipal": "JESSICA BLUMENKRON SUAREZ (MADRE)",
+      "tutorNombre": "JESSICA BLUMENKRON SUAREZ (MADRE)",
+      "tutor": "JESSICA BLUMENKRON SUAREZ (MADRE)",
+      "tutorResponsable": "JESSICA BLUMENKRON SUAREZ (MADRE)"
+    },
+    {
+      "id": "ALU_AEX4OF",
+      "nombre": "DEMIAN BRITO CORTES",
+      "nombreAlumno": "DEMIAN BRITO CORTES",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_IHUX88",
+      "personaExtra": "MARCOS BRITO ALVARADO (PADRE)",
+      "tutorPrincipal": "ALDE SELENE CORTES VARGAS (MADRE)",
+      "tutorNombre": "ALDE SELENE CORTES VARGAS (MADRE)",
+      "tutor": "ALDE SELENE CORTES VARGAS (MADRE)",
+      "tutorResponsable": "ALDE SELENE CORTES VARGAS (MADRE)"
+    },
+    {
+      "id": "ALU_ND385F",
+      "nombre": "CAMILA BACHA CARBAJAL",
+      "nombreAlumno": "CAMILA BACHA CARBAJAL",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_E5MWVV",
+      "personaExtra": "GUILHEM BACHA (PADRE)/LUIS CARBAJAL",
+      "tutorPrincipal": "BRENDA CARBAJAL SALAZAR (MADRE)",
+      "tutorNombre": "BRENDA CARBAJAL SALAZAR (MADRE)",
+      "tutor": "BRENDA CARBAJAL SALAZAR (MADRE)",
+      "tutorResponsable": "BRENDA CARBAJAL SALAZAR (MADRE)"
+    },
+    {
+      "id": "ALU_R9KGVH",
+      "nombre": "AVRIL VILLAGRAN MENDEZ",
+      "nombreAlumno": "AVRIL VILLAGRAN MENDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_38V7LE",
+      "personaExtra": "ARTURO RAFAEL VILLAGRAN PEREZ (PADRE)",
+      "tutorPrincipal": "CLAUDIA CATALINA MENDEZ CHONTAL (MADRE)",
+      "tutorNombre": "CLAUDIA CATALINA MENDEZ CHONTAL (MADRE)",
+      "tutor": "CLAUDIA CATALINA MENDEZ CHONTAL (MADRE)",
+      "tutorResponsable": "CLAUDIA CATALINA MENDEZ CHONTAL (MADRE)"
+    },
+    {
+      "id": "ALU_ONUK2X",
+      "nombre": "FREYJA REBEKA HERNANDEZ REYES",
+      "nombreAlumno": "FREYJA REBEKA HERNANDEZ REYES",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_06J7BG",
+      "personaExtra": "MARCO ANTONIO HERNANDEZ FLORES (PADRE)/REBECCA LEON DIAZ/MARIA DE LOS ANGELES FLORES/MA. GUADALUPE MARTINEZ REYES",
+      "tutorPrincipal": "ERIKA LILIANA REYES LEON (MADRE)",
+      "tutorNombre": "ERIKA LILIANA REYES LEON (MADRE)",
+      "tutor": "ERIKA LILIANA REYES LEON (MADRE)",
+      "tutorResponsable": "ERIKA LILIANA REYES LEON (MADRE)"
+    },
+    {
+      "id": "ALU_2GPCL4",
+      "nombre": "MILA SOFIA MARTINEZ TRENADO",
+      "nombreAlumno": "MILA SOFIA MARTINEZ TRENADO",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_48CMFL",
+      "personaExtra": "-/TODD J COMB/CAMILA YAMILE YAÑEZ/",
+      "tutorPrincipal": "MARIA DEL CARMEN TRENADO YAÑEZ (MADRE)",
+      "tutorNombre": "MARIA DEL CARMEN TRENADO YAÑEZ (MADRE)",
+      "tutor": "MARIA DEL CARMEN TRENADO YAÑEZ (MADRE)",
+      "tutorResponsable": "MARIA DEL CARMEN TRENADO YAÑEZ (MADRE)"
+    },
+    {
+      "id": "ALU_V5CO1T",
+      "nombre": "DRAVEN ALEXANDER VALERO FERNANDEZ",
+      "nombreAlumno": "DRAVEN ALEXANDER VALERO FERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_HOMF24",
+      "personaExtra": "-/ILEANA ZENDEJAS SANCHEZ/TANIA RAMIREZ/AMADEO FERNANDEZ",
+      "tutorPrincipal": "MONICA ITZEL FERNANDEZ SANTIAGO (MADRE)",
+      "tutorNombre": "MONICA ITZEL FERNANDEZ SANTIAGO (MADRE)",
+      "tutor": "MONICA ITZEL FERNANDEZ SANTIAGO (MADRE)",
+      "tutorResponsable": "MONICA ITZEL FERNANDEZ SANTIAGO (MADRE)"
+    },
+    {
+      "id": "ALU_ECXTRT",
+      "nombre": "PAULA PADRON GOMEZ",
+      "nombreAlumno": "PAULA PADRON GOMEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_11D3JO",
+      "personaExtra": "FERNANDO PADRON MORALES (PADRE)/SHANTAL ELIAS GONZALEZ/ALEJANDRO PADRON MORALES/",
+      "tutorPrincipal": "MONICA NAVHIL GOMEZ ROBLEDO (MADRE)",
+      "tutorNombre": "MONICA NAVHIL GOMEZ ROBLEDO (MADRE)",
+      "tutor": "MONICA NAVHIL GOMEZ ROBLEDO (MADRE)",
+      "tutorResponsable": "MONICA NAVHIL GOMEZ ROBLEDO (MADRE)"
+    },
+    {
+      "id": "ALU_7SMTYU",
+      "nombre": "LANDER FERNANDO CARRILLO VARGAS",
+      "nombreAlumno": "LANDER FERNANDO CARRILLO VARGAS",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_LLQI8E",
+      "personaExtra": "LAURO FERNANDO CARRILLO AGUILAR (PADRE)/ITALIA GARZA/IVAN GARZA/ALEXANDRA CHORA",
+      "tutorPrincipal": "NELLY YADIRA VARGAS TORRES (MADRE)",
+      "tutorNombre": "NELLY YADIRA VARGAS TORRES (MADRE)",
+      "tutor": "NELLY YADIRA VARGAS TORRES (MADRE)",
+      "tutorResponsable": "NELLY YADIRA VARGAS TORRES (MADRE)"
+    },
+    {
+      "id": "ALU_NYMH78",
+      "nombre": "SEBASTIAN REBORA BASURTO",
+      "nombreAlumno": "SEBASTIAN REBORA BASURTO",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_Z40LPT",
+      "personaExtra": "STEPHAN ENRIQUE REBORA BRET (PADRE)",
+      "tutorPrincipal": "PAOLA BASURTO BASURTO (MADRE)",
+      "tutorNombre": "PAOLA BASURTO BASURTO (MADRE)",
+      "tutor": "PAOLA BASURTO BASURTO (MADRE)",
+      "tutorResponsable": "PAOLA BASURTO BASURTO (MADRE)"
+    },
+    {
+      "id": "ALU_O9QG3M",
+      "nombre": "ZIANYA POLIN KURI",
+      "nombreAlumno": "ZIANYA POLIN KURI",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_POUG1V",
+      "personaExtra": "-/JUAN CARLOS POLIN KURI/GUADALUPE LOPEZ ROJAN/CAMILA POLIN LOPEZ",
+      "tutorPrincipal": "PAOLA ILIANA POLIN KURI (MADRE)",
+      "tutorNombre": "PAOLA ILIANA POLIN KURI (MADRE)",
+      "tutor": "PAOLA ILIANA POLIN KURI (MADRE)",
+      "tutorResponsable": "PAOLA ILIANA POLIN KURI (MADRE)"
+    },
+    {
+      "id": "ALU_JII3TD",
+      "nombre": "DANA JULIETA CHIÑAS CASTILLO",
+      "nombreAlumno": "DANA JULIETA CHIÑAS CASTILLO",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_LQHWAR",
+      "personaExtra": "JOSE ABEL CHIÑAS LOPEZ (PADRE)/ARACELI CHIÑAS LOPEZ/YAJAHIRA CHIÑAS LOPEZ/ABIGAIL ESCANDON",
+      "tutorPrincipal": "RITA CASTILLO DAVILA (MADRE)",
+      "tutorNombre": "RITA CASTILLO DAVILA (MADRE)",
+      "tutor": "RITA CASTILLO DAVILA (MADRE)",
+      "tutorResponsable": "RITA CASTILLO DAVILA (MADRE)"
+    },
+    {
+      "id": "ALU_PI1Z3W",
+      "nombre": "MILA GONZALEZ CISNEROS",
+      "nombreAlumno": "MILA GONZALEZ CISNEROS",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_XYJ1ZC",
+      "personaExtra": "MARCOS GONZALEZ RODRIGUEZ (PADRE)/ROLANDO AQUINO MATIAS (BISABUELO)",
+      "tutorPrincipal": "SANDRA ALICIA CISNEROS AQUINO (MADRE)",
+      "tutorNombre": "SANDRA ALICIA CISNEROS AQUINO (MADRE)",
+      "tutor": "SANDRA ALICIA CISNEROS AQUINO (MADRE)",
+      "tutorResponsable": "SANDRA ALICIA CISNEROS AQUINO (MADRE)"
+    },
+    {
+      "id": "ALU_FLW3A2",
+      "nombre": "MARIANA CAMACHO BENITEZ",
+      "nombreAlumno": "MARIANA CAMACHO BENITEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_EIAE9S",
+      "personaExtra": "FERNANDO PEDRO CAMACHO GARCIA (PADRE)/MA. GUADALUPE GARCIA/GERALDINE BARRE/",
+      "tutorPrincipal": "SANDRA BENITEZ VARGAS (MADRE)",
+      "tutorNombre": "SANDRA BENITEZ VARGAS (MADRE)",
+      "tutor": "SANDRA BENITEZ VARGAS (MADRE)",
+      "tutorResponsable": "SANDRA BENITEZ VARGAS (MADRE)"
+    },
+    {
+      "id": "ALU_IBOBSC",
+      "nombre": "ALEXIS EMILIO HERNANDEZ ABUD",
+      "nombreAlumno": "ALEXIS EMILIO HERNANDEZ ABUD",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_GM0FTX",
+      "personaExtra": "EDGAR ALEXIS HERNANDEZ AGUILAR (PADRE)/EMILIO ABUD SORIANO (ABUELO)/ELSA GONZALEZ RIOS (ABUELA)/ARTURO VILLAGRAN PEREZ",
+      "tutorPrincipal": "SARAHI DENISSE ABUD GONZALEZ (MADRE)",
+      "tutorNombre": "SARAHI DENISSE ABUD GONZALEZ (MADRE)",
+      "tutor": "SARAHI DENISSE ABUD GONZALEZ (MADRE)",
+      "tutorResponsable": "SARAHI DENISSE ABUD GONZALEZ (MADRE)"
+    },
+    {
+      "id": "ALU_SCS28Q",
+      "nombre": "FRIDA SIMONE REYES CORDOVA",
+      "nombreAlumno": "FRIDA SIMONE REYES CORDOVA",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_YXJHSK",
+      "personaExtra": "ALEJANDRO REYES ROSAS (PADRE)/JESIE GAEL CORDOVA RUIZ",
+      "tutorPrincipal": "SILVIA GUADALUPE CORDOVA RUIZ (MADRE)",
+      "tutorNombre": "SILVIA GUADALUPE CORDOVA RUIZ (MADRE)",
+      "tutor": "SILVIA GUADALUPE CORDOVA RUIZ (MADRE)",
+      "tutorResponsable": "SILVIA GUADALUPE CORDOVA RUIZ (MADRE)"
+    },
+    {
+      "id": "ALU_LI8NVU",
+      "nombre": "AILYN ARIADNE MORA JIMENEZ",
+      "nombreAlumno": "AILYN ARIADNE MORA JIMENEZ",
+      "nivel": "PRIMARIA",
+      "grado": "6",
+      "grupo": "A",
+      "tutorId": "FAM_LBZN4F",
+      "personaExtra": "ADRIAN FRANCISCO MORA GONZALEZ (PADRE)/LAURA GONZALEZ MONDRAGON (ABUELA)",
+      "tutorPrincipal": "SUSANA JIMENEZ LOPEZ (MADRE)",
+      "tutorNombre": "SUSANA JIMENEZ LOPEZ (MADRE)",
+      "tutor": "SUSANA JIMENEZ LOPEZ (MADRE)",
+      "tutorResponsable": "SUSANA JIMENEZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "ALU_CC8A4M",
+      "nombre": "ANGEL ELIAN SANCHEZ FERNANDEZ",
+      "nombreAlumno": "ANGEL ELIAN SANCHEZ FERNANDEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorId": "FAM_51UFUD",
+      "personaExtra": "ANGEL SALVADOR SANCHEZ (PADRE)/ABIGAIL FERNANDEZ ROBLES",
+      "tutorPrincipal": "LILIANA FERNANDEZ ROBLES (MADRE)",
+      "tutorNombre": "LILIANA FERNANDEZ ROBLES (MADRE)",
+      "tutor": "LILIANA FERNANDEZ ROBLES (MADRE)",
+      "tutorResponsable": "LILIANA FERNANDEZ ROBLES (MADRE)",
+      "codigo": "ALU_CC8A4M",
+      "autorizados": "ANGEL SALVADOR SANCHEZ (PADRE)/ABIGAIL FERNANDEZ ROBLES",
+      "alerta": ""
+    },
+    {
+      "id": "ALU_T183FL",
+      "nombre": "LEONARDO TELLO JUAREZ",
+      "nombreAlumno": "LEONARDO TELLO JUAREZ",
+      "nivel": "PRIMARIA",
+      "grado": "SEC 1",
+      "grupo": "A",
+      "tutorId": "FAM_E4R52M",
+      "personaExtra": "ENRIQUE TELLO BRAVO (PADRE)",
+      "tutorPrincipal": "MAYRA DE JESUS JUAREZ RIVERA (MADRE)",
+      "tutorNombre": "MAYRA DE JESUS JUAREZ RIVERA (MADRE)",
+      "tutor": "MAYRA DE JESUS JUAREZ RIVERA (MADRE)",
+      "tutorResponsable": "MAYRA DE JESUS JUAREZ RIVERA (MADRE)"
+    },
+    {
+      "id": "ALU_VGOGJA",
+      "nombre": "NATALIA AZCANO LEDESMA",
+      "nombreAlumno": "NATALIA AZCANO LEDESMA",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_HYUVUR",
+      "personaExtra": "JOSE RAMON AZCANO KOBASHI (PADRE)",
+      "tutorPrincipal": "MARISOL LEDESMA ARGUMEDO (MADRE)",
+      "tutorNombre": "MARISOL LEDESMA ARGUMEDO (MADRE)",
+      "tutor": "MARISOL LEDESMA ARGUMEDO (MADRE)",
+      "tutorResponsable": "MARISOL LEDESMA ARGUMEDO (MADRE)"
+    },
+    {
+      "id": "ALU_MZ2OEQ",
+      "nombre": "EMMA VICTORIA PURECO TAVERA",
+      "nombreAlumno": "EMMA VICTORIA PURECO TAVERA",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_8LYOEK",
+      "personaExtra": "-/VICTOR MANUEL PURECO/ALEJANDRA TAVERA CAMPOS/RYAN CHRISTOPHER SCOTT",
+      "tutorPrincipal": "ANDREA VICTORIA PURECO (MADRE)",
+      "tutorNombre": "ANDREA VICTORIA PURECO (MADRE)",
+      "tutor": "ANDREA VICTORIA PURECO (MADRE)",
+      "tutorResponsable": "ANDREA VICTORIA PURECO (MADRE)"
+    },
+    {
+      "id": "ALU_KJC863",
+      "nombre": "KIRA LINDI SANCHEZ HALLIN",
+      "nombreAlumno": "KIRA LINDI SANCHEZ HALLIN",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_GLH5XH",
+      "personaExtra": "CHRISTIAN EMMANUEL SANCHEZ AGUILA (PADRE)",
+      "tutorPrincipal": "ANGELA ROSIE HALLIN (MADRE)",
+      "tutorNombre": "ANGELA ROSIE HALLIN (MADRE)",
+      "tutor": "ANGELA ROSIE HALLIN (MADRE)",
+      "tutorResponsable": "ANGELA ROSIE HALLIN (MADRE)"
+    },
+    {
+      "id": "ALU_ZVX3VK",
+      "nombre": "RENATA CENTENO MOGUEL",
+      "nombreAlumno": "RENATA CENTENO MOGUEL",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_CM3VQA",
+      "personaExtra": "SALVADOR CENTENO AYALA (PADRE)/LORENA MOGUEL RIVEROLL (ABUELA)",
+      "tutorPrincipal": "CHANTELL DEL ANGEL MOGUEL RIVEROLL (MADRE)",
+      "tutorNombre": "CHANTELL DEL ANGEL MOGUEL RIVEROLL (MADRE)",
+      "tutor": "CHANTELL DEL ANGEL MOGUEL RIVEROLL (MADRE)",
+      "tutorResponsable": "CHANTELL DEL ANGEL MOGUEL RIVEROLL (MADRE)"
+    },
+    {
+      "id": "ALU_JUFKP2",
+      "nombre": "MARIA MACARENA ABASCAL VAZQUEZ",
+      "nombreAlumno": "MARIA MACARENA ABASCAL VAZQUEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_I5PRL3",
+      "personaExtra": "LUIS MIGUEL ABASCAL ALVAREZ (PADRE)/PAULA GARCIA (MAMA EKBE)/MARIA JOSE MONTES DE OCA/",
+      "tutorPrincipal": "CLAUDIA FABIOLA VAZQUEZ LEMUS (MADRE)",
+      "tutorNombre": "CLAUDIA FABIOLA VAZQUEZ LEMUS (MADRE)",
+      "tutor": "CLAUDIA FABIOLA VAZQUEZ LEMUS (MADRE)",
+      "tutorResponsable": "CLAUDIA FABIOLA VAZQUEZ LEMUS (MADRE)"
+    },
+    {
+      "id": "ALU_ANDQHW",
+      "nombre": "EVAN NICOLAS DUVERGER SILVA",
+      "nombreAlumno": "EVAN NICOLAS DUVERGER SILVA",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_QDA4QG",
+      "personaExtra": "GREGORY FRANTZ JEAN DUVERGER (PADRE)/GERARDO TRECHUELO",
+      "tutorPrincipal": "CORAL ADALYN SILVA REYES (MADRE)",
+      "tutorNombre": "CORAL ADALYN SILVA REYES (MADRE)",
+      "tutor": "CORAL ADALYN SILVA REYES (MADRE)",
+      "tutorResponsable": "CORAL ADALYN SILVA REYES (MADRE)"
+    },
+    {
+      "id": "ALU_RZUNZJ",
+      "nombre": "EMILIA CACERES ASSADOURIAN",
+      "nombreAlumno": "EMILIA CACERES ASSADOURIAN",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_E2P6DE",
+      "personaExtra": "MATIAS RUBEN CACERES (PADRE)/LUCIANA ASSDOURIAN",
+      "tutorPrincipal": "MARCELA ASSADOURIAN (MADRE)",
+      "tutorNombre": "MARCELA ASSADOURIAN (MADRE)",
+      "tutor": "MARCELA ASSADOURIAN (MADRE)",
+      "tutorResponsable": "MARCELA ASSADOURIAN (MADRE)"
+    },
+    {
+      "id": "ALU_3KJ35O",
+      "nombre": "VALENTINA MATEOS OZUNA",
+      "nombreAlumno": "VALENTINA MATEOS OZUNA",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_Q3JU6T",
+      "personaExtra": "CHISTOPHER MATEOS (PADRE)/HILDA IRENE ROJO GONZALEZ",
+      "tutorPrincipal": "MARIANA OZUNA (MADRE)",
+      "tutorNombre": "MARIANA OZUNA (MADRE)",
+      "tutor": "MARIANA OZUNA (MADRE)",
+      "tutorResponsable": "MARIANA OZUNA (MADRE)"
+    },
+    {
+      "id": "ALU_UHXHYK",
+      "nombre": "EMILIANO RAMOS PORTILLO",
+      "nombreAlumno": "EMILIANO RAMOS PORTILLO",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_NY6JA7",
+      "personaExtra": "-/NIDIA PEREZ LOPEZ/NADIA VILLALOBOS/",
+      "tutorPrincipal": "KATIA DOREL PORTILLO PEREZ (MADRE)",
+      "tutorNombre": "KATIA DOREL PORTILLO PEREZ (MADRE)",
+      "tutor": "KATIA DOREL PORTILLO PEREZ (MADRE)",
+      "tutorResponsable": "KATIA DOREL PORTILLO PEREZ (MADRE)"
+    },
+    {
+      "id": "ALU_WXZCCV",
+      "nombre": "MAXIMILIANO TREJO MARTINEZ",
+      "nombreAlumno": "MAXIMILIANO TREJO MARTINEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_XG1GPD",
+      "personaExtra": "JUAN ALBERTO TREJO (PADRE)/ROSA MARIN VIDALS (ABUELA)",
+      "tutorPrincipal": "MYRIAM MARTINEZ MARIN (MADRE)",
+      "tutorNombre": "MYRIAM MARTINEZ MARIN (MADRE)",
+      "tutor": "MYRIAM MARTINEZ MARIN (MADRE)",
+      "tutorResponsable": "MYRIAM MARTINEZ MARIN (MADRE)"
+    },
+    {
+      "id": "ALU_LX1S6G",
+      "nombre": "MATHIAS RODRIGUEZ BUIC",
+      "nombreAlumno": "MATHIAS RODRIGUEZ BUIC",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_GGDML3",
+      "personaExtra": "JAIME KARIM RODRIGUEZ VIDAL (PADRE)/EDMUNDO RODRIGUEZ VILLALOBOS (ABUELO)/ENRIQUETA VIDAL GONZALEZ (ABUELA)/JAIR RODRIGUEZ VIDAL (TIO)",
+      "tutorPrincipal": "NICOLE INGRID BUIC (MADRE)",
+      "tutorNombre": "NICOLE INGRID BUIC (MADRE)",
+      "tutor": "NICOLE INGRID BUIC (MADRE)",
+      "tutorResponsable": "NICOLE INGRID BUIC (MADRE)"
+    },
+    {
+      "id": "ALU_05UZD3",
+      "nombre": "FRIDA TONALLI ARENAS BALTAZAR",
+      "nombreAlumno": "FRIDA TONALLI ARENAS BALTAZAR",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_EFC6FR",
+      "personaExtra": "RICARDO ARENAS ANGUIANO (PADRE)/AUREA CITLALI CAMACHO ANGUIANO/RAMSES BALTZAR RUIZ/",
+      "tutorPrincipal": "OSIRIS MARIA BALTAZAR RUIZ (MADRE)",
+      "tutorNombre": "OSIRIS MARIA BALTAZAR RUIZ (MADRE)",
+      "tutor": "OSIRIS MARIA BALTAZAR RUIZ (MADRE)",
+      "tutorResponsable": "OSIRIS MARIA BALTAZAR RUIZ (MADRE)"
+    },
+    {
+      "id": "ALU_9YGXBG",
+      "nombre": "SHANON MIA SETROUK MEDINA",
+      "nombreAlumno": "SHANON MIA SETROUK MEDINA",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_XN2458",
+      "personaExtra": "FABIAN JANKIEL PROSPER SETRORK (PADRE)",
+      "tutorPrincipal": "TERESA MEDINA CORRALES (MADRE)",
+      "tutorNombre": "TERESA MEDINA CORRALES (MADRE)",
+      "tutor": "TERESA MEDINA CORRALES (MADRE)",
+      "tutorResponsable": "TERESA MEDINA CORRALES (MADRE)"
+    },
+    {
+      "id": "ALU_M15QA1",
+      "nombre": "NICOLAS SANCHEZ SPANO",
+      "nombreAlumno": "NICOLAS SANCHEZ SPANO",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_MKIWP5",
+      "personaExtra": "JOSE DE JESUS SANCHEZ VARGAS (PADRE)",
+      "tutorPrincipal": "VALENTINA SPANO (MADRE)",
+      "tutorNombre": "VALENTINA SPANO (MADRE)",
+      "tutor": "VALENTINA SPANO (MADRE)",
+      "tutorResponsable": "VALENTINA SPANO (MADRE)"
+    },
+    {
+      "id": "ALU_DQBBQ1",
+      "nombre": "OLIVER EMILIANO GRANADOS VENCES",
+      "nombreAlumno": "OLIVER EMILIANO GRANADOS VENCES",
+      "nivel": "SECUNDARIA",
+      "grado": "1",
+      "grupo": "A",
+      "tutorId": "FAM_537M0W",
+      "personaExtra": "HANSEL DANISVER GRANADOS VAZQUEZ (PADRE)/DANIELA DIAZ DE LEON (MAMA DE ZURIA GALLEGOS)",
+      "tutorPrincipal": "YENIFER VENCES MONTES (MADRE)",
+      "tutorNombre": "YENIFER VENCES MONTES (MADRE)",
+      "tutor": "YENIFER VENCES MONTES (MADRE)",
+      "tutorResponsable": "YENIFER VENCES MONTES (MADRE)"
+    },
+    {
+      "id": "ALU_EE1H2P",
+      "nombre": "SUSANA VALENTINA ENRIQUEZ ORTIZ",
+      "nombreAlumno": "SUSANA VALENTINA ENRIQUEZ ORTIZ",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_7GZC9L",
+      "personaExtra": "BERNARDO ENRIQUEZ PUC (PADRE)/ANTONIA LOPEZ GARCIA/RICARDO ORTIZ CEREZO/",
+      "tutorPrincipal": "CRISTINA JANET ORTIZ LOPEZ (MADRE)",
+      "tutorNombre": "CRISTINA JANET ORTIZ LOPEZ (MADRE)",
+      "tutor": "CRISTINA JANET ORTIZ LOPEZ (MADRE)",
+      "tutorResponsable": "CRISTINA JANET ORTIZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "ALU_3D122C",
+      "nombre": "RICARDO MIGUEL ALVAREZ SOSA",
+      "nombreAlumno": "RICARDO MIGUEL ALVAREZ SOSA",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_PJD68R",
+      "personaExtra": "RICARDO DAVID ALVAREZ ELIAS (PADRE)/MARIA CRUZ SANCHEZ MOGUEL",
+      "tutorPrincipal": "ESTELA ANGELINA SOSA COCOM (MADRE)",
+      "tutorNombre": "ESTELA ANGELINA SOSA COCOM (MADRE)",
+      "tutor": "ESTELA ANGELINA SOSA COCOM (MADRE)",
+      "tutorResponsable": "ESTELA ANGELINA SOSA COCOM (MADRE)"
+    },
+    {
+      "id": "ALU_LTHRL1",
+      "nombre": "SEBASTIAN VILLEGAS MARTINEZ",
+      "nombreAlumno": "SEBASTIAN VILLEGAS MARTINEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_JKJC9V",
+      "personaExtra": "FRANCISCO VILLEGAS FRIAS (PADRE)/MONSERRAT MENDOZA/MARIA GORETTI ANAYA/",
+      "tutorPrincipal": "GISELA DEL CARMEN MARTINEZ (MADRE)",
+      "tutorNombre": "GISELA DEL CARMEN MARTINEZ (MADRE)",
+      "tutor": "GISELA DEL CARMEN MARTINEZ (MADRE)",
+      "tutorResponsable": "GISELA DEL CARMEN MARTINEZ (MADRE)"
+    },
+    {
+      "id": "ALU_GTN8GY",
+      "nombre": "SANTIAGO NAVA MENDOZA",
+      "nombreAlumno": "SANTIAGO NAVA MENDOZA",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_0TK685",
+      "personaExtra": "MAMA INFORMA CUANDO PAPA PARTICIPA (PADRE)/RAFAEL MENDOZA LOPEZ/JONATHAN ORTIZ JIMENEZ/GEORGETTE JIMENEZ",
+      "tutorPrincipal": "LETICIA MENDOZA TREJO (MADRE)",
+      "tutorNombre": "LETICIA MENDOZA TREJO (MADRE)",
+      "tutor": "LETICIA MENDOZA TREJO (MADRE)",
+      "tutorResponsable": "LETICIA MENDOZA TREJO (MADRE)"
+    },
+    {
+      "id": "ALU_ORFM1W",
+      "nombre": "BRUNO CHAVEZ TARDITTI",
+      "nombreAlumno": "BRUNO CHAVEZ TARDITTI",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_VHL14L",
+      "personaExtra": "MARIO ALBERTO CHAVEZ (PADRE)",
+      "tutorPrincipal": "LORENA TARDITTI (MADRE)",
+      "tutorNombre": "LORENA TARDITTI (MADRE)",
+      "tutor": "LORENA TARDITTI (MADRE)",
+      "tutorResponsable": "LORENA TARDITTI (MADRE)"
+    },
+    {
+      "id": "ALU_CPHINO",
+      "nombre": "JORDAN MARTINEZ MUÑOZ",
+      "nombreAlumno": "JORDAN MARTINEZ MUÑOZ",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_9PVW2K",
+      "personaExtra": "JORGE MARTINEZ MARTINEZ (PADRE)/GUILLERMO MUÑOZ",
+      "tutorPrincipal": "MARIA ANGELES MUÑOZ FLORES (MADRE)",
+      "tutorNombre": "MARIA ANGELES MUÑOZ FLORES (MADRE)",
+      "tutor": "MARIA ANGELES MUÑOZ FLORES (MADRE)",
+      "tutorResponsable": "MARIA ANGELES MUÑOZ FLORES (MADRE)"
+    },
+    {
+      "id": "ALU_YJUO5K",
+      "nombre": "VICTOR MANUEL MENDOZA REYNOSO",
+      "nombreAlumno": "VICTOR MANUEL MENDOZA REYNOSO",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_A3ZMBM",
+      "personaExtra": "VICTOR MANUEL MENDOZA RUVALCABA (PADRE)/ANA OCHOA PEREZ",
+      "tutorPrincipal": "NAYELI MAYLIN REYNOSO GUTIERREZ (MADRE)",
+      "tutorNombre": "NAYELI MAYLIN REYNOSO GUTIERREZ (MADRE)",
+      "tutor": "NAYELI MAYLIN REYNOSO GUTIERREZ (MADRE)",
+      "tutorResponsable": "NAYELI MAYLIN REYNOSO GUTIERREZ (MADRE)"
+    },
+    {
+      "id": "ALU_RRUU26",
+      "nombre": "SOFIA ROMINA RODRIGUEZ RIOS",
+      "nombreAlumno": "SOFIA ROMINA RODRIGUEZ RIOS",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_IQZYWP",
+      "personaExtra": "CESAR ERNESTO RODRIGUEZ RAMIREZ (PADRE)",
+      "tutorPrincipal": "PAULINA RIOS ESPEJO (MADRE)",
+      "tutorNombre": "PAULINA RIOS ESPEJO (MADRE)",
+      "tutor": "PAULINA RIOS ESPEJO (MADRE)",
+      "tutorResponsable": "PAULINA RIOS ESPEJO (MADRE)"
+    },
+    {
+      "id": "ALU_L2GTQH",
+      "nombre": "MATTEO VEZZANI VELTRI",
+      "nombreAlumno": "MATTEO VEZZANI VELTRI",
+      "nivel": "SECUNDARIA",
+      "grado": "2",
+      "grupo": "A",
+      "tutorId": "FAM_4FMOER",
+      "personaExtra": "ALESSANDRO VEZZANI (PADRE)/TULLIO VELTRI",
+      "tutorPrincipal": "RAFAELLA VELTRI (MADRE)",
+      "tutorNombre": "RAFAELLA VELTRI (MADRE)",
+      "tutor": "RAFAELLA VELTRI (MADRE)",
+      "tutorResponsable": "RAFAELLA VELTRI (MADRE)"
+    },
+    {
+      "id": "ALU_SVBR10",
+      "nombre": "LAUREN ALISHA FERNANDEZ PADILLA",
+      "nombreAlumno": "LAUREN ALISHA FERNANDEZ PADILLA",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_AK4064",
+      "personaExtra": "SALVADOR FERNANDEZ AZCARATE (ABUELO) (PADRE)/SALVADOR FERNANDEZ MUÑOZ CANO",
+      "tutorPrincipal": "TERESITA DEL CARMEN MUÑOZ CANO PEREZ (ABUELA) (MADRE)",
+      "tutorNombre": "TERESITA DEL CARMEN MUÑOZ CANO PEREZ (ABUELA) (MADRE)",
+      "tutor": "TERESITA DEL CARMEN MUÑOZ CANO PEREZ (ABUELA) (MADRE)",
+      "tutorResponsable": "TERESITA DEL CARMEN MUÑOZ CANO PEREZ (ABUELA) (MADRE)"
+    },
+    {
+      "id": "ALU_KQYDIG",
+      "nombre": "BRUNO SANCHEZ DE LA VEGA BARRON",
+      "nombreAlumno": "BRUNO SANCHEZ DE LA VEGA BARRON",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_15JA0W",
+      "personaExtra": "-/RODOLPHE MINIER",
+      "tutorPrincipal": "LILIANA BARRON RAMIREZ (MADRE)",
+      "tutorNombre": "LILIANA BARRON RAMIREZ (MADRE)",
+      "tutor": "LILIANA BARRON RAMIREZ (MADRE)",
+      "tutorResponsable": "LILIANA BARRON RAMIREZ (MADRE)"
+    },
+    {
+      "id": "ALU_8YDR98",
+      "nombre": "MIA ISABELLA SOSA RAYMUNDO",
+      "nombreAlumno": "MIA ISABELLA SOSA RAYMUNDO",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_PPLG7D",
+      "personaExtra": "PABLO CESAR SOSA (PADRE)/PABLO SALCE/RODRIGO HINOJOSA/",
+      "tutorPrincipal": "MARIA DEL ROCIO RAYMUNDO ESQUIVEL (MADRE)",
+      "tutorNombre": "MARIA DEL ROCIO RAYMUNDO ESQUIVEL (MADRE)",
+      "tutor": "MARIA DEL ROCIO RAYMUNDO ESQUIVEL (MADRE)",
+      "tutorResponsable": "MARIA DEL ROCIO RAYMUNDO ESQUIVEL (MADRE)"
+    },
+    {
+      "id": "ALU_QYVKXT",
+      "nombre": "LUIS ROBERTO CASTAÑEDA CHAVEZ",
+      "nombreAlumno": "LUIS ROBERTO CASTAÑEDA CHAVEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_EJ1FQ7",
+      "personaExtra": "ADRIAN SOLANO MARTINEZ (2O. PADRE) (PADRE)",
+      "tutorPrincipal": "MARIA LUISA CHAVEZ SOTO (MADRE)",
+      "tutorNombre": "MARIA LUISA CHAVEZ SOTO (MADRE)",
+      "tutor": "MARIA LUISA CHAVEZ SOTO (MADRE)",
+      "tutorResponsable": "MARIA LUISA CHAVEZ SOTO (MADRE)"
+    },
+    {
+      "id": "ALU_IXTK2Y",
+      "nombre": "NICOLE ESMERALDA GARRIDO POOT",
+      "nombreAlumno": "NICOLE ESMERALDA GARRIDO POOT",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_046F2R",
+      "personaExtra": "JUAN NICOMEDES GARRIDO GARCIA (PADRE)/LANDY GARRIDO GARCIA",
+      "tutorPrincipal": "CLAUDIA YAZMIN POOT GOMEZ (MADRE)",
+      "tutorNombre": "CLAUDIA YAZMIN POOT GOMEZ (MADRE)",
+      "tutor": "CLAUDIA YAZMIN POOT GOMEZ (MADRE)",
+      "tutorResponsable": "CLAUDIA YAZMIN POOT GOMEZ (MADRE)"
+    },
+    {
+      "id": "ALU_KHDHPZ",
+      "nombre": "VICTOR CASTAÑEDA MORA",
+      "nombreAlumno": "VICTOR CASTAÑEDA MORA",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_G12JPP",
+      "personaExtra": "VICTOR MANUEL CASTAÑEDA SANCHEZ (PADRE)/SASHARI SAHAGUN/JANET GONZALEZ TOSTADO/",
+      "tutorPrincipal": "KARINA YARETH MORA GONZALEZ (MADRE)",
+      "tutorNombre": "KARINA YARETH MORA GONZALEZ (MADRE)",
+      "tutor": "KARINA YARETH MORA GONZALEZ (MADRE)",
+      "tutorResponsable": "KARINA YARETH MORA GONZALEZ (MADRE)"
+    },
+    {
+      "id": "ALU_F6FG4L",
+      "nombre": "ZOË FERNANDEZ SANCHEZ",
+      "nombreAlumno": "ZOË FERNANDEZ SANCHEZ",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_0VUABM",
+      "personaExtra": "RUBEN DARIO FERNANDEZ ABURTO (PADRE)/BORIS GERRITZEN",
+      "tutorPrincipal": "KARLA EVA BERENICE SANCHEZ LOZANO (MADRE)",
+      "tutorNombre": "KARLA EVA BERENICE SANCHEZ LOZANO (MADRE)",
+      "tutor": "KARLA EVA BERENICE SANCHEZ LOZANO (MADRE)",
+      "tutorResponsable": "KARLA EVA BERENICE SANCHEZ LOZANO (MADRE)"
+    },
+    {
+      "id": "ALU_QS1ZDC",
+      "nombre": "AMERICA MONTHSERRAT CUEVAS DIAZ",
+      "nombreAlumno": "AMERICA MONTHSERRAT CUEVAS DIAZ",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_8QPCOD",
+      "personaExtra": "MARIO ALEJANDRO SOTO LOPEZ (PADRE)/RIGOBERTO DIAZ LOPEZ/SARA NOEMI MEJIA SOSA/",
+      "tutorPrincipal": "KARLA JULISSA DIAZ MEJIA (MADRE)",
+      "tutorNombre": "KARLA JULISSA DIAZ MEJIA (MADRE)",
+      "tutor": "KARLA JULISSA DIAZ MEJIA (MADRE)",
+      "tutorResponsable": "KARLA JULISSA DIAZ MEJIA (MADRE)"
+    },
+    {
+      "id": "ALU_NCVAEK",
+      "nombre": "EMILIANO FLORES LOZANO",
+      "nombreAlumno": "EMILIANO FLORES LOZANO",
+      "nivel": "SECUNDARIA",
+      "grado": "3",
+      "grupo": "A",
+      "tutorId": "FAM_FOMH1M",
+      "personaExtra": "JUAN CARLOS FLORES UGALDE (PADRE)/KAREN ZAVALA LOZANO/MA. TERESA LOZANO COSSIO/",
+      "tutorPrincipal": "SILVIA LOZANO COSSIO (MADRE)",
+      "tutorNombre": "SILVIA LOZANO COSSIO (MADRE)",
+      "tutor": "SILVIA LOZANO COSSIO (MADRE)",
+      "tutorResponsable": "SILVIA LOZANO COSSIO (MADRE)"
+    },
+    {
+      "id": "ALU_4GNXYL",
+      "nombre": "LUCIA ZAZUETA FERNANDEZ",
+      "nombreAlumno": "LUCIA ZAZUETA FERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorId": "FAM_JT00G3",
+      "personaExtra": "MANUEL ANTONIO ZAZUETA PARRA (PADRE)/TERESITA MUÑZCANO PEREZ/SALVADOR FERNANDEZ AZCARATE/",
+      "codigo": "ALU_4GNXYL",
+      "tutor": "TERESA IVETTE FERNANDEZ MUÑOZCANO (MADRE)",
+      "autorizados": "MANUEL ANTONIO ZAZUETA PARRA (PADRE)/TERESITA MUÑZCANO PEREZ/SALVADOR FERNANDEZ AZCARATE/",
+      "alerta": ""
+    },
+    {
+      "id": "ALU_JS67TS",
+      "nombre": "LUNA ZAZUETA FERNANDEZ",
+      "nombreAlumno": "LUNA ZAZUETA FERNANDEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorId": "FAM_JT00G3",
+      "personaExtra": "MANUEL ANTONIO ZAZUETA PARRA (PADRE)/TERESITA MUÑOZCANO PEREZ/SALVADOR FERNANDEZ AZCARATE/",
+      "codigo": "ALU_JS67TS",
+      "tutor": "TERESA IVETTE FERNANDEZ MUÑOZCANO (MADRE)",
+      "autorizados": "MANUEL ANTONIO ZAZUETA PARRA (PADRE)/TERESITA MUÑOZCANO PEREZ/SALVADOR FERNANDEZ AZCARATE/",
+      "alerta": ""
+    },
+    {
+      "id": "ALU_K4ED8T",
+      "nombre": "ARMINA GRIGORJAN CAMARGO",
+      "nombreAlumno": "ARMINA GRIGORJAN CAMARGO",
+      "nivel": "SECUNDARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorId": "FAM_LIV8EF",
+      "idFamilia": "FAM_LIV8EF",
+      "tutorPrincipal": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "tutorNombre": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "tutor": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "personaExtra": "GRIGOR GRIGORJAN (PADRE)",
+      "alerta": "",
+      "codigo": "ALU_K4ED8T",
+      "autorizados": "GRIGOR GRIGORJAN (PADRE)"
+    },
+    {
+      "id": "ALU_2BGYNE",
+      "nombre": "LEON GRIGORJAN CAMARGO",
+      "nombreAlumno": "LEON GRIGORJAN CAMARGO",
+      "nivel": "PRIMARIA",
+      "grado": "2°",
+      "grupo": "A",
+      "tutorId": "FAM_LIV8EF",
+      "idFamilia": "FAM_LIV8EF",
+      "tutorPrincipal": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "tutorNombre": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "tutor": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "personaExtra": "GRIGOR GRIGORJAN (PADRE)",
+      "alerta": ""
+    }
+  ],
+  "tutores": [
+    {
+      "id": "FAM_A7AG4Q",
+      "nombre": "DIANELA ANDREA SANMIGUEL CAAMAL (MADRE)"
+    },
+    {
+      "id": "FAM_7N1N89",
+      "nombre": "KARINA ADRIANA GRANADOS BARCERNAS (MADRE)"
+    },
+    {
+      "id": "FAM_N6KWRL",
+      "nombre": "LAURA JOHANNA POHJANEN (MADRE)"
+    },
+    {
+      "id": "FAM_0GF43W",
+      "nombre": "MARIA JOSE MEDINA RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_3SKYPG",
+      "nombre": "ARLENE ISABEL BALAM NAH (MADRE)"
+    },
+    {
+      "id": "FAM_MOTV69",
+      "nombre": "MICAELA GABRIELA BONIFACIO (MADRE)"
+    },
+    {
+      "id": "FAM_ZX1A32",
+      "nombre": "LOLITA VIVALDI (MADRE)"
+    },
+    {
+      "id": "FAM_6LESK7",
+      "nombre": "LINDA ROXANA SILVA VIZCARRA (MADRE)"
+    },
+    {
+      "id": "FAM_O73U59",
+      "nombre": "ALEJANDRA ISABEL RODRIGUEZ RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_LRY7YT",
+      "nombre": "ANAHI CHONG OVIEDO (MADRE)"
+    },
+    {
+      "id": "FAM_8GEHEJ",
+      "nombre": "FRINE WENCE PINEDA (MADRE)"
+    },
+    {
+      "id": "FAM_RFBJ3V",
+      "nombre": "LLUVIA AZUCENA GARCIA DUARTE (MADRE)"
+    },
+    {
+      "id": "FAM_DI4KDE",
+      "nombre": "MARCIA CAROLINA GARCIA MENDEZ (MADRE)"
+    },
+    {
+      "id": "FAM_11VSWL",
+      "nombre": "MARIANA VICTORIA AMEZCUA ESTRADA (MADRE)"
+    },
+    {
+      "id": "FAM_JBUVG8",
+      "nombre": "ANGIE PAULINA BETANCOURT LOFFSNER (MADRE)"
+    },
+    {
+      "id": "FAM_G32YR4",
+      "nombre": "KARLA LISSET RAMIREZ ARANDA (MADRE)"
+    },
+    {
+      "id": "FAM_PSEFIU",
+      "nombre": "MARICELA MOLINA ACATITLAN (MADRE)"
+    },
+    {
+      "id": "FAM_JHZOLF",
+      "nombre": "NELLY CAROLINA GONZALEZ GALARZA (MADRE)"
+    },
+    {
+      "id": "FAM_4LUCU2",
+      "nombre": "XIMENA GARCIA GOMEZ (MADRE)"
+    },
+    {
+      "id": "FAM_R91BSL",
+      "nombre": "CYNTHIA CUERO MUCIÑO (MADRE)"
+    },
+    {
+      "id": "FAM_FXBMHF",
+      "nombre": "ANGELICA GIRON GARCIA (MADRE)"
+    },
+    {
+      "id": "FAM_XMG0FB",
+      "nombre": "BARBARA ABIGAIL TRUJILLO GOMORA (MADRE)"
+    },
+    {
+      "id": "FAM_SIRXXF",
+      "nombre": "BLANCA VIOLETA LOPEZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "FAM_I099BO",
+      "nombre": "CANDELARIA LOSARDO (MADRE)"
+    },
+    {
+      "id": "FAM_SI79XW",
+      "nombre": "CONSTANZA MONTAÑO URDANETA (MADRE)"
+    },
+    {
+      "id": "FAM_EYK7X4",
+      "nombre": "DULCE NOHEMI CASTILLO VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_HR9XFK",
+      "nombre": "FABIOLA PEREZ FIGUEROA MACIAS (MADRE)"
+    },
+    {
+      "id": "FAM_E5XFCG",
+      "nombre": "FATIMA DE LA CRUZ ORTIZ (MADRE)"
+    },
+    {
+      "id": "FAM_O93UXR",
+      "nombre": "JESSICA CERON MONDRAGON (MADRE)"
+    },
+    {
+      "id": "FAM_1Q3QX1",
+      "nombre": "JOCELYN RAMIREZ FRAGOSO (MADRE)"
+    },
+    {
+      "id": "FAM_B8CCDH",
+      "nombre": "KAREN DOMENECH AVILA (MADRE)"
+    },
+    {
+      "id": "FAM_PJNID9",
+      "nombre": "KARLA JUDITH AGUIRRE RESENDIZ (MADRE)"
+    },
+    {
+      "id": "FAM_DW6AGH",
+      "nombre": "LIZBETH SANDOVAL VALENZUELA (MADRE)"
+    },
+    {
+      "id": "FAM_YIOIAU",
+      "nombre": "LUCIANA USANDIZAGA (MADRE)"
+    },
+    {
+      "id": "FAM_FE2A7H",
+      "nombre": "MARCELA HERNANDEZ PEREZ (MADRE)"
+    },
+    {
+      "id": "FAM_1Q3IWT",
+      "nombre": "MARCELA MALVAEZ SANTILLAN (MADRE)"
+    },
+    {
+      "id": "FAM_ADOSLM",
+      "nombre": "MARIA EMILIA RIOS GERONIMO (MADRE)"
+    },
+    {
+      "id": "FAM_ZCOL72",
+      "nombre": "MARIA MERCEDES DELL'AQUILA (MADRE)"
+    },
+    {
+      "id": "FAM_ZW91I0",
+      "nombre": "ALEJANDRA ABIGAIL RODRIGUEZ VENTURA (MADRE)"
+    },
+    {
+      "id": "FAM_R786EL",
+      "nombre": "CINTHIA ANGELICA MAY SABIDO (MADRE)"
+    },
+    {
+      "id": "FAM_S6OF5S",
+      "nombre": "DESIRE VIGUERAS MONCADA (MADRE)"
+    },
+    {
+      "id": "FAM_2M1NEL",
+      "nombre": "MARIA AGUSTINA CASADIO (MADRE)"
+    },
+    {
+      "id": "FAM_GBJECF",
+      "nombre": "MARIA DIANE MARTINEZ FLORES (MADRE)"
+    },
+    {
+      "id": "FAM_ZNW662",
+      "nombre": "MELINA PONTNAU (MADRE)"
+    },
+    {
+      "id": "FAM_2UY4M8",
+      "nombre": "MIRIAM ANJELLY REYES CAREÑO (MADRE)"
+    },
+    {
+      "id": "FAM_7M33OT",
+      "nombre": "MIRTYS ELIAS MODESTO DE PAULA (MADRE)"
+    },
+    {
+      "id": "FAM_UL2XF9",
+      "nombre": "SUELEN SANTOS GAIA (MADRE)"
+    },
+    {
+      "id": "FAM_NUFDFV",
+      "nombre": "TAMARA GUZMAN PEREZ (MADRE)"
+    },
+    {
+      "id": "FAM_WBAB8P",
+      "nombre": "THALIA TOBON LEONEL (MADRE)"
+    },
+    {
+      "id": "FAM_1IGMC3",
+      "nombre": "VERONICA ROCIO GONZALEZ SUAREZ (MADRE)"
+    },
+    {
+      "id": "FAM_TUPWWC",
+      "nombre": "ANABEL TORRES MOLINA (MADRE)"
+    },
+    {
+      "id": "FAM_UOFSQY",
+      "nombre": "FRIDA PATRICIA RODRIGUEZ SOLAR (MADRE)"
+    },
+    {
+      "id": "FAM_QWIKWF",
+      "nombre": "MARIA GUADALUPE JIMENEZ HERNANDEZ (MADRE)"
+    },
+    {
+      "id": "FAM_C4IY93",
+      "nombre": "MARIA JOSE PEREIRA (MADRE)"
+    },
+    {
+      "id": "FAM_DU8CL4",
+      "nombre": "MARIA MARTA DE LA ROSA (MADRE)"
+    },
+    {
+      "id": "FAM_SQPI54",
+      "nombre": "MARIA VICTORIA JIMENEZ (MADRE)"
+    },
+    {
+      "id": "FAM_KQRIR6",
+      "nombre": "BRIZIA ANGELICA CASTAÑEDA GRANADOS (MADRE)"
+    },
+    {
+      "id": "FAM_VS9YTJ",
+      "nombre": "KAREN SOLEDAD PERALTA (MADRE)"
+    },
+    {
+      "id": "FAM_STBMD1",
+      "nombre": "PALOMA HERNANDEZ MEDRANO (MADRE)"
+    },
+    {
+      "id": "FAM_MN41M6",
+      "nombre": "PATRICIA IRENE CASANOVA MORENO (MADRE)"
+    },
+    {
+      "id": "FAM_NMJE8I",
+      "nombre": "REYNA RUBI RODRIGUEZ SAMPERIO (MADRE)"
+    },
+    {
+      "id": "FAM_1VRNP0",
+      "nombre": "RUMI ISHIDA (MADRE)"
+    },
+    {
+      "id": "FAM_6HU42O",
+      "nombre": "SONIA SARAI GALA CORDOVA (MADRE)"
+    },
+    {
+      "id": "FAM_E0K0TF",
+      "nombre": "SUSANA OLIVERA NAVA (MADRE)"
+    },
+    {
+      "id": "FAM_9UTQ8Q",
+      "nombre": "VERONICA ALEJANDRA DI LAUDONIO (MADRE)"
+    },
+    {
+      "id": "FAM_A80V2H",
+      "nombre": "YENI NAXELI CASTILLO GOMEZ (MADRE)"
+    },
+    {
+      "id": "FAM_TKN92N",
+      "nombre": "YULI DEL CARMEN LOPEZ MARQUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_EB8MGI",
+      "nombre": "LAURA KELLY RAIKES (MADRE)"
+    },
+    {
+      "id": "FAM_GP7NHF",
+      "nombre": "TANIA MARLEN MONROY PEREZ (MADRE)"
+    },
+    {
+      "id": "FAM_0ATYQA",
+      "nombre": "REYNA AZUCENA JUAREZ RAMIREZ (MADRE)"
+    },
+    {
+      "id": "FAM_7J4IMC",
+      "nombre": "CYNTHIA MARCELA RAMONET ARREDONDO (MADRE)"
+    },
+    {
+      "id": "FAM_RGZMPK",
+      "nombre": "DIANA WELLS (MADRE)"
+    },
+    {
+      "id": "FAM_YP3CN9",
+      "nombre": "ELIZABETH URRAZA DUGAY (MADRE)"
+    },
+    {
+      "id": "FAM_COO8RK",
+      "nombre": "ERIKA MARIBEL TUZ ESCAMILLA (MADRE)"
+    },
+    {
+      "id": "FAM_G3R891",
+      "nombre": "HELIA ESTELA CORONA PARRA (MADRE)"
+    },
+    {
+      "id": "FAM_EG27YA",
+      "nombre": "MA. DE LOS ANGELES COS RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_42Y65K",
+      "nombre": "MARA LEE YICK ALVAREZ (MADRE)"
+    },
+    {
+      "id": "FAM_M3JEW2",
+      "nombre": "MARIA EUNICE FIGUEROA SIFUENTES (MADRE)"
+    },
+    {
+      "id": "FAM_JPBHE0",
+      "nombre": "ALEJANDRA VALDEZ RAMIREZ (MADRE)"
+    },
+    {
+      "id": "FAM_LUZB0H",
+      "nombre": "ANEL VIDAL VILLAR (MADRE)"
+    },
+    {
+      "id": "FAM_LKNHIF",
+      "nombre": "DIANA ALEJANDRA ARIAS PORRAS (MADRE)"
+    },
+    {
+      "id": "FAM_6XC3AG",
+      "nombre": "PAULINA IVETTE MORENO VERA (MADRE)"
+    },
+    {
+      "id": "FAM_MVRL85",
+      "nombre": "ROSA FINAMORE (MADRE)"
+    },
+    {
+      "id": "FAM_UGF7W7",
+      "nombre": "SARI CARITA PARKKINEN (MADRE)"
+    },
+    {
+      "id": "FAM_1NMUHV",
+      "nombre": "VANESA ALEXANDRA FIGUEROA (MADRE)"
+    },
+    {
+      "id": "FAM_77M6ZI",
+      "nombre": "CORAL HAIDE MACIAS FLORES (MADRE)"
+    },
+    {
+      "id": "FAM_SHVMBY",
+      "nombre": "ERIKA SHIRLEY LEON FERRETIS (MADRE)"
+    },
+    {
+      "id": "FAM_J1NFW5",
+      "nombre": "FLOR DE MARIA DIAZ FLORES (MADRE)"
+    },
+    {
+      "id": "FAM_0YJ2S7",
+      "nombre": "FLOR HERNANDEZ JIMENEZ (MADRE)"
+    },
+    {
+      "id": "FAM_O1M2U8",
+      "nombre": "GISELLA MILOE MENDOZA HERNADEZ (MADRE)"
+    },
+    {
+      "id": "FAM_ST2NDN",
+      "nombre": "JANA SABUCKA (MADRE)"
+    },
+    {
+      "id": "FAM_7F0DVQ",
+      "nombre": "JESICA DEL ROCIO CASTILLO AGUILAR (MADRE)"
+    },
+    {
+      "id": "FAM_U99GAK",
+      "nombre": "JESSICA MONTAÑEZ MACIAS VALADEZ (MADRE)"
+    },
+    {
+      "id": "FAM_RD3J1H",
+      "nombre": "JULIEE MELISSA MUÑOZ CANALES (MADRE)"
+    },
+    {
+      "id": "FAM_ZICCL7",
+      "nombre": "MARIA FLORENCIA PERELLO (MADRE)"
+    },
+    {
+      "id": "FAM_BALM4M",
+      "nombre": "MARIA JOSE RAHAL (MADRE)"
+    },
+    {
+      "id": "FAM_BS8HVG",
+      "nombre": "MARIA LAURA AZANZA CERVANTES (MADRE)"
+    },
+    {
+      "id": "FAM_ZML7ZX",
+      "nombre": "MARIA LAURA LESCANO (MADRE)"
+    },
+    {
+      "id": "FAM_71HJGC",
+      "nombre": "MARICELA RAMOS ESCOBAR (ABUELA) (MADRE)"
+    },
+    {
+      "id": "FAM_QXFG73",
+      "nombre": "CLAUDIA PAULINA CASTAÑEDA MORLET (MADRE)"
+    },
+    {
+      "id": "FAM_1MLP9P",
+      "nombre": "PAULINA DANIOTTI (MADRE)"
+    },
+    {
+      "id": "FAM_HU4P5T",
+      "nombre": "PILAR REYNOSO URIBARREN (MADRE)"
+    },
+    {
+      "id": "FAM_FOWR39",
+      "nombre": "RUTH MONNSERRAT GUTIERREZ HDEZ. (MADRE)"
+    },
+    {
+      "id": "FAM_7AA4EX",
+      "nombre": "SARAI JEMIMAH MAY MUKUL (MADRE)"
+    },
+    {
+      "id": "FAM_82XJH5",
+      "nombre": "VERONICA BECERRA MUNOZ (MADRE)"
+    },
+    {
+      "id": "FAM_MB85CG",
+      "nombre": "FABIOLA PALOMA SERNA GILL (MADRE)"
+    },
+    {
+      "id": "FAM_XM6URH",
+      "nombre": "AIDA GERALDINE DIAZ HOWES (MADRE)"
+    },
+    {
+      "id": "FAM_8N6XMI",
+      "nombre": "DIANA XIMENA ZUBILLAGA MARTINEZ (MADRE)"
+    },
+    {
+      "id": "FAM_HN31SR",
+      "nombre": "ALICIA GUADALUPE VERDUGO GALVEZ (MADRE)"
+    },
+    {
+      "id": "FAM_C74ZDA",
+      "nombre": "ANA CECILIA REYES HERNANDEZ (MADRE)"
+    },
+    {
+      "id": "FAM_CPY92W",
+      "nombre": "ANA LAURA LOBATO (MADRE)"
+    },
+    {
+      "id": "FAM_L9LCFK",
+      "nombre": "CLAUDIA ANDREA MENDOZA (MADRE)"
+    },
+    {
+      "id": "FAM_MQZGHG",
+      "nombre": "DANIELA CUPIL GIL (MADRE)"
+    },
+    {
+      "id": "FAM_KN8VYJ",
+      "nombre": "DIANA MEDRANO VILLEGAS (MADRE)"
+    },
+    {
+      "id": "FAM_XPBUST",
+      "nombre": "DINA MELISA MAESTRE LEDESMA (MADRE)"
+    },
+    {
+      "id": "FAM_8UPY5K",
+      "nombre": "ELIZETH HERNANDEZ SANGABRIEL (MADRE)"
+    },
+    {
+      "id": "FAM_26Q2YC",
+      "nombre": "JESSICA BEATRIZ DIAZ DELGADO (MADRE)"
+    },
+    {
+      "id": "FAM_9NW6PO",
+      "nombre": "MARIA ARACELI DE JESUS CUTZ CIAU (MADRE)"
+    },
+    {
+      "id": "FAM_ZU7E28",
+      "nombre": "MARIA INES SANCHEZ DEL CAMPO (MADRE)"
+    },
+    {
+      "id": "FAM_1EAO3N",
+      "nombre": "MARIA MONSERRAT FLORES CAMPOS (MADRE)"
+    },
+    {
+      "id": "FAM_BTP26F",
+      "nombre": "MARIANANA LOPEZ VILLANUEVA (MADRE)"
+    },
+    {
+      "id": "FAM_VGLO03",
+      "nombre": "MARITZA BELTRAN ROMERO (MADRE)"
+    },
+    {
+      "id": "FAM_T26RW3",
+      "nombre": "MAYDA ITZEL MENDEZ LORENZANO (MADRE)"
+    },
+    {
+      "id": "FAM_SOZ5UT",
+      "nombre": "CAMILA FERNANDEZ (MADRE)"
+    },
+    {
+      "id": "FAM_BZSQK1",
+      "nombre": "DIANA KARINA LOPEZ AGUADO RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_E33WA4",
+      "nombre": "EDNA SYLVIA ABELAR (MADRE)"
+    },
+    {
+      "id": "FAM_WJ2WL8",
+      "nombre": "FEDERICA PARLANI (MADRE)"
+    },
+    {
+      "id": "FAM_25EOYO",
+      "nombre": "MA. BEATRIZ CRUCES VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_IHERIK",
+      "nombre": "MA. DE JESUS ROMERO HEREDIA (MADRE)"
+    },
+    {
+      "id": "FAM_AMPON1",
+      "nombre": "MARIA MAYELA HUERTA GONZALEZ (MADRE)"
+    },
+    {
+      "id": "FAM_KYZRYB",
+      "nombre": "MELISSA MICHAUS VILLALOBOS (MADRE)"
+    },
+    {
+      "id": "FAM_10KF82",
+      "nombre": "MITZI ALETHIA TORRES LEMUS (MADRE)"
+    },
+    {
+      "id": "FAM_T8SQVC",
+      "nombre": "NAYELI ESMERALDA TORRES VAZQUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_EEJR26",
+      "nombre": "SAMANTHA SALOMON RODRIGUEZ (MADRE)"
+    },
+    {
+      "id": "FAM_ZVI4KI",
+      "nombre": "TANIA VILLALOBOS RIVERA MELO (MADRE)"
+    },
+    {
+      "id": "FAM_LGH4BE",
+      "nombre": "VERONIQUE ELISABETH JOANNES FINCKEN (MADRE)"
+    },
+    {
+      "id": "FAM_4PJ685",
+      "nombre": "ADRIANA ROSAS MORALES (MADRE)"
+    },
+    {
+      "id": "FAM_JAV3O6",
+      "nombre": "ALEJANDRA RUZ (MADRE)"
+    },
+    {
+      "id": "FAM_Q71FVT",
+      "nombre": "ALINA TRINIDAD VIDAÑA (MADRE)"
+    },
+    {
+      "id": "FAM_VTWXFC",
+      "nombre": "ESMERALDA BARRON PEREZ (MADRE)"
+    },
+    {
+      "id": "FAM_H3X2CJ",
+      "nombre": "ILSE KOBUS (MADRE)"
+    },
+    {
+      "id": "FAM_1O335U",
+      "nombre": "JULIETA TONON MARINI (MADRE)"
+    },
+    {
+      "id": "FAM_YTC5D6",
+      "nombre": "LILI JUAREZ BARRAGAN (MADRE)"
+    },
+    {
+      "id": "FAM_YKSECY",
+      "nombre": "MA. VIRGINIA DEL VALLE ESPECHE (MADRE)"
+    },
+    {
+      "id": "FAM_JC0I4B",
+      "nombre": "MARLENE CHIRINOS BARRAN (MADRE)"
+    },
+    {
+      "id": "FAM_V22227",
+      "nombre": "MARTHA JESSICA ESTRADA RAMIREZ (MADRE)"
+    },
+    {
+      "id": "FAM_ISSYIE",
+      "nombre": "EILEEN VALENCIA NUÑEZ (MADRE)"
+    },
+    {
+      "id": "FAM_J3QZ22",
+      "nombre": "KIESHA DIXON (MADRE)"
+    },
+    {
+      "id": "FAM_MXM0B7",
+      "nombre": "MIROSLAVA DEL PILAR CONTRERAS AMEZCUA (MADRE)"
+    },
+    {
+      "id": "FAM_HXQPHY",
+      "nombre": "NACIRA ROXANA PERERA UCAN (MADRE)"
+    },
+    {
+      "id": "FAM_YSKV87",
+      "nombre": "NIDIA FLORES CUEVAS (MADRE)"
+    },
+    {
+      "id": "FAM_O2OCFD",
+      "nombre": "SOPHIE SCHLESSER (MADRE)"
+    },
+    {
+      "id": "FAM_Q6MC8H",
+      "nombre": "SZILVIA ROSTAS (MADRE)"
+    },
+    {
+      "id": "FAM_NAPTXP",
+      "nombre": "YULIIA VOROZHKO (MADRE)"
+    },
+    {
+      "id": "FAM_6QL2TO",
+      "nombre": "BEATRIZ ADRIANA GUZMAN (MADRE)"
+    },
+    {
+      "id": "FAM_WR82V0",
+      "nombre": "CAMILA GUADALUPE EUDAVE DELGADO (MADRE)"
+    },
+    {
+      "id": "FAM_EM9KP1",
+      "nombre": "CLAUDIA PAOLA MIAJA FALCON (MADRE)"
+    },
+    {
+      "id": "FAM_RHRQ6Y",
+      "nombre": "ELIDE MARTINEZ HUERTA (MADRE)"
+    },
+    {
+      "id": "FAM_GA70GQ",
+      "nombre": "EUFRACIA ZARATE (MADRE)"
+    },
+    {
+      "id": "FAM_BJQZ7H",
+      "nombre": "FRANCA ALEJANDRA BORELLI (MADRE)"
+    },
+    {
+      "id": "FAM_ZS2MSL",
+      "nombre": "GABRIELA ADRIANA NARVAEZ RANGEL (MADRE)"
+    },
+    {
+      "id": "FAM_REYAFY",
+      "nombre": "ITALIA CAROLINA ACOSTA CHAIREZ (MADRE)"
+    },
+    {
+      "id": "FAM_WOV2OB",
+      "nombre": "JESSICA BLUMENKRON SUAREZ (MADRE)"
+    },
+    {
+      "id": "FAM_IHUX88",
+      "nombre": "ALDE SELENE CORTES VARGAS (MADRE)"
+    },
+    {
+      "id": "FAM_E5MWVV",
+      "nombre": "BRENDA CARBAJAL SALAZAR (MADRE)"
+    },
+    {
+      "id": "FAM_38V7LE",
+      "nombre": "CLAUDIA CATALINA MENDEZ CHONTAL (MADRE)"
+    },
+    {
+      "id": "FAM_06J7BG",
+      "nombre": "ERIKA LILIANA REYES LEON (MADRE)"
+    },
+    {
+      "id": "FAM_48CMFL",
+      "nombre": "MARIA DEL CARMEN TRENADO YAÑEZ (MADRE)"
+    },
+    {
+      "id": "FAM_HOMF24",
+      "nombre": "MONICA ITZEL FERNANDEZ SANTIAGO (MADRE)"
+    },
+    {
+      "id": "FAM_11D3JO",
+      "nombre": "MONICA NAVHIL GOMEZ ROBLEDO (MADRE)"
+    },
+    {
+      "id": "FAM_LLQI8E",
+      "nombre": "NELLY YADIRA VARGAS TORRES (MADRE)"
+    },
+    {
+      "id": "FAM_Z40LPT",
+      "nombre": "PAOLA BASURTO BASURTO (MADRE)"
+    },
+    {
+      "id": "FAM_POUG1V",
+      "nombre": "PAOLA ILIANA POLIN KURI (MADRE)"
+    },
+    {
+      "id": "FAM_LQHWAR",
+      "nombre": "RITA CASTILLO DAVILA (MADRE)"
+    },
+    {
+      "id": "FAM_XYJ1ZC",
+      "nombre": "SANDRA ALICIA CISNEROS AQUINO (MADRE)"
+    },
+    {
+      "id": "FAM_EIAE9S",
+      "nombre": "SANDRA BENITEZ VARGAS (MADRE)"
+    },
+    {
+      "id": "FAM_GM0FTX",
+      "nombre": "SARAHI DENISSE ABUD GONZALEZ (MADRE)"
+    },
+    {
+      "id": "FAM_YXJHSK",
+      "nombre": "SILVIA GUADALUPE CORDOVA RUIZ (MADRE)"
+    },
+    {
+      "id": "FAM_LBZN4F",
+      "nombre": "SUSANA JIMENEZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "FAM_51UFUD",
+      "nombre": "LILIANA FERNANDEZ ROBLES (MADRE)"
+    },
+    {
+      "id": "FAM_E4R52M",
+      "nombre": "MAYRA DE JESUS JUAREZ RIVERA (MADRE)"
+    },
+    {
+      "id": "FAM_HYUVUR",
+      "nombre": "MARISOL LEDESMA ARGUMEDO (MADRE)"
+    },
+    {
+      "id": "FAM_8LYOEK",
+      "nombre": "ANDREA VICTORIA PURECO (MADRE)"
+    },
+    {
+      "id": "FAM_GLH5XH",
+      "nombre": "ANGELA ROSIE HALLIN (MADRE)"
+    },
+    {
+      "id": "FAM_CM3VQA",
+      "nombre": "CHANTELL DEL ANGEL MOGUEL RIVEROLL (MADRE)"
+    },
+    {
+      "id": "FAM_I5PRL3",
+      "nombre": "CLAUDIA FABIOLA VAZQUEZ LEMUS (MADRE)"
+    },
+    {
+      "id": "FAM_QDA4QG",
+      "nombre": "CORAL ADALYN SILVA REYES (MADRE)"
+    },
+    {
+      "id": "FAM_E2P6DE",
+      "nombre": "MARCELA ASSADOURIAN (MADRE)"
+    },
+    {
+      "id": "FAM_Q3JU6T",
+      "nombre": "MARIANA OZUNA (MADRE)"
+    },
+    {
+      "id": "FAM_NY6JA7",
+      "nombre": "KATIA DOREL PORTILLO PEREZ (MADRE)"
+    },
+    {
+      "id": "FAM_XG1GPD",
+      "nombre": "MYRIAM MARTINEZ MARIN (MADRE)"
+    },
+    {
+      "id": "FAM_GGDML3",
+      "nombre": "NICOLE INGRID BUIC (MADRE)"
+    },
+    {
+      "id": "FAM_EFC6FR",
+      "nombre": "OSIRIS MARIA BALTAZAR RUIZ (MADRE)"
+    },
+    {
+      "id": "FAM_XN2458",
+      "nombre": "TERESA MEDINA CORRALES (MADRE)"
+    },
+    {
+      "id": "FAM_MKIWP5",
+      "nombre": "VALENTINA SPANO (MADRE)"
+    },
+    {
+      "id": "FAM_537M0W",
+      "nombre": "YENIFER VENCES MONTES (MADRE)"
+    },
+    {
+      "id": "FAM_7GZC9L",
+      "nombre": "CRISTINA JANET ORTIZ LOPEZ (MADRE)"
+    },
+    {
+      "id": "FAM_PJD68R",
+      "nombre": "ESTELA ANGELINA SOSA COCOM (MADRE)"
+    },
+    {
+      "id": "FAM_JKJC9V",
+      "nombre": "GISELA DEL CARMEN MARTINEZ (MADRE)"
+    },
+    {
+      "id": "FAM_0TK685",
+      "nombre": "LETICIA MENDOZA TREJO (MADRE)"
+    },
+    {
+      "id": "FAM_VHL14L",
+      "nombre": "LORENA TARDITTI (MADRE)"
+    },
+    {
+      "id": "FAM_9PVW2K",
+      "nombre": "MARIA ANGELES MUÑOZ FLORES (MADRE)"
+    },
+    {
+      "id": "FAM_A3ZMBM",
+      "nombre": "NAYELI MAYLIN REYNOSO GUTIERREZ (MADRE)"
+    },
+    {
+      "id": "FAM_IQZYWP",
+      "nombre": "PAULINA RIOS ESPEJO (MADRE)"
+    },
+    {
+      "id": "FAM_4FMOER",
+      "nombre": "RAFAELLA VELTRI (MADRE)"
+    },
+    {
+      "id": "FAM_AK4064",
+      "nombre": "TERESITA DEL CARMEN MUÑOZ CANO PEREZ (ABUELA) (MADRE)"
+    },
+    {
+      "id": "FAM_15JA0W",
+      "nombre": "LILIANA BARRON RAMIREZ (MADRE)"
+    },
+    {
+      "id": "FAM_PPLG7D",
+      "nombre": "MARIA DEL ROCIO RAYMUNDO ESQUIVEL (MADRE)"
+    },
+    {
+      "id": "FAM_EJ1FQ7",
+      "nombre": "MARIA LUISA CHAVEZ SOTO (MADRE)"
+    },
+    {
+      "id": "FAM_046F2R",
+      "nombre": "CLAUDIA YAZMIN POOT GOMEZ (MADRE)"
+    },
+    {
+      "id": "FAM_G12JPP",
+      "nombre": "KARINA YARETH MORA GONZALEZ (MADRE)"
+    },
+    {
+      "id": "FAM_0VUABM",
+      "nombre": "KARLA EVA BERENICE SANCHEZ LOZANO (MADRE)"
+    },
+    {
+      "id": "FAM_8QPCOD",
+      "nombre": "KARLA JULISSA DIAZ MEJIA (MADRE)"
+    },
+    {
+      "id": "FAM_FOMH1M",
+      "nombre": "SILVIA LOZANO COSSIO (MADRE)"
+    },
+    {
+      "id": "FAM_JT00G3",
+      "nombre": "TERESA IVETTE FERNANDEZ MUÑOZCANO (MADRE)"
+    },
+    {
+      "id": "FAM_LIV8EF",
+      "tutorId": "FAM_LIV8EF",
+      "nombre": "SARA MARIFELL CAMARGO LOPEZ (MADRE)",
+      "madre": "SARA MARIFELL CAMARGO LOPEZ (MADRE)"
+    }
+  ],
+  "listaVoceo": [],
+  "historial": [
+    {
+      "id": 1786753850878,
+      "fecha": "2026-08-15",
+      "hora": "07:30 p.m.",
+      "alumnoNombre": "LEONARDO MATEU CHAVEZ RAMIREZ",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_G32YR4",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753849117,
+      "fecha": "2026-08-15",
+      "hora": "07:30 p.m.",
+      "alumnoNombre": "LUCAS PIÑA VIVALDI",
+      "nivel": "PREESCOLAR",
+      "grado": "2",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_ZX1A32",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753739641,
+      "fecha": "2026-08-15",
+      "hora": "07:28 p.m.",
+      "alumnoNombre": "PAULA JIMENA CORONA MEDINA",
+      "nivel": "PREESCOLAR",
+      "grado": "1",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_0GF43W",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753159092,
+      "fecha": "2026-08-15",
+      "hora": "07:19 p.m.",
+      "alumnoNombre": "LUNA ZAZUETA FERNANDEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_JT00G3",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753157714,
+      "fecha": "2026-08-15",
+      "hora": "07:19 p.m.",
+      "alumnoNombre": "LUCIA ZAZUETA FERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_JT00G3",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753156322,
+      "fecha": "2026-08-15",
+      "hora": "07:19 p.m.",
+      "alumnoNombre": "LEON GRIGORJAN CAMARGO",
+      "nivel": "PRIMARIA",
+      "grado": "2°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_LIV8EF",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786753155118,
+      "fecha": "2026-08-15",
+      "hora": "07:19 p.m.",
+      "alumnoNombre": "ARMINA GRIGORJAN CAMARGO",
+      "nivel": "SECUNDARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_LIV8EF",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786676450377,
+      "fecha": "2026-08-14",
+      "hora": "10:00 p.m.",
+      "alumnoNombre": "VALENTINA MORALES GRANADOS",
+      "nivel": "PREESCOLAR",
+      "grado": "MATERNAL 1",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_7N1N89",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786676448056,
+      "fecha": "2026-08-14",
+      "hora": "10:00 p.m.",
+      "alumnoNombre": "LUCIA ZAZUETA FERNANDEZ",
+      "nivel": "PRIMARIA",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_JT00G3",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    },
+    {
+      "id": 1786676447016,
+      "fecha": "2026-08-14",
+      "hora": "10:00 p.m.",
+      "alumnoNombre": "LUNA ZAZUETA FERNANDEZ",
+      "nivel": "PREESCOLAR",
+      "grado": "1°",
+      "grupo": "A",
+      "tutorNombre": "Tutor Registrado",
+      "tutorId": "FAM_JT00G3",
+      "puerta": "Principal",
+      "tipo": "Escáner / Salida Directa"
+    }
+  ]
+}

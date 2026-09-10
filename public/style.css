@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f2f4f7;
+    padding-bottom: 80px;
+}
+
+/* ENCABEZADO */
+.top-header {
+    background-color: #1b2680;
+    color: white;
+    padding: 30px 25px;
+}
+
+.top-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.content-area {
+    width: 100%;
+}
+
+/* CONTROL DE PESTAÑAS */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block !important;
+}
+
+/* BOTÓN ESTRELLA AMARILLA */
+.star-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 25px 0;
+}
+
+.yellow-star-btn {
+    width: 180px;
+    height: 180px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: transform 0.1s ease;
+}
+
+.yellow-star-btn:active {
+    transform: scale(0.95);
+}
+
+.star-3d {
+    font-size: 100px;
+    color: #ffd740;
+    text-shadow: 0 4px 10px rgba(180, 120, 0, 0.3);
+}
+
+.star-label {
+    margin-top: 18px;
+    color: #1b2680;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* TARJETAS Y CONTENEDORES */
+.manual-box, .panel-card {
+    background: white;
+    margin: 15px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #1b2680;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    width: 100%;
+    background: #1b2680;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background: #141c60;
+}
+
+/* NAVEGACIÓN INFERIOR FIXA */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: white;
+    border-top: 3px solid #ffcc00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1b2680;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.6;
+}
+
+.nav-item.active {
+    opacity: 1;
+}
+
+.nav-item .icon { font-size: 20px; margin-bottom: 2px; }
+.nav-item .label { font-size: 12px; font-weight: 800; }
+
+.result-box {
+    background: white;
+    margin: 15px 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #28a745;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* MODALES */
+.modal-bg {
+    position: fixed;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.modal-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.btn-sec { background: #5c6bc0; color: white; border: none; padding: 8px; border-radius: 6px; width: 100%; margin-top: 5px; cursor: pointer; font-weight: bold; }
+.btn-close { background: #888; color: white; border: none; padding: 8px; border-radius: 6px; width: 100%; margin-top: 5px; cursor: pointer; }
