@@ -222,8 +222,17 @@ function renderHermanos(alumnos, tutorNombre, tutorId) {
 }
 
 function entregar(alumnoNombre, tutorNombre, tutorId) {
+    // 1. Hora local garantizada en formato de México (12 horas con AM/PM)
     const hoy = new Date().toISOString().split('T')[0];
-    const hora = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const hora = new Date().toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', hour12: true });
+
+    // 2. UI OPTIMISTA: Oculta el botón/tarjeta al instante al hacer clic
+    if (window.event && window.event.target) {
+        const boton = window.event.target;
+        boton.disabled = true;
+        boton.innerText = "✅ Entregado";
+        boton.style.background = "#6c757d";
+    }
 
     fetch('/api/entregar-alumno-individual', {
         method: 'POST',
@@ -531,7 +540,7 @@ function cerrarModalDetalleAlumno() {
 }
 
 // ==========================================================
-// 1. EXPEDIENTE FAMILIAR MULTI-ALUMNO
+// 1. EXPEDIENTE FAMILIAR MULTI-ALUMNO (FILTRO FLEXIBLE CUSTODIA)
 // ==========================================================
 window.abrirExpedienteFamiliar = function(criterio) {
     if (!criterio) return alert("⚠️ Por favor ingresa un nombre o código.");
@@ -558,8 +567,27 @@ window.abrirExpedienteFamiliar = function(criterio) {
             const listaAlumnos = todosLosAlumnos.filter(a => (a.tutorId || a.idFamilia || '').toString().trim().toUpperCase() === tutorIdBase);
             const tutorObj = todosLosTutores.find(t => (t.id || t.tutorId || '').toString().trim().toUpperCase() === tutorIdBase) || {};
             const nombreTutor = alumnoBase.tutorPrincipal || alumnoBase.tutorNombre || alumnoBase.tutor || tutorObj.nombre || tutorObj.madre || "Tutor No Registrado";
-            const personaExtra = alumnoBase.personaExtra || alumnoBase.personaAutorizadaExtra || tutorObj.personaExtra || "Ninguna";
+            
+            let personaExtra = alumnoBase.personaExtra || alumnoBase.personaAutorizadaExtra || tutorObj.personaExtra || "Ninguna";
             const alerta = alumnoBase.alerta || tutorObj.alerta || "";
+
+            // ⚡ FILTRO ULTRA FLEXIBLE
+            if (alerta && (alerta.toUpperCase().includes("CUSTODIA") || alerta.toUpperCase().includes("BLOQUEO")) && personaExtra !== "Ninguna") {
+                const alertaUpper = alerta.toUpperCase();
+                let listaAutorizados = personaExtra.split(',').map(p => p.trim());
+                
+                let listaFiltrada = listaAutorizados.filter(persona => {
+                    const pUpper = persona.toUpperCase();
+                    // Dividimos en palabras (ej. CARLOS, DANIEL, GUTIERREZ)
+                    const palabras = pUpper.split(' ').filter(word => word.length > 2);
+                    
+                    // Si la alerta contiene las palabras clave del nombre, la descartamos
+                    const coincide = palabras.some(palabra => alertaUpper.includes(palabra));
+                    return !coincide;
+                });
+
+                personaExtra = listaFiltrada.length > 0 ? listaFiltrada.join(', ') : "Sin personas autorizadas extras (Restricción por Custodia)";
+            }
 
             // 3. Generar HTML en el modal
             const contenedor = document.getElementById("detalle-alumno-contenido");
@@ -1679,9 +1707,6 @@ function guardarEdicionAlumno() {
     let tieneCustodia = document.getElementById('edit-custodia-check') ? document.getElementById('edit-custodia-check').checked : false;
     let alertaCustodia = document.getElementById('edit-custodia-texto') ? document.getElementById('edit-custodia-texto').value.trim() : '';
 
-    let bdActual = JSON.parse(localStorage.getItem('bd_alumnos')) || [];
-
-    // GUARDAR CADA HERMANO EDITADO
     let promesas = [];
 
     bloques.forEach(bloque => {
@@ -1703,38 +1728,36 @@ function guardarEdicionAlumno() {
                 tutorNombre: tutorNombreVal,
                 tutorPrincipal: tutorNombreVal,
                 tutorExistenteId: idFamilia,
+                
+                // Actualiza todas las claves posibles del JSON
+                personaExtra: autorizadosVal,
                 personaAutorizadaExtra: autorizadosVal,
+                autorizados: autorizadosVal,
+                
+                alerta: tieneCustodia ? (alertaCustodia || "RESTRICCIÓN DE CUSTODIA") : '',
                 tieneCustodia: tieneCustodia,
                 alertaCustodia: alertaCustodia
             };
 
-            // Guardar en servidor
             promesas.push(
                 fetch('/api/registrar', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(datos)
-                }).catch(e => console.log("Guardando en memoria local..."))
+                })
             );
-
-            // Guardar también en LocalStorage para que la pantalla se actualice de inmediato
-            let idx = bdActual.findIndex(a => (a.idAlumno == idAlumno || a.id == idAlumno));
-            if (idx !== -1) {
-                bdActual[idx] = { ...bdActual[idx], ...datos };
-            }
         }
     });
 
-    localStorage.setItem('bd_alumnos', JSON.stringify(bdActual));
+    localStorage.removeItem('bd_alumnos');
 
     Promise.all(promesas)
         .then(() => {
-            alert("✅ ¡Toda la información familiar se actualizó correctamente!");
+            alert("✅ ¡Información actualizada correctamente!");
             cerrarModalEditar();
             location.reload();
         })
         .catch(err => {
-            alert("✅ ¡Datos guardados correctamente!");
             cerrarModalEditar();
             location.reload();
         });
@@ -2173,9 +2196,16 @@ function guardarEdicionAlumno() {
                 grupo: grupo,
                 tutorNombre: tutor,
                 tutorPrincipal: tutor,
+                
+                // ⚡ CORRECCIÓN CLAVE: Enviamos las 3 variantes para sincronizar con data.json
+                personaExtra: autorizados,
                 personaAutorizadaExtra: autorizados,
+                autorizados: autorizados,
+                
+                // ⚡ ALERTA: Envía el texto o lo borra si no tiene custodia
+                alerta: tieneCustodia ? (alertaCustodia || "RESTRICCIÓN DE CUSTODIA") : "",
                 tieneCustodia: tieneCustodia,
-                alertaCustodia: alertaCustodia
+                alertaCustodia: tieneCustodia ? alertaCustodia : ""
             };
 
             // Enviar al servidor
@@ -2203,6 +2233,7 @@ function guardarEdicionAlumno() {
         location.reload();
     });
 }
+
 // ==========================================================
 // BÚSQUEDA Y EDICIÓN DE ALUMNOS (CONEXIÓN CENTRAL EN TIEMPO REAL)
 // ==========================================================
@@ -2238,7 +2269,9 @@ window.buscarAlumnoParaEditar = function() {
                 setVal("edit-grado", alumno.grado || alumno.GRADO || "");
                 setVal("edit-grupo", alumno.grupo || alumno.GRUPO || "");
                 setVal("edit-nombre-alumno", alumno.nombreAlumno || alumno.nombre || alumno.NOMBRE || "");
-                setVal("edit-autorizados", alumno.personaExtra || alumno.autorizados || alumno.AUTORIZADOS || "");
+                
+                // Carga cualquiera de las tres claves de autorizados que contenga datos
+                setVal("edit-autorizados", alumno.personaExtra || alumno.autorizados || alumno.personaAutorizadaExtra || "");
                 setVal("edit-alerta", alumno.alerta || alumno.ALERTA || alumno.custodia || "");
 
                 // 2. Asignar el Tutor Responsable devuelto por el servidor
@@ -2248,7 +2281,7 @@ window.buscarAlumnoParaEditar = function() {
                     campoTutor.readOnly = false;
                     campoTutor.disabled = false;
                     campoTutor.style.backgroundColor = "#ffffff";
-                    campoTutor.value = alumno.tutorNombreCompleto || "";
+                    campoTutor.value = alumno.tutorNombreCompleto || alumno.tutorPrincipal || alumno.tutorNombre || "";
                 }
 
             } else {
@@ -2413,7 +2446,7 @@ window.guardarRegistroAlumno = function(event) {
     });
 };
 // ==========================================================
-// EXPEDIENTE FAMILIAR DEFINITIVO (ARMINA + LEÓN + HERMANOS)
+// EXPEDIENTE FAMILIAR DEFINITIVO (CORREGIDO)
 // ==========================================================
 window.abrirExpedienteFamiliar = function(criterio) {
     fetch('/api/alumnos-completo')
@@ -2437,9 +2470,19 @@ window.abrirExpedienteFamiliar = function(criterio) {
             const tutorIdBase = (alumnoBase.tutorId || alumnoBase.idFamilia || '').toString().trim().toUpperCase();
             const listaAlumnos = todosLosAlumnos.filter(a => (a.tutorId || a.idFamilia || '').toString().trim().toUpperCase() === tutorIdBase);
             const tutorObj = todosLosTutores.find(t => (t.id || t.tutorId || '').toString().trim().toUpperCase() === tutorIdBase) || {};
+            
+            // EL TUTOR PRINCIPAL PERMANECE SIEMPRE IGUAL
             const nombreTutor = alumnoBase.tutorPrincipal || alumnoBase.tutorNombre || alumnoBase.tutor || tutorObj.nombre || tutorObj.madre || "Tutor No Registrado";
-            const personaExtra = alumnoBase.personaExtra || alumnoBase.personaAutorizadaExtra || tutorObj.personaExtra || "Ninguna";
-            const alerta = alumnoBase.alerta || tutorObj.alerta || "";
+            
+            // ⚡ CORRECCIÓN: Lee únicamente los campos del alumno sin ir a revivir datos viejos del tutor
+            const extraVal = (alumnoBase.personaExtra !== undefined ? alumnoBase.personaExtra : 
+                             (alumnoBase.personaAutorizadaExtra !== undefined ? alumnoBase.personaAutorizadaExtra : 
+                             (alumnoBase.autorizados !== undefined ? alumnoBase.autorizados : ""))).toString().trim();
+                             
+            const personaExtra = extraVal !== "" ? extraVal : "Ninguna";
+
+            // Alerta de custodia
+            const alerta = (alumnoBase.alerta || alumnoBase.alertaCustodia || tutorObj.alerta || "").toString().trim();
 
             // 3. Renderizar HTML
             const contenedor = document.getElementById("detalle-alumno-contenido");
@@ -2495,7 +2538,6 @@ window.abrirExpedienteFamiliar = function(criterio) {
         })
         .catch(err => console.error("Error al cargar expediente:", err));
 };
-
 // Sobrescribir funciones viejas y conectar buscador
 window.abrirExpedienteAlumno = window.abrirExpedienteFamiliar;
 window.verDetalleAlumno = window.abrirExpedienteFamiliar;
@@ -2506,7 +2548,7 @@ window.buscarAlumno = function(term) {
     const input = document.querySelector("input[placeholder*='nombre']") || document.querySelector("input[placeholder*='código']") || document.getElementById("input-filtro-bd");
     const valor = term || (input ? input.value : '');
     if (valor) window.abrirExpedienteFamiliar(valor);
-};
+};  
 // ==========================================================
 // VINCULAR EXCLUSIVAMENTE LA TECLA ENTER DEL INPUT #manual-code
 // ==========================================================
